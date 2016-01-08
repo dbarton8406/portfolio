@@ -83,7 +83,7 @@ body {
     width: 100%;
     height: 100%;
     line-height: 24px;
-    color: #6a6a6a;
+    color: #FFFFFF;
     font-size: 13px;
     font-family: 'Oxygen', sans-serif;
     font-weight: normal;
@@ -181,8 +181,8 @@ ul,li{
 /* 2.1 - Headings 
 --------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
-    color: #323232;
+h2, h3, h4, h5, h6 {
+    color: black;
     text-transform: uppercase;
     font-family: "Volkhov",serif;
     font-weight: 700;
@@ -191,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    color: #FFFFFF;
     font-size: 43px;
     letter-spacing: 2px;
     line-height: 40px;
@@ -315,8 +316,8 @@ h6 {
 
 /*==================== section heading ========================*/
 .section-heading{
-    margin-bottom: 70px;
-    padding-top: 80px;
+    margin-bottom: 50px;
+    padding-top: 40px;
 }
 
 .section-heading hr{
@@ -393,6 +394,8 @@ h6 {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    padding-left: 7em;
+    padding-right: 5em;
 }
 
 .navbar-custom .nav li a:hover {
@@ -513,11 +516,13 @@ h6 {
 }
 
 .iconbox{
+    color:black;
     position: relative;
     margin: 0 0 50px;
 }
 
 .iconbox-icon {
+    color:black;
     position: absolute;
     width: 55px;
     left: 0;
@@ -527,10 +532,12 @@ h6 {
 }
 
 .iconbox-text {
+    color:black;
     padding-left: 55px;
 }
 
 .iconboxl-title {
+    color:black;
     margin: 0 0 15px;
     padding: 0;
 }
@@ -549,7 +556,7 @@ h6 {
 }
 
 .resume i{
-    font-size: 22px;
+    font-size: 16px;
     color:  #E23F43;
     margin-right: 8px;
 }
@@ -734,6 +741,8 @@ h6 {
     max-width: 100%;
     margin: 20px 0px;
 }
+
+
 
 .item-wrap img {
     -webkit-transition: all .4s ease;
@@ -1172,4 +1181,306 @@ h6 {
 .copy span{
     color: #E23F43;
     font-weight: 700;
+}
+
+/*===================================================
+       mask 
+===================================================*/
+ 
+ .box {
+   width: 620px;
+   height: 400px;
+   margin: 10px;
+   float: left;
+   /*border: 5px solid #fff;*/
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   display: block;
+   position: relative;
+        }
+a.link {
+   background:url( Link image URL)
+   center no-repeat;
+   background-size:50px 50px;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-999px;
+   width:50px;
+   height:50px;
+   position:relative;
+   top:-15px;
+   opacity: 0;
+   transition: opacity 0.1s 0s ease-in-out;
+          }
+.mask {
+   width: 620px;
+   height: 140px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   overflow:visible;
+   border:5px solid rgba(0,0,0,0.9);
+   color: FFFFFF;
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
+           }
+.mask:hover {
+   opacity: 1;
+   border:220px solid rgba(0,0,0,0.7);
+   color: white;
+                    }
+.mask:hover a.link {
+   opacity:1;
+   transition-delay: 0.3s;
+                             }
+/*===================================================
+       rolling
+===================================================*/ 
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* { padding: 0; margin: 0; }
+
+
+
+p#start
+{
+    position: relative;
+    width: 14em;
+    font-size: 200%;
+    font-weight: 400;
+    margin: 20% auto;
+    color: #4ee;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: intro 2s ease-out;
+    -moz-animation: intro 2s ease-out;
+    -ms-animation: intro 2s ease-out;
+    -o-animation: intro 2s ease-out;
+    animation: intro 2s ease-out;
+}
+
+@-webkit-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes intro {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+h5
+{
+    position: absolute;
+    width: 2.6em;
+    left: 50%;
+    top: 25%;
+    font-size: 10em;
+    text-align: center;
+    margin-left: -1.3em;
+    line-height: 0.8em;
+    letter-spacing: -0.05em;
+    color: #000;
+    text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: logo 25s linear 4s ;
+    -moz-animation: logo 25s linear 4s ;
+    -ms-animation: logo 25s linear 4s ;
+    -o-animation: logo 25s linear 4s ;
+    animation: logo 25s linear 4s ;
+}
+
+
+
+
+@-webkit-keyframes logo {
+    0% { -webkit-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+    0% { -moz-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+    0% { -ms-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+    0% { -o-transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+    0% { transform: scale(1); opacity: 1; }
+    50% { opacity: 1; }
+    100% { transform: scale(0.1); opacity: 0; }
+}
+
+/* the interesting 3D scrolling stuff */
+#titles
+{
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 350%;
+    text-align: justify;
+    overflow: hidden;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: perspective(100px) rotateX(15deg);
+    -moz-transform: perspective(100px) rotateX(15deg);
+    -ms-transform: perspective(100px) rotateX(15deg);
+    -o-transform: perspective(100px) rotateX(15deg);
+    transform: perspective(100px) rotateX(15deg);
+}
+
+#titles:after
+{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+#titles p
+{
+    text-align: justify;
+    margin: 0.8em 0;
+}
+
+#titles p.center
+{
+    text-align: center;
+}
+
+#titles a
+{
+    color: #ff6;
+    text-decoration: underline;
+}
+
+#titlecontent
+{
+    position: absolute;
+    top: 100%;
+    -webkit-animation: scroll 500s linear 4s ;
+    -moz-animation: scroll 500s linear 4s ;
+    -ms-animation: scroll 500s linear 4s ;
+    -o-animation: scroll 500s linear 4s ;
+    animation: scroll 500s linear 4s ;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+@-moz-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+@-ms-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+@-o-keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -170%; }
+}
+
+
+
+/*=========================*/
+.ttt {
+    float: right;
+    width: 40%;
+    height: 400px;
+    margin-top: 33px;
+   /*box-shadow: none;*/
+}
+ 
+ .etsy{
+    margin-left: 70px;
+    /*box-shadow: none;*/
+ }
+
+ .war{
+    float: right;
+    height: 400px;
+    width: 35.5%;
+    margin-right: 80px;
+    /*box-shadow: none;*/
+ }
+
+ .works{
+    text-align: center;
+ }
+
+
+form{
+    color: black;
+}
+
+hr {
+    background-image: black;
+}
+
+.experience {
+    margin-top: 20px;
 }

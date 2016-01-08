@@ -1,8 +1,8 @@
 <?php
 
 //Add your information here
-$recipient = "themeturn@gmail.com";
-$successPage = "index.html";
+$recipient = "dbarton8406@gmail.com";
+$successPage = "";
 
 //Don't edit anything below this line
 
