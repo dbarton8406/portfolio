@@ -2,7 +2,7 @@
 
 //Add your information here
 $recipient = "dbarton8406@gmail.com";
-$successPage = "index.html";
+$successPage = "http://dbarton8406.github.io/portfolio/";
 
 //Don't edit anything below this line
 
