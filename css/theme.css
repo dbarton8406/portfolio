@@ -575,7 +575,7 @@ display: inline-block;
 SECTION PORTFOLIO
 ===============================================*/
 #section-portfolio{
-padding-bottom:75px;
+padding-bottom:5px;
 }
 #section-portfolio .section-heading{
 padding-top: 78px;
@@ -750,7 +750,7 @@ margin-bottom: 20px;
 .contact-info{
 padding-top: 40px;
 /*padding-left: 350px;*/
-padding-bottom: 20px;
+padding-bottom: 70px;
 }
 .contact-info ul{
 margin-top: 50px;
