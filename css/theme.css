@@ -1,9 +1,6 @@
 /*
-Template Name: Milane-personal portfolio landing template
-Author: Themeturn
-Author URI:ThemeTurn
-Description:
-Version: 1.0
+Template Name: DANIEL-personal portfolio landing template
+
 */
 /* Table of Content
 ==================================================
@@ -13,16 +10,16 @@ Version: 1.0
 4.  Navigation
 5.  HEADER AREA
 6.  SECTION ABOUT
-7.  SECTION SERVICES
-8.  SECTION TEAM
+7.  MASK
 9.  SECTION PORTFOLIO
 10. SECTION EDUCATION
-11. SECTION PRICING
+11. SCROLLING
 12. SECTION CONTACT
 13. SECTION FOOTER
 */
 /* 1 - Google Font
 ------------------------------------------------------------------------*/
+@import "compass/css3";
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -478,6 +475,61 @@ transition: all .4s ease;
 background: #eee;
 cursor: pointer;
 }
+
+/*===================================================
+mask
+===================================================*/
+.box {
+width: 620px;
+height: 400px;
+margin: 10px;
+float: left;
+/*border: 5px solid #fff;*/
+overflow: hidden;
+position: relative;
+text-align: center;
+box-shadow: 0px 0px 5px #aaa;
+display: block;
+position: relative;
+}
+a.link {
+background:url( Link image URL)
+center no-repeat;
+background-size:50px 50px;
+display: inline-block;
+text-decoration: none;
+padding:0;
+text-indent:-999px;
+width:50px;
+height:50px;
+position:relative;
+top:-15px;
+opacity: 0;
+transition: opacity 0.1s 0s ease-in-out;
+}
+.mask {
+width: 620px;
+height: 140px;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+opacity: 0;
+overflow:visible;
+border:5px solid rgba(0,0,0,0.9);
+color: FFFFFF;
+box-sizing:border-box;
+transition: all 0.4s ease-in-out;
+}
+.mask:hover {
+opacity: 1;
+border:220px solid rgba(0,0,0,0.7);
+color: white;
+}
+.mask:hover a.link {
+opacity:1;
+transition-delay: 0.3s;
+}
 /*----------------*/
 /*  Skills Bar
 /*---------------*/
@@ -518,94 +570,7 @@ text-transform: uppercase;
 float: right;
 display: inline-block;
 }
-/*======================================================
-section service
-============================================================*/
-#section-services{
-padding: 0px 0px 65px;
-background: #FAFAFC;
-}
-.service-box{
-text-align: center;
-padding:30px 15px;
-background: #fff;
-margin-bottom: 30px;
--webkit-transition: all .3s ease;
--o-transition: all .3s ease;
-transition: all .3s ease;
-}
-.service-inner{
--webkit-transition: all .4s ease 0s;
--o-transition: all .4s ease 0s;
-transition: all .4s ease 0s;
-margin-bottom: 50px;
-}
-.service-icon {
-margin-bottom: 30px;
-}
-.service-icon i{
-font-size: 30px;
-color: #222;
-width: 50px;
-}
-.service-inner p{
-font-size: 13px;
-margin-top: 20px;
-}
-.service-box:hover .service-icon i,.service-box:hover .service-inner h6{
-color: #E23F43;
-}
-/*=====================================================
-SECTION TEAM
-==========================================================*/
-#section-team{
-background: #Fafafa;
-padding-bottom: 95px;
-background: url("../images/bg/team-bg.jpg")fixed 50% 0%;
--webkit-background-size: cover;
-background-size: cover;
-}
-#section-team .section-heading{
-padding-top: 75px;
-}
-.team-box{
-background: #fff;
-padding: 25px;
-}
-.team-img img{
-width: 100%;
-}
-.team-info{
-margin: 20px 0px;
-text-align: center;
-}
-.team-info h4{
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-}
-.team-info h6{
-font-weight: 400;
-text-transform: capitalize;
-}
-.team-info p{
-margin-top: 30px;
-}
-.team-info hr{
-width: 40px;
-}
-.team-socail {
-margin-top: 30px;
-background: #Fafafa;
-}
-.team-socail li a i{
-width: 40px;
-height: 40px;
-padding-top: 12px;
-}
-.team-socail li a:hover i{
-background: #fff;
-}
+
 /*============================================
 SECTION PORTFOLIO
 ===============================================*/
@@ -749,148 +714,7 @@ padding-bottom: 10px;
 .about-info-inner{
 margin-left: 70px;
 }
-/*============================================
-section process & pricing
-===============================================*/
-.pricing-box{
--webkit-transition: all .4s ease 0s;
--o-transition: all .4s ease 0s;
-transition: all .4s ease 0s;
-}
-.pricing-box{
-border: 3px solid#333;
-padding: 20px 20px;
-margin-bottom: 30px;
-text-align: center;
-}
-.pricing-top{
-text-align: center;
-padding: 40px 0px 30px;
-border-bottom: 1px solid#eee;
-}
-.pricing-top i{
-font-size: 30px;
-margin-bottom: 20px;
-display: block;
-border-bottom: 1px solid#eee;
-padding-bottom: 30px;
-}
-.pricing-inner ul{
-margin-top: 20px;
-}
-.pricing-inner ul li{
-text-transform: capitalize;
-padding: 7px 0px;
-}
-.pricing-top h5{
-padding-top: 10px;
-}
-.price{
-font-size:16px;
-font-weight: 700;
-text-transform: uppercase;
-color: #E23F43;
-}
-#pricing-carousel .carousel-indicators{
-bottom: -30px;
-}
-#pricing-carousel .carousel-indicators .active {
-background-color: #444;
-}
-#pricing-carousel .carousel-indicators li {
-border: 1px solid #444;
-}
-/* process ===========*/
-#section-process{
-background: #fff;
-padding: 93px 0px 70px;
-}
-.process-heading{
-margin-bottom: 40px;
-}
-.process-heading h3{
-margin-bottom: 20px;
-}
-.process-inner{
-margin-bottom: 50px;
-}
-.icon-box{
-float: left;
-font-size: 30px;
-margin-right: 30px;
-margin-top: 8px;
-}
-.process-inner h4{
-text-transform: capitalize;
-color: #777;
-}
-.process-inner h4 span{
-margin-bottom: 10px;
-font-size: 34px;
-line-height: 30px;
-color: #eaeaea;
-}
-.process-inner p{
-margin-top: 15px;
-}
-/*=====================================================
-SECTION TESTIMONIAL
-==========================================================*/
-#testimonial{
-padding: 80px 0px 100px;
-background: url("../images/bg/section-parallax.jpg") no-repeat fixed 50% 50% ;
--webkit-background-size: cover;
-background-size: cover;
-position: relative;
-}
-#testimonial-carousel .item{
-text-align: center;
-color: #fff;
-}
-#testimonial-carousel .item p,#testimonial-carousel .item h4,#testimonial-carousel .item h5{
-color: #fff;
-}
-#testimonial-carousel .item p{
-width: 70%;
-margin: 20px auto;
-color: #ddd;
-font-size: 13px;
-}
-#testimonial-carousel .item i{
-font-size: 45px;
-text-align: center;
-line-height: 45px;
-width: 100%;
-margin: 0px auto;
-}
-#testimonial-carousel .item h4 {
-margin-top: 30px;
-}
-#testimonial-carousel .carousel-indicators {
-bottom: -45px;
-}
-#testimonial-carousel .carousel-indicators li {
-margin: 5px;
-cursor: pointer;
-opacity: 0.4;
--webkit-transition: all 0.4s;
--o-transition: all 0.4s;
-transition: all 0.4s;
-border-color:#fff;
-width: 10px;
-height: 10px;
-border-radius: 0px;
-}
-#testimonial-carousel .carousel-indicators .active {
-opacity: 1;
-background: #fff;
-}
-/*=====================================================
-SECTION CLIENT
-==========================================================*/
-#section-client{
-padding: 90px 0px;
-}
+
 /*=====================================================
 SECTION CONTACT
 ==========================================================*/
@@ -972,11 +796,11 @@ display: block;
 padding-top: 10px;
 }
 .footer-socail li a:hover{
-background: #fff;
-color: #E23F43;
+background: rgba(0,0,0,0);
 }
 .footer-menu li a:hover{
 color: #E23F43;
+background: black
 }
 .footer-menu li a{
 color: #fff;
@@ -993,60 +817,7 @@ text-transform: capitalize;
 color: #E23F43;
 font-weight: 700;
 }
-/*===================================================
-mask
-===================================================*/
-.box {
-width: 620px;
-height: 400px;
-margin: 10px;
-float: left;
-/*border: 5px solid #fff;*/
-overflow: hidden;
-position: relative;
-text-align: center;
-box-shadow: 0px 0px 5px #aaa;
-display: block;
-position: relative;
-}
-a.link {
-background:url( Link image URL)
-center no-repeat;
-background-size:50px 50px;
-display: inline-block;
-text-decoration: none;
-padding:0;
-text-indent:-999px;
-width:50px;
-height:50px;
-position:relative;
-top:-15px;
-opacity: 0;
-transition: opacity 0.1s 0s ease-in-out;
-}
-.mask {
-width: 620px;
-height: 140px;
-position: absolute;
-overflow: hidden;
-top: 0;
-left: 0;
-opacity: 0;
-overflow:visible;
-border:5px solid rgba(0,0,0,0.9);
-color: FFFFFF;
-box-sizing:border-box;
-transition: all 0.4s ease-in-out;
-}
-.mask:hover {
-opacity: 1;
-border:220px solid rgba(0,0,0,0.7);
-color: white;
-}
-.mask:hover a.link {
-opacity:1;
-transition-delay: 0.3s;
-}
+
 /*===================================================
 rolling
 ===================================================*/
@@ -1062,11 +833,11 @@ margin: 20% auto;
 color: #4ee;
 opacity: 0;
 z-index: 1;
--webkit-animation: intro 2s ease-out;
--moz-animation: intro 2s ease-out;
--ms-animation: intro 2s ease-out;
--o-animation: intro 2s ease-out;
-animation: intro 2s ease-out;
+-webkit-animation: intro 4s ease-out;
+-moz-animation: intro 4s ease-out;
+-ms-animation: intro 4s ease-out;
+-o-animation: intro 4s ease-out;
+animation: intro 4s ease-out;
 }
 @-webkit-keyframes intro {
 0% { opacity: 1; }
@@ -1226,7 +997,8 @@ animation: scroll 500s linear 4s ;
 .ttt {
 float: right;
 margin-top: 33px;
-margin-right: 120px;
+margin-left: 80px;
+margin-right: 80px;
 box-shadow: none;
 width: 20em;
 height:30em;
@@ -1240,7 +1012,8 @@ box-shadow: none;
 float: right;
 width: 20em;
 height:30em;
-margin-left: 150px;
+margin-left: 80px;
+margin-right: 80px;
 box-shadow: none;
 word-wrap: break-word;
 }
@@ -1252,9 +1025,28 @@ padding-top: 70px;
 text-align: center;
 padding-top: 70px;
 }
-form{
-color: black;
+
+.stream{
+float: right;
+width: 20em;
+height:30em;
+margin-left: 80px;
+margin-right: 80px;
+box-shadow: none;
+word-wrap: break-word;
 }
+
+.myhub {
+float: right;
+width: 20em;
+height:30em;
+margin-left: 80px;
+margin-right: 80px;
+margin-top: 30px;
+box-shadow: none;
+word-wrap: break-word;
+}	
+
 .experience {
 margin-top: 20px;
 }
@@ -1270,3 +1062,5 @@ color:#575757;
 .fa-facebook:before{
 color:#46629E;
 }
+
+
