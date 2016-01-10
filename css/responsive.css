@@ -89,7 +89,7 @@
 }
 
 /* Extra Small Devices, Phones */ 
-@media (min-width : 480px) and (max-width:767px){
+@media (min-width : 480px) and (max-width:100%){
 
 /* background=================================*/
 
@@ -181,7 +181,7 @@
 }
 
 /* Custom, iPhone Retina */ 
-@media (min-width : 320px) and (max-width: 478px)  {
+@media (min-width : 320px) and (max-width: 100%)  {
 
 
 /* background=================================*/
