@@ -125,7 +125,7 @@ font-weight: 400;
 color: #666;
 }
 img {
-height: 440;
+height: auto;
 max-width: 100%;
 border: none;
 outline: none;
@@ -509,12 +509,12 @@ opacity: 0;
 transition: opacity 0.1s 0s ease-in-out;
 }
 .mask {
-width: 620px;
+width: 820px;
 height: 140px;
 position: absolute;
 overflow: hidden;
-top: 0;
-left: 0;
+top: 50px;
+left: 15px;
 opacity: 0;
 overflow:visible;
 border:5px solid rgba(0,0,0,0.9);
@@ -880,11 +880,11 @@ color: #000;
 text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
 opacity: 0;
 z-index: 1;
--webkit-animation: logo 25s linear 4s ;
--moz-animation: logo 25s linear 4s ;
--ms-animation: logo 25s linear 4s ;
--o-animation: logo 25s linear 4s ;
-animation: logo 25s linear 4s ;
+-webkit-animation: logo 5s linear 4s ;
+-moz-animation: logo 5s linear 4s ;
+-ms-animation: logo 5s linear 4s ;
+-o-animation: logo 5s linear 4s ;
+animation: logo 5s linear 4s ;
 }
 @-webkit-keyframes logo {
 0% { -webkit-transform: scale(1); opacity: 1; }
@@ -917,7 +917,7 @@ animation: logo 25s linear 4s ;
 position: absolute;
 width: 18em;
 height: 50em;
-bottom: 0;
+bottom: -100px;
 left: 50%;
 margin-left: -9em;
 font-size: 350%;
@@ -967,11 +967,11 @@ text-decoration: underline;
 {
 position: absolute;
 top: 100%;
--webkit-animation: scroll 500s linear 4s ;
--moz-animation: scroll 500s linear 4s ;
--ms-animation: scroll 500s linear 4s ;
--o-animation: scroll 500s linear 4s ;
-animation: scroll 500s linear 4s ;
+-webkit-animation: scroll 300s linear 6s ;
+-moz-animation: scroll 300s linear 6s ;
+-ms-animation: scroll 300s linear 6s ;
+-o-animation: scroll 300s linear 6s ;
+animation: scroll 300s linear 6s ;
 }
 /* animation */
 @-webkit-keyframes scroll {
@@ -1006,15 +1006,16 @@ height:30em;
 word-wrap: break-word;
 }
 .etsy{
-/*margin-left: 20px;*/
+height:440px;
 box-shadow: none;
 }
-.war{
-float: right;
+.war_box{
+float: left;
 width: 20em;
 height:30em;
 margin-left: 80px;
 margin-right: 80px;
+margin-top: 80px;
 box-shadow: none;
 word-wrap: break-word;
 }
