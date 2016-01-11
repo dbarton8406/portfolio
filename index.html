@@ -228,9 +228,6 @@
                                     </div>
                                 </div>
                                 <p id="start">A short time ago in a browser very, very close&hellip;</p>
-                                <FORM style="color:black;">
-                                    <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh"></INPUT>
-                                </FORM>
                                 <h5>EtsyWars</h5>
                                 <div id="titles">
                                     <div id="titlecontent">
@@ -252,10 +249,14 @@
                         </div>
                         <br>
                         <audio controls preload="auto" width="20px" height="5px">
-                            <source src="images/Star Wars.mp3"></source>
-                            <source src="images/Star Wars.ogg"></source>
+                            <source src="images/star-wars_cutted.mp3"></source>
+                            <source src="images/star-wars_cutted.ogg"></source>
                             Your browser does not support the audio element.
                         </audio>
+                        <br>
+                        <FORM style="color:black;">
+                            <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh">
+                        </FORM>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 grid item col-md-6 col-sm-4 col-xs-2">
@@ -296,8 +297,8 @@
                     <div class="col-lg-12 grid item col-md-8 col-sm-4 col-xs-2">
                         <div id="object">
                             <h4 class="streamline">Streamline<a href="https://github.com/dbarton8406/funnelcakes"><i class="fa fa-link"></i></a></h4>
-                            <object data=http://streamliners.surge.sh/#/ width="375" height="250">
-                                <embed src=http://streamliners.surge.sh/#/ width="375" height="250" class="embed"> </embed> Error: Embedded data could not be displayed.
+                            <object data=http://streamliners.surge.sh/#/ width="375" height="250" class="embed">
+                                <embed src=http://streamliners.surge.sh/#/ width="375" height="250"> </embed> Error: Embedded data could not be displayed.
                             </object>
                             <div id="stream_box">
                                 <p style="color:black;"> This is and App that was created to build curated content for users. Per example we used a sports newsletter to show how subscribers could select content based on interest and the company could build a complete newsletter and it would only send articles based off of their selections on the app. </p>
@@ -498,6 +499,20 @@
 
             // Kick off one resize to fix all videos on page load
         }).resize();
+        </script>
+        <script>
+        function readDeviceOrientation() {
+
+            if (Math.abs(window.orientation) === 90) {
+                // Landscape
+                document.getElementById("orientation").innerHTML = "LANDSCAPE";
+            } else {
+                // Portrait
+                document.getElementById("orientation").innerHTML = "PORTRAIT";
+            }
+        }
+
+        window.onorientationchange = readDeviceOrientation;
         </script>
 </body>
 
