@@ -514,7 +514,7 @@ height: 140px;
 position: absolute;
 overflow: hidden;
 top: 110px;
-left: 15px;
+left: -50px;
 opacity: 0;
 overflow:visible;
 border:5px solid rgba(0,0,0,0.9);
@@ -1066,6 +1066,12 @@ color:#46629E;
 
 audio{
 	position: absolute;
+	left: -50px;
     width: 640px;
     height: 10px
+}
+
+video, object{
+	position:relative;
+	left: -50px;
 }
