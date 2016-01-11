@@ -513,7 +513,7 @@ width: 820px;
 height: 140px;
 position: absolute;
 overflow: hidden;
-top: 50px;
+top: 110px;
 left: 15px;
 opacity: 0;
 overflow:visible;
@@ -577,6 +577,7 @@ SECTION PORTFOLIO
 ===============================================*/
 #section-portfolio{
 padding-bottom:5px;
+overflow-x: hidden;
 }
 #section-portfolio .section-heading{
 padding-top: 78px;
@@ -1063,4 +1064,8 @@ color:#575757;
 color:#46629E;
 }
 
-
+audio{
+	position: absolute;
+    width: 640px;
+    height: 10px
+}
