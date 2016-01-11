@@ -1001,7 +1001,7 @@ float: left;
 width: 20em;
 height:30em;
 margin-top: 33px;
-margin-left: 80px;
+margin-left: 40px;
 margin-right: 80px;
 box-shadow: none;
 word-wrap: break-word;
@@ -1014,7 +1014,7 @@ box-shadow: none;
 float: left;
 width: 20em;
 height:30em;
-margin-left: 80px;
+margin-left: 40px;
 margin-right: 80px;
 margin-top: 80px;
 box-shadow: none;
@@ -1032,7 +1032,7 @@ padding-top: 70px;
 #stream_box {
 width: 20em;
 height:30em;
-margin-left: 80px;
+margin-left: 40px;
 margin-right: 80px;
 box-shadow: 2px solid;
 word-wrap: break-word;
@@ -1041,7 +1041,7 @@ word-wrap: break-word;
 #myhub_box {
 width: 20em;
 height:30em;
-margin-left: 80px;
+margin-left: 40px;
 margin-right: 80px;
 margin-top: 30px;
 box-shadow: none;
@@ -1072,7 +1072,7 @@ audio{
 
 video:hover{
 	position:relative;
-    top:-25px;
+    top:-15px;
     left:-35px;
     width:100%;
     height:auto;
@@ -1080,7 +1080,7 @@ video:hover{
     z-index:999;
 }
 
- /*input{
- 	position: absolute;
- 	top:100px;
- }*/
+ #section-portfolio{
+ 	position: relative;
+ 	right:80px;
+ }
