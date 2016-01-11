@@ -1298,7 +1298,7 @@ h5 {
 .etsy {
     box-shadow: none;
     position: relative;
-    right: 15px;
+    right: 5px;
 }
 
 #war_box {
@@ -1377,17 +1377,17 @@ video:hover {
     z-index: 999;
 }
 
-#section-portfolio {
+.ttt {
     position: relative;
-    right: 80px;
+    right: 5px;
 }
 
 object.embed {
     position: relative;
-    right: 15px;
+    right: 5px;
 }
 
 .myhub {
     position: relative;
-    right: 15px;
+    right: 5px;
 }
