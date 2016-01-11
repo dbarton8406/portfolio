@@ -514,7 +514,7 @@ height: 140px;
 position: absolute;
 overflow: hidden;
 top: 110px;
-left: 15px;
+left: 60px;
 opacity: 0;
 overflow:visible;
 border:5px solid rgba(0,0,0,0.9);
@@ -1080,12 +1080,7 @@ video:hover{
     z-index:999;
 }
 
- .embed:hover{
-	position:relative;
-    top:-25px;
-    left:-35px;
-    width:100%;
-    height:auto;
-    display:block;
-    z-index:999;
-}
+ /*input{
+ 	position: absolute;
+ 	top:100px;
+ }*/
