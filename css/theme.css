@@ -1377,7 +1377,7 @@ video:hover {
     z-index: 999;
 }
 
-#ttt {
+.ttt {
     position: relative;
     right: 55px;
 }
@@ -1388,7 +1388,7 @@ object.embed {
     width: 350px;
 }
 
-#myhub {
+.myhub {
     position: relative;
     right: 85px;
 }

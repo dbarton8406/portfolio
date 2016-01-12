@@ -205,8 +205,8 @@
                     <div class="col-lg-12 grid item col-md-6 col-sm-4 col-xs-2">
                         <div id="video">
                             <h4 class="works">Terminal TicTacToe(WarGames)<a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a></h4>
-                            <video width="375" height="250" controls preload="auto" class="ttt" id="video">
-                                <source src="images/ttt_demo.mp4" type="video/mp4">
+                            <video width="375" height="250" controls preload="auto" class="ttt">
+                                <source src="images/ttt_demo.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"'">
                             </video>
                         </div>
                         <div id="ttt_box">
@@ -278,8 +278,8 @@
                         <div class="col-lg-12 grid item col-md-6 col-sm-4 col-xs-2">
                             <div id="video">
                                 <h4 class="works">MyHub<a href="https://github.com/dbarton8406/myhub"><i class="fa fa-link"></i></a></h4>
-                                <video width="375" height="250" controls preload="auto" class="myhub" id="video">
-                                    <source src="images/git_demo.mp4" type="video/mp4">
+                                <video width="375" height="250" controls preload="auto" class="myhub">
+                                    <source src="images/git_demo.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
                                 </video>
                                 <div id="myhub_box">
                                     <p style="color:black;">This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </p>
@@ -499,13 +499,6 @@
 
             // Kick off one resize to fix all videos on page load
         }).resize();
-        </script>
-        <script>
-        var video =
-        document.getElementById('video');
-        video.addEventListener('click', function(){
-            video.play();
-        },false);
         </script>
 </body>
 
