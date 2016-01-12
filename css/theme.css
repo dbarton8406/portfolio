@@ -1391,3 +1391,18 @@ object.embed {
     position: relative;
     right: 85px;
 }
+
+input.etsybutton {
+    width: 50px;
+    height: 20px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    right: 550px;
+}
+
+@media screen and (max-width:360px) {
+    input.etsybutton {
+        width: 100%;
+    }
+}
