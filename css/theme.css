@@ -1377,17 +1377,18 @@ video:hover {
     z-index: 999;
 }
 
-.ttt {
+#ttt {
     position: relative;
     right: 55px;
 }
 
 object.embed {
     position: relative;
-    right: 85px;
+    right: 75px;
+    width: 350px;
 }
 
-.myhub {
+#myhub {
     position: relative;
     right: 85px;
 }
@@ -1406,3 +1407,5 @@ input.etsybutton {
         width: 100%;
     }
 }
+
+
