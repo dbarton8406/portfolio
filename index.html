@@ -199,31 +199,70 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                <div class="items-wrap">
-                     <div class="col-md-5 col-sm-9 wow fadeInUp">
-                        <div id="video">
-                            <h4 class="works">Terminal TicTacToe(WarGames)<a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a></h4>
-                            <video width="620" height="440" controls preload="auto" class="ttt">
-                                <source src="images/ttt_demo.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"'">
-                            </video>
-                        </div>
-                        <div id="ttt_box">
-                            <p style="color:black;">This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</p>
-                            <p style="color:black;"><b>Role:</b> Back-End</p>
-                            <p style="color:black;"><b>Tech:</b> Ruby</p>
+            <div class="row container-masonry js-masonry" id="masonry-grid">
+                <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <div class="item-wrap">
+                        <video width="340" height="230" controls preload="auto">
+                                <source src="images/ttt_demo.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"'"
+                             class="img-responsive"></video>
+
+                        <div class="item-info">
+                            <h4 class="ttt">Terminal TicTacToe(WarGames)</h4>
+                            <h6>This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</h6>
+                            <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
+                            <p style="color:white;" class="works"><b>Tech:</b> Ruby</p>
+                            <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a>
                         </div>
                     </div>
+                    <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link" style="color:black;"></i>TicTacToe</a>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                     <div class="col-md-5 col-sm-9 wow fadeInUp">
-                        <div class="etsy_box">
-                            <h4 class="works">Etsy you Betsy<a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i></a></h4>
-                            <object width="640" height="440" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png" class="etsy"></object>
-                            <div class="mask">
+
+
+
+
+
+
+
+
+
+                 <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+                    <div class="item-wrap">
+                        <video width="400" height="250" controls preload="auto" class="myhub">
+                                    <source src="images/git_demo.mp4" type="video/mp4;" class="img-responsive">
+                                </video>
+
+                        <div class="item-info">
+                             <h4 class="ttt">MyHub</h4>
+                            <h6>This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </h6>
+                                    <p style="color:white;"class="works"><b>Role:</b> Back-End</p>
+                                    <p style="color:white;"class="works"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/dbarton8406/Myhub"><i class="fa fa-link"></i>My Hub</a>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+            <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+                    <div class="item-wrap">
+                        <img src="images/etsy1.png" height="240" alt="" class="img-responsive">
+                        <div class="mask">
                                 <div style="overflow:hidden; position:absolute; left:0; top:0; width:0px; height:25px;">
                                     <div style="margin-top:-490px;">
                                     </div>
@@ -243,79 +282,97 @@
                                             <br> it should start a sinatra app. It use the Etsy API results to render the page!
                                             <br>The controller method should check for a query parameter called "q" and search the Etsy API for matching listings. .</p>
                                         <p class="center" style="color:yellow;font-family: Droid Sans;"> It does NOT use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize..</p>
-                                        <object width="625" height="440" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
+                                        <object width="325" height="240" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br>
+                        </div>
                         <audio controls preload="auto" width="20px" height="5px">
                             <source src="images/star-wars_cutted.mp3"></source>
                             <source src="images/star-wars_cutted.ogg"></source>
                             Your browser does not support the audio element.
-                        </audio><br>
+                        </audio>
+                        <div>
                         <FORM style="color:black;">
                                     <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh" class="etsybutton">
                                 </FORM>
-                        <div class="container">
-                            <div class="row">
-                                 <div class="col-md-5 col-sm-9 wow fadeInUp">
-                                    <div id="war_box">
-                                        <p style="color:black;"> A sinatra app with the use of Ruby that pulls data from the Etsy Api with HTML and CSS .</p>
-                                        <p style="color:black;"><b>Role:</b> Full-Stack</p>
-                                        <p style="color:black;"><b>Tech:</b> Ruby, Html, CSS</p>
-                                        <p style="color:black;"><strong>Hover over Pic for more info</strong></p>
-                                    </div>
-                                </div>
-                            </div>
+                    
+                        <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i>Etsy you Betsy</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="items-wrap">
-                         <div class="col-md-5 col-sm-9 wow fadeInUp">
-                            <div id="video">
-                                <h4 class="works">MyHub<a href="https://github.com/dbarton8406/myhub"><i class="fa fa-link"></i></a></h4>
-                                <video width="620" height="440" controls preload="auto" class="myhub">
-                                    <source src="images/git_demo.mp4" type="video/mp4;">
-                                </video>
-                                <div id="myhub_box">
-                                    <p style="color:black;">This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </p>
-                                    <p style="color:black;"><b>Role:</b> Back-End</p>
-                                    <p style="color:black;"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="items-wrap"></div>
-                     <div class="col-md-5 col-sm-9 wow fadeInUp">
-                        <div id="object">
-                            <h4 class="streamline">Streamline<a href="https://github.com/dbarton8406/funnelcakes"><i class="fa fa-link"></i></a></h4>
-                            <object data=http://streamliners.surge.sh/#/ width="640" height="440" class="embed">
-                                <embed src=http://streamliners.surge.sh/#/ width="640" height="440"> </embed> Error: Embedded data could not be displayed.
+                    
+    
+                
+
+
+
+
+
+                <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <div class="item-wrap">
+                        <object data=http://streamliners.surge.sh/#/ width="340" height="250" class="embed">
+                                <embed src=http://streamliners.surge.sh/#/ width="340" height="250"> </embed> Error: Embedded data could not be displayed.
                             </object>
-                            <div id="stream_box">
-                                <p style="color:black;"> This is and App that was created to build curated content for users. Per example we used a sports newsletter to show how subscribers could select content based on interest and the company could build a complete newsletter and it would only send articles based off of their selections on the app. </p>
-                                <p style="color:black;"><b>Role:</b> Back-End Team</p>
-                                <p style="color:black;"><b>Tech:</b> Rails, Heroku, Action mailer, CSVimport, Mandrill API, AWS, Paperclip</p>
-                            </div>
+
+                        <div class="item-info">
+                            <h4 class="ttt">Streamline</h4>
+                            <h6>This is and App that was created to build curated content for users. Per example we used a sports newsletter to show how subscribers could select content based on interest and the company could build a complete newsletter and it would only send articles based off of their selections on the app.</h6>
+                                <p style="color:black;"class="works"><b>Role:</b> Back-End Team</p>
+                                <p style="color:black;"class="works"><b>Tech:</b> Rails, Heroku, Action mailer, CSVimport, Mandrill API, AWS, Paperclip</p></h6>
                         </div>
+                    </div>
+                    <a href="https://github.com/dbarton8406/funnelcakes"><i class="fa fa-link"></i>Streamline</a>
+                </div>
+              
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+           <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <div class="item-wrap">
+                            <object data=http://streamliners.surge.sh/#/ width="340" height="250" class="embed">
+                            <embed src=http://streamliners.surge.sh/#/ width="340" height="250"> </embed> Error: Embedded data could not be displayed.
+                            </object>
                     </div>
                 </div>
             </div>
-            <div>
-                <p> Other works links:</p>
-                <a href="http://duckbills.surge.sh/#/"> http://duckbills.surge.sh/#/ - Back End Team </a>
+
+
+
+            <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <div class="item-wrap">
+                        <a href="http://duckbills.surge.sh/#/"> http://duckbills.surge.sh/#/ - Back End Team </a>
                 <br>
                 <a href="https://fuhgeddit.herokuapp.com/"> https://fuhgeddit.herokuapp.com/ - Full Stack </a>
+                        
+                    </div>
+                </div>
+
+               </div>
+
                 <!-- container end -->
-            </div>
+            </section>
             <!-- </section>  Portfolio Section End -->
     </section>
     <!-- section portfolio end -->
@@ -451,7 +508,7 @@
         <script>
         var container = document.querySelector('#masonry-grid');
         var masonry = new Masonry(container, {
-            columnWidth: 50,
+            columnWidth: 60,
             itemSelector: '.grid-item',
             easing: 'linear',
             gutter: 1
