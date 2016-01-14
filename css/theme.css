@@ -560,6 +560,7 @@ section about
 
 .resume {
     text-align: center;
+    color: #595651;
 }
 
 .resume i {
@@ -569,6 +570,7 @@ section about
 }
 
 .resume h6 {
+	background-color: #198FFF;
     border: 1px solid#eee;
     padding: 12px 12px 14px 12px;
     margin-top: 28px;
@@ -630,7 +632,7 @@ a.link {
     transition: all 0.4s ease-in-out;
 }
 
-.mask:hover, .mask:focus, .mask:focus {
+.active.mask:hover, .mask:focus, .mask:focus {
 	cursor: pointer;
     opacity: 1;
     border: 220px solid rgba(0, 0, 0, 0.7);
@@ -639,7 +641,7 @@ a.link {
 
 }
 
-.mask:hover, .mask:focus, .mask:focus a.link {
+.active.mask:hover, .mask:focus, .mask:focus a.link {
 	cursor: pointer;
     opacity: 1;
     transition-delay: 0.3s;
@@ -660,7 +662,7 @@ a.link {
 }
 
 .skillbar-bar:before {
-    background: #eee;
+    background: #595651;
     content: "";
     height: 3px;
     position: absolute;
@@ -1424,4 +1426,11 @@ input.etsybutton {
 	background-color: blue;
 	color:white;
 
+}
+.col{
+box-shadow: 2px solid black;
+}
+
+section, #section-edu{
+	background-color: #595651;
 }
