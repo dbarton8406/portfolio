@@ -631,6 +631,7 @@ a.link {
 }
 
 .mask:hover, .mask:focus, .mask:focus {
+	cursor: pointer;
     opacity: 1;
     border: 220px solid rgba(0, 0, 0, 0.7);
     color: white;
@@ -639,6 +640,7 @@ a.link {
 }
 
 .mask:hover, .mask:focus, .mask:focus a.link {
+	cursor: pointer;
     opacity: 1;
     transition-delay: 0.3s;
 }
@@ -1421,10 +1423,5 @@ input.etsybutton {
 	right:145px;
 	background-color: blue;
 	color:white;
-
-}
-
-audio{
-	width: 3%;
 
 }
