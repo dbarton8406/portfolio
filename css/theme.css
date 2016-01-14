@@ -1387,14 +1387,15 @@ audio {
 
 
 
-object.embed {
+video{
     position: relative;
-    right: 55px;
+    top: -15px;
     
 }
 
 .myhub {
     position: relative;
+    top: 45px;
     
 }
 
