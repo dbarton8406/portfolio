@@ -220,7 +220,7 @@ h3 {
 h4 {
     font-size: 17px;
     letter-spacing: 2px;
-    line-height: 28px;
+    line-height: 18px;
 }
 
 h5 {
@@ -233,7 +233,7 @@ h5 {
 h6 {
     font-size: 14px;
     letter-spacing: 2px;
-    line-height: 18px;
+    line-height: 10px;
     font-weight: 600;
 }
 
@@ -1398,14 +1398,14 @@ object.embed {
     
 }
 
-/*input.etsybutton {
+input.etsybutton {
     width: 50px;
     height: 20px;
     display: table;
     margin: 0 auto;
     position: relative;
-    right: 550px;
-}*/
+    right: 30px;
+}
 
 @media screen and (max-width:360px) {
     input.etsybutton {
@@ -1413,4 +1413,12 @@ object.embed {
     }
 }
 
+.goback{
+	float:right;
+	position:relative;
+	bottom:20px;
+	right:145px;
+	background-color: blue;
+	color:white;
 
+}
