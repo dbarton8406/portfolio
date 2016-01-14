@@ -155,8 +155,8 @@ p {
 }
 
 img {
-    height: auto;
-    max-width: 100%;
+    /*height: auto;*/
+    /*max-width: 100%;*/
     border: none;
     outline: none;
     transition: all 0.2s ease 0s;
@@ -622,7 +622,7 @@ a.link {
     width: 820px;
     height: 140px;
     position: absolute;
-    bottom: 1px;
+    bottom: 40px;
     left: -130px;
     opacity: 0;
     overflow: visible;
@@ -1443,4 +1443,40 @@ section, #section-edu{
 .port_box{
 	width: 100%;
 	height:80px;
+}
+
+.item-wrap-hackathon{
+	position: relative;
+	top: 120px;
+}
+
+.item-wrap-tictactoe{
+	position: relative;
+	top: -30px;
+}
+
+.item-wrap-reddit{
+	position: relative;
+	top: 90px;
+}
+
+.item-wrap-myhub{
+	position: relative;
+	bottom:40px;
+
+}
+
+.item-wrap-etsy{
+	position: relative;
+	bottom: -50px;
+}
+
+.item-wrap-stream{
+	position: relative;
+	bottom:-70px;
+}
+
+video{
+	width:340px; 
+	height:230px;
 }
