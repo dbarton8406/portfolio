@@ -1409,7 +1409,7 @@ input.etsybutton {
 
 @media screen and (max-width:360px) {
     input.etsybutton {
-        width: 100%;
+        width: 50%;
     }
 }
 
