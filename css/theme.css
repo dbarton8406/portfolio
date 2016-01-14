@@ -630,7 +630,7 @@ a.link {
     transition: all 0.4s ease-in-out;
 }
 
-.mask:hover {
+.no-touch .mask:hover {
     opacity: 1;
     border: 220px solid rgba(0, 0, 0, 0.7);
     color: white;
@@ -638,7 +638,7 @@ a.link {
 
 }
 
-.mask:hover a.link {
+.no-touch .mask:hover a.link {
     opacity: 1;
     transition-delay: 0.3s;
 }
