@@ -328,8 +328,8 @@ h6 {
 }
 
 .section-heading hr {
-    width: 7%;
-    border-color: #ddd;
+    width: 100%;
+    border-color: white;
 }
 
 .mid-title {
