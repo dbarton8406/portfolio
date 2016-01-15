@@ -1402,7 +1402,7 @@ video{
     
 }
 
-.myhub {
+/*.myhub {*/
     position: relative;
     top: 45px;
     
@@ -1445,36 +1445,18 @@ section, #section-edu{
 	height:80px;
 }
 
-.item-wrap-hackathon{
-	position: relative;
-	top: 120px;
+
+.item-wrap{
+	width:340px; 
+	height:230px;
 }
 
-.item-wrap-tictactoe{
-	position: relative;
-	top: -30px;
-}
 
-.item-wrap-reddit{
-	position: relative;
-	top: 90px;
-}
-
-.item-wrap-myhub{
-	position: relative;
-	bottom:40px;
-
-}
-
-.item-wrap-etsy{
-	position: relative;
-	bottom: -50px;
-}
 
 .item-wrap-stream{
 	position: relative;
 	bottom:-70px;
-}
+
 
 video{
 	width:340px; 
