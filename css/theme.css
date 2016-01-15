@@ -622,7 +622,7 @@ a.link {
     width: 820px;
     height: 140px;
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
     left: -130px;
     opacity: 0;
     overflow: visible;
@@ -1087,10 +1087,10 @@ p#start {
 }
 
 h5 {
-    position: absolute;
+    position: relative;
     width: 1.6em;
     left:20%;
-    top: -85%;
+    bottom: 45px;
     font-size: 7em;
     text-align: center;
     margin-left: -1.3em;
@@ -1234,16 +1234,11 @@ h5 {
 #titlecontent {
     position: absolute;
     top: 100%;
-    -webkit-animation: logo 5s linear 4s;
-    -moz-animation: logo 5s linear 4s;
-    -ms-animation: logo 5s linear 4s;
-    -o-animation: logo 5s linear 4s;
-    animation: logo 5s linear 4s;
-    -webkit-animation: scroll 60s linear 6s;
-    -moz-animation: scroll 60s linear 6s;
-    -ms-animation: scroll 60s linear 6s;
-    -o-animation: scroll 60s linear 6s;
-    animation: scroll 60s linear 6s;
+    -webkit-animation: scroll 160s linear 6s;
+    -moz-animation: scroll 160s linear 6s;
+    -ms-animation: scroll 160s linear 6s;
+    -o-animation: scroll 160s linear 6s;
+    animation: scroll 160s linear 6s;
 }
 
 
@@ -1384,18 +1379,6 @@ audio {
     height: 10px
 }
 
-/*video:hover {*/
-    position: relative;
-    top: -15px;
-    left: -35px;
-    width: 100%;
-    height: auto;
-    display: block;
-    z-index: 999;
-}
-
-
-
 video{
     position: relative;
     top: -15px;
@@ -1415,6 +1398,7 @@ input.etsybutton {
     margin: 0 auto;
     position: relative;
     right: 30px;
+
 }
 
 @media screen and (max-width:360px) {
@@ -1458,7 +1442,13 @@ section, #section-edu{
 	bottom:-70px;
 
 
-video{
-	width:340px; 
+video {
+	width:320px; 
 	height:230px;
 }
+
+form{
+	padding: 2px
+}
+
+
