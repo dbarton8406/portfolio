@@ -1440,6 +1440,32 @@ section, #section-edu{
 	background-color: #595651;
 }
 
+<<<<<<< HEAD
+=======
+.port_box{
+	width: 100%;
+	height:80px;
+}
+
+.item-wrap-hackathon{
+	position: relative;
+	top: 120px;
+}
+
+.item-wrap-tictactoe{
+	position: relative;
+	top: -30px;
+}
+
+.item-wrap-reddit{
+	position: relative;
+	top: 90px;
+}
+
+.item-wrap-myhub{
+	position: relative;
+	bottom:40px;
+>>>>>>> ab8a05977ae8207ff076339687232953dab8c929
 
 .item-wrap{
 	width:340px; 
@@ -1447,6 +1473,13 @@ section, #section-edu{
 }
 
 
+<<<<<<< HEAD
+=======
+.item-wrap-stream{
+	position: relative;
+	bottom:-70px;
+}
+>>>>>>> ab8a05977ae8207ff076339687232953dab8c929
 
 video{
 	width:340px; 
