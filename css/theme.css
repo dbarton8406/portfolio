@@ -1440,12 +1440,22 @@ section, #section-edu{
 	background-color: #595651;
 }
 
+.port_box{
+	width: 100%;
+	height:80px;
+}
+
 
 .item-wrap{
 	width:340px; 
 	height:230px;
 }
 
+
+
+.item-wrap-stream{
+	position: relative;
+	bottom:-70px;
 
 
 video{
