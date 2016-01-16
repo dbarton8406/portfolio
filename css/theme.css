@@ -473,12 +473,13 @@ SLIDER SECTION
 #section-intro {
     height: 100%;
     background-position: 50% 0px;
-    background: #222 url("../images/bg/home2.jpg") no-repeat fixed 50% 50% / cover;
+    background: #222 url("../images/") no-repeat fixed 50% 50% / cover;
     padding: 0px;
     position: relative;
     max-height: 600px;
     overflow: hidden;
 }
+
 
 .intro-caption {
     width: 100%;
@@ -488,6 +489,10 @@ SLIDER SECTION
     padding: 220px 15px 0px;
     position: absolute;
     color: #fff;
+}
+
+.intro-caption:hover {
+	background: #222 url("../images/red_lightning.gif") no-repeat fixed 50% 50% / cover;
 }
 
 .intro-caption h1 {
