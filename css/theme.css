@@ -492,7 +492,7 @@ SLIDER SECTION
 }
 
 .intro-caption:hover {
-	background: #222 url("../images/red_lightning.gif") no-repeat fixed 50% 50% / cover;
+	background: #222 url("../images/red_lightning.gif")  
 }
 
 .intro-caption h1 {
