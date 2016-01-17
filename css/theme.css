@@ -729,9 +729,7 @@ SECTION PORTFOLIO
     margin: 20px 0px;
 }
 
-.item-wrap img,
-object,
-video {
+.item-wrap {
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -739,9 +737,7 @@ video {
     transition: all .4s ease;
 }
 
-.item-wrap:hover img,
-object,
-video {
+.item-wrap:hover {
     transform: scale(1.07);
     -ms-transform: scale(1.07);
     -webkit-transform: scale(1.07)
@@ -1448,3 +1444,28 @@ section,
     form {
         padding: 2px
     }
+
+    #hidden {
+	font-size:10px;
+	padding:10px;
+	float:right;
+	z-index: 9999;
+	opacity:0;
+    -webkit-transition:opacity 0.5s ease-in-out;
+    -moz-transition:opacity 0.5s ease-in-out;
+    -o-transition:opacity 0.5s ease-in-out;
+    -ms-transition:opacity 0.5s ease-in-out;
+    transition:opacity 0.5s ease-in-out;
+  position: fixed; 
+  right:0px; 
+  bottom:0px;
+}
+
+#hidden:hover {
+    opacity:1;
+    -webkit-transition:opacity 0.5s ease-in-out;
+    -moz-transition:opacity 0.5s ease-in-out;
+    -o-transition:opacity 0.5s ease-in-out;
+    -ms-transition:opacity 0.5s ease-in-out;
+    transition:opacity 0.5s ease-in-out;
+}

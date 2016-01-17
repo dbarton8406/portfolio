@@ -536,49 +536,49 @@ var clicksound=createsoundbite("images/thunder.ogg", "images/thunder.mp3")
             gutter: 1
         });
         </script>
-        <script>
-        new WOW().init();
-        </script>
-        <script>
-        var vid = document.getElementById("object, embed, video");
-        vid.videoHeight; // returns the intrinsic height of the video
-        vid.videoWidth; // returns the intrinsic width of the video
+        // <script>
+        // new WOW().init();
+        // </script>
+        // <script>
+        // var vid = document.getElementById("object, embed, video");
+        // vid.videoHeight; // returns the intrinsic height of the video
+        // vid.videoWidth; // returns the intrinsic width of the video
 
-        // Find all videos
-        var $allVideos = $("object, embed, video"),
-            // The element that is fluid width
-            $fluidEl = $("body");
+        // // Find all videos
+        // var $allVideos = $("object, embed, video"),
+        //     // The element that is fluid width
+        //     $fluidEl = $("body");
 
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function() {
+        // // Figure out and save aspect ratio for each video
+        // $allVideos.each(function() {
 
-            $(this)
-                .data('aspectRatio', this.height / this.width)
+        //     $(this)
+        //         .data('aspectRatio', this.height / this.width)
 
-            // and remove the hard coded width/height
-            .removeAttr('height')
-                .removeAttr('width');
+        //     // and remove the hard coded width/height
+        //     .removeAttr('height')
+        //         .removeAttr('width');
 
-        });
+        // });
 
-        // When the window is resized
-        $(window).resize(function() {
+        // // When the window is resized
+        // $(window).resize(function() {
 
-            var newWidth = $fluidEl.width();
+        //     var newWidth = $fluidEl.width();
 
-            // Resize all videos according to their own aspect ratio
-            $allVideos.each(function() {
+        //     // Resize all videos according to their own aspect ratio
+        //     $allVideos.each(function() {
 
-                var $el = $(this);
-                $el
-                    .width(newWidth)
-                    .height(newWidth * $el.data('aspectRatio'));
+        //         var $el = $(this);
+        //         $el
+        //             .width(newWidth)
+        //             .height(newWidth * $el.data('aspectRatio'));
 
-            });
+        //     });
 
-            // Kick off one resize to fix all videos on page load
-        }).resize();
-        </script>
+        //     // Kick off one resize to fix all videos on page load
+        // }).resize();
+        // </script>
         
 </body>
 
