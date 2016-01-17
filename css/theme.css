@@ -492,8 +492,10 @@ SLIDER SECTION
 }
 
 .intro-caption:hover {
-	background: #222 url("../images/red_lightning.gif")  
+	background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50% ;
 }
+
+
 
 .intro-caption h1 {
     font-size: 50px;
@@ -1399,7 +1401,7 @@ video{
 input.etsybutton {
     width: 50px;
     height: 20px;
-    display: table;
+    display: inline;
     margin: 0 auto;
     position: relative;
     right: 30px;
