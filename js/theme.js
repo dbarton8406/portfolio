@@ -47,3 +47,11 @@ $('.navbar-collapse ul li a').click(function() {
 
  
  });
+
+var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+
+if(iOS) {
+    $(document).on('touchstart click', '.tp-video-play-button', function() {
+        $(this).hide();
+    });
+}
