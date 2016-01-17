@@ -729,9 +729,7 @@ SECTION PORTFOLIO
     margin: 20px 0px;
 }
 
-.item-wrap img,
-object,
-video {
+.item-wrap {
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -739,9 +737,7 @@ video {
     transition: all .4s ease;
 }
 
-.item-wrap:hover img,
-object,
-video {
+.item-wrap:hover {
     transform: scale(1.07);
     -ms-transform: scale(1.07);
     -webkit-transform: scale(1.07)
