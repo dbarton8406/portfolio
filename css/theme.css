@@ -1,4 +1,4 @@
-/*
+    /*
 Template Name: DANIEL-personal portfolio landing template
 
 */
@@ -84,7 +84,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     line-height: 24px;
-    color: rgba(0,0,0,.0001);
+    color: rgba(0, 0, 0, .0001);
     font-size: 13px;
     font-family: 'Oxygen', sans-serif;
     font-weight: normal;
@@ -164,6 +164,8 @@ img {
     -webkit-transition: all 0.2s ease 0s;
     -o-transition: all 0.2s ease 0s;
 }
+
+
 
 iframe,
 audio {
@@ -480,7 +482,6 @@ SLIDER SECTION
     overflow: hidden;
 }
 
-
 .intro-caption {
     width: 100%;
     top: 50%;
@@ -492,10 +493,9 @@ SLIDER SECTION
 }
 
 .intro-caption:hover {
-	background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50% ;
+    background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50%;
+    overflow: visible;
 }
-
-
 
 .intro-caption h1 {
     font-size: 50px;
@@ -577,7 +577,7 @@ section about
 }
 
 .resume h6 {
-	background-color: #198FFF;
+    background-color: #198FFF;
     border: 1px solid#eee;
     padding: 12px 12px 14px 12px;
     margin-top: 28px;
@@ -639,17 +639,19 @@ a.link {
     transition: all 0.4s ease-in-out;
 }
 
-.mask:hover, .mask:focus, .mask:focus {
-	cursor: pointer;
+.mask:hover,
+.mask:focus,
+.mask:focus {
+    cursor: pointer;
     opacity: 1;
     border: 220px solid rgba(0, 0, 0, 0.7);
     color: white;
-    
-
 }
 
-.mask:hover, .mask:focus, .mask:focus a.link {
-	cursor: pointer;
+.mask:hover,
+.mask:focus,
+.mask:focus a.link {
+    cursor: pointer;
     opacity: 1;
     transition-delay: 0.3s;
 }
@@ -727,7 +729,9 @@ SECTION PORTFOLIO
     margin: 20px 0px;
 }
 
-.item-wrap img, object, video {
+.item-wrap img,
+object,
+video {
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -735,7 +739,9 @@ SECTION PORTFOLIO
     transition: all .4s ease;
 }
 
-.item-wrap:hover img, object, video {
+.item-wrap:hover img,
+object,
+video {
     transform: scale(1.07);
     -ms-transform: scale(1.07);
     -webkit-transform: scale(1.07)
@@ -868,8 +874,7 @@ SECTION education & Experiecne
 
 .about-info p.year {
     font-weight: 700;
-    border-bottom: 1px solid #eee
-    padding-bottom: 10px;
+    border-bottom: 1px solid #eee padding-bottom: 10px;
 }
 
 .about-info-inner {
@@ -1017,7 +1022,7 @@ rolling
 
 p#start {
     position: relative;
-    right:20%;
+    right: 20%;
     width: 14em;
     font-size: 100%;
     font-weight: 200;
@@ -1096,7 +1101,7 @@ p#start {
 h5 {
     position: relative;
     width: 1.6em;
-    left:20%;
+    left: 20%;
     bottom: 45px;
     font-size: 7em;
     text-align: center;
@@ -1310,8 +1315,8 @@ h5 {
     word-wrap: break-word;
 }
 
-.ttt{
-	font-weight: 100;
+.ttt {
+    font-weight: 100;
     font-size: 13px;
 }
 
@@ -1333,7 +1338,7 @@ h5 {
 }
 
 .works {
-   font-size: 7px;
+    font-size: 7px;
 }
 
 .streamline {
@@ -1386,18 +1391,16 @@ audio {
     height: 10px
 }
 
-video{
+video {
     position: relative;
     top: -15px;
-    
 }
 
-/*.myhub {*/
-    position: relative;
-    top: 45px;
-    
+#video2 {
+	height: 220px;
 }
 
+}
 input.etsybutton {
     width: 50px;
     height: 20px;
@@ -1405,57 +1408,43 @@ input.etsybutton {
     margin: 0 auto;
     position: relative;
     right: 30px;
-
 }
-
 @media screen and (max-width:360px) {
     input.etsybutton {
         width: 70%;
     }
 }
-
-.goback{
-	float:right;
-	position:relative;
-	bottom:20px;
-	right:145px;
-	background-color: blue;
-	color:white;
-
+.goback {
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 145px;
+    background-color: blue;
+    color: white;
 }
-.col{
-box-shadow: 2px solid black;
+.col {
+    box-shadow: 2px solid black;
 }
-
-section, #section-edu{
-	background-color: #595651;
+section,
+#section-edu {
+    background-color: #595651;
 }
-
-.port_box{
-	width: 100%;
-	height:80px;
+.port_box {
+    width: 100%;
+    height: 80px;
 }
-
-
-.item-wrap{
-	width:340px; 
-	height:230px;
+.item-wrap {
+    width: 340px;
+    height: 230px;
 }
-
-
-
-.item-wrap-stream{
-	position: relative;
-	bottom:-70px;
-
-
-video {
-	width:320px; 
-	height:230px;
-}
-
-form{
-	padding: 2px
-}
-
-
+.item-wrap-stream {
+    position: relative;
+    bottom: -70px;
+    video {
+        width: 320px;
+        height: 230px;
+    }
+    
+    form {
+        padding: 2px
+    }
