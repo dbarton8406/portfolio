@@ -517,6 +517,12 @@ var clicksound=createsoundbite("images/star-wars_cutted.mp3", "images/star-wars_
         // new WOW().init();
         // </script>
         // <script>
+        var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+
+if(iOS) {
+    $(document).on('touchstart click', '.tp-video-play-button', function() {
+        $(this).hide();
+    });
         // var vid = document.getElementById("object, embed, video");
         // vid.videoHeight; // returns the intrinsic height of the video
         // vid.videoWidth; // returns the intrinsic width of the video
@@ -556,6 +562,7 @@ var clicksound=createsoundbite("images/star-wars_cutted.mp3", "images/star-wars_
         //     // Kick off one resize to fix all videos on page load
         // }).resize();
         // </script>
+
         
 </body>
 
