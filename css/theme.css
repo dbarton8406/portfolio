@@ -1108,7 +1108,7 @@ h5 {
     text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
     opacity: 0;
     z-index: 1;
-    -webkit-animation: logo 5s linear 4s;
+    -webkit-animation: logo 5s linear 4s infinite delay 30s;
     -moz-animation: logo 5s linear 4s;
     -ms-animation: logo 5s linear 4s;
     -o-animation: logo 5s linear 4s;
@@ -1242,11 +1242,11 @@ h5 {
 #titlecontent {
     position: absolute;
     top: 100%;
-    -webkit-animation: scroll 160s linear 6s;
-    -moz-animation: scroll 160s linear 6s;
-    -ms-animation: scroll 160s linear 6s;
-    -o-animation: scroll 160s linear 6s;
-    animation: scroll 160s linear 6s;
+    -webkit-animation: scroll 160s linear 6s infinite;
+    -moz-animation: scroll 160s linear 6 infinite;
+    -ms-animation: scroll 160s linear 6 infinite;
+    -o-animation: scroll 160s linear 6 infinite;
+    animation: scroll 160s linear 6 infinite;
 }
 
 
@@ -1390,6 +1390,7 @@ audio {
 video {
     position: relative;
     top: -15px;
+
 }
 
 #video2 {
@@ -1445,7 +1446,7 @@ section,
         padding: 2px
     }
 
-    #hidden {
+   /* #hidden {
 	font-size:10px;
 	padding:10px;
 	float:right;
@@ -1468,4 +1469,12 @@ section,
     -o-transition:opacity 0.5s ease-in-out;
     -ms-transition:opacity 0.5s ease-in-out;
     transition:opacity 0.5s ease-in-out;
+}
+*/
+
+video::-webkit-media-controls-start-playback-button {
+    display:none !important
+    ;
+    -webkit-apperance:none
+    ;
 }
