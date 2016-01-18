@@ -1006,7 +1006,7 @@ SECTION FOOTER
     font-weight: 700;
 }
 
-
+/*custom css*/
 /*===================================================
 rolling
 ===================================================*/
@@ -1451,3 +1451,5 @@ section,
 video::-webkit-media-controls {
     display:none !important;
 }
+
+.rev_slider video::-webkit-media-controls {display: none !important}
