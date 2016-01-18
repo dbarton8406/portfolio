@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Elegant icon font -->
     <link rel="stylesheet" href="css/simple-line-icons.css">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -251,6 +252,7 @@
             </div>
             <div class="row container-masonry js-masonry" id="masonry-grid">
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                <a href="200.html_streamline"><i class="fa fa-link"></i>Streamline (Demo Link)</a>
                     <div class="item-wrap">
                         <video id="video2" width="100%" height="auto" controls="controls" poster="images/email.png" class="ttt">
                             <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -264,9 +266,9 @@
                             <p style="color:white;" class="works"><b>Tech:</b> Rails, Heroku, Action mailer, CSVimport, Mandrill API, AWS, Paperclip</p>
                         </div>
                     </div>
-                    <a href="200.html_streamline"><i class="fa fa-link"></i>Streamline (Demo Link)</a>
                 </div>
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                <a href="http://duckbills.surge.sh/#/"><i class="fa fa-link"></i>Duckbills (Demo Link)</a>
                     <div class="item-wrap">
                         <video id="video2" width="100%" height="auto" controls="controls" poster="images/duck.png" class="ttt">
                             <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -279,9 +281,10 @@
                             <p style="color:white;" class="works"><b>Role:</b> Back-End Team API</p>
                         </div>
                     </div>
-                    <a href="http://duckbills.surge.sh/#/"><i class="fa fa-link"></i>Duckbills (Demo Link)</a>
+                    
                 </div>
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                <a href="https://fuhgeddit.herokuapp.com/"><i class="fa fa-link"></i>Reddit Clone (Demo Link)</a>
                     <div class="item-wrap">
                         <video id="video2" width="100%" height="auto" controls="controls" poster="images/reddit.png" class="ttt">
                             <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -296,9 +299,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://fuhgeddit.herokuapp.com/"><i class="fa fa-link"></i>Reddit Clone (Demo Link)</a>
+                
             </div>
             <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+            <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i>Etsy you Betsy</a>
                 <div class="item-wrap" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
                     <video id="video2" width="100%" height="auto" controls="controls" poster="images/etsy1.png" class="ttt">
                         <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -334,12 +338,14 @@
                         </div>
                     </div>
                 </div>
-                <FORM style="color:black;">click on picture after refresh. dblclick to stop.
+                <a href="#" style="color:#595651;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</a>
+                <FORM style="color:black;">
                     <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh" class="etsybutton"> Click to Watch Again
                 </FORM>
-                <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i>Etsy you Betsy</a>
+                
             </div>
             <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+            <a href="200.html_myhub"><i class="fa fa-link"></i>My Hub (mobile link)</a>
                 <div class="item-wrap">
                     <video id="video1" width="100%" height="auto" controls="controls" poster="images/git.png">
                         <!-- <source src="images/git_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -352,9 +358,10 @@
                         <p style="color:white;" class="works"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
                     </div>
                 </div>
-                <a href="200.html_myhub"><i class="fa fa-link"></i>My Hub (mobile link)</a>
+                
             </div>
             <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+            <a href="200.html_tictactoe"><i class="fa fa-link"></i>TicTacToe (mobile link)</a>
                 <div class="item-wrap">
                     <video id="video2" width="100%" height="auto" controls="controls" poster="images/giphy.gif" class="ttt">
                         <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
@@ -368,7 +375,6 @@
                         <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a>
                     </div>
                 </div>
-                <a href="200.html_tictactoe"><i class="fa fa-link"></i>TicTacToe (mobile link)</a>
             </div>
             <!-- container end -->
     </section>
@@ -441,6 +447,7 @@
                                 <div class="card center">
                                     <img src="images/contact.png" class="img-responsive">
                                 </div>
+                                <a href="200.html_drawing"><i class="fa fa-link"></i>My Hub (mobile link)</a>
                             </div>
                             <!--about info end -->
                         </div>
@@ -564,6 +571,13 @@
             // }).resize();
             //
         </script>
+        <script>
+                function colorImg(x) {
+                    x.style.color = "black";}
+
+                    function normalImg(x) {
+    x.style.color = "#595651";}
+                </script>
 </body>
 
 </html>

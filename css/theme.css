@@ -128,7 +128,7 @@ a {
 }
 
 a:hover {
-    color: #E23F43;
+    color: black;
     text-decoration: none;
     transition: all 0.25s ease 0s;
     -moz-transition: all 0.25s ease 0s;
@@ -140,6 +140,7 @@ a:focus,
 a:hover {
     outline: none!important;
     outline-offset: 0;
+    color:black;
 }
 
 a:link,
@@ -1446,31 +1447,6 @@ section,
         padding: 2px
     }
 
-   /* #hidden {
-	font-size:10px;
-	padding:10px;
-	float:right;
-	z-index: 9999;
-	opacity:0;
-    -webkit-transition:opacity 0.5s ease-in-out;
-    -moz-transition:opacity 0.5s ease-in-out;
-    -o-transition:opacity 0.5s ease-in-out;
-    -ms-transition:opacity 0.5s ease-in-out;
-    transition:opacity 0.5s ease-in-out;
-  position: fixed; 
-  right:0px; 
-  bottom:0px;
-}
-
-#hidden:hover {
-    opacity:1;
-    -webkit-transition:opacity 0.5s ease-in-out;
-    -moz-transition:opacity 0.5s ease-in-out;
-    -o-transition:opacity 0.5s ease-in-out;
-    -ms-transition:opacity 0.5s ease-in-out;
-    transition:opacity 0.5s ease-in-out;
-}
-*/
 
 video::-webkit-media-controls-start-playback-button {
     display:none !important

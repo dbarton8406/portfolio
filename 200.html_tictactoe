@@ -38,6 +38,7 @@
 <body>
     <video width="100%" height="100%" controls preload="auto">
         <source src="images/ttt_demo.mp4" type="video/mp4; codecs=" avc1.42E01E, mp4a.40.2 "'" class="img-responsive">
+        <source src="images/ttt_demo.m4v" type="video/mp4; codecs=" avc1.42E01E, mp4a.40.2 "'" class="img-responsive">
     </video>
     <button onclick="goBack()" class="goback">Go Back</button>
 
