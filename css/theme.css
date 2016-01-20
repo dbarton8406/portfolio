@@ -427,11 +427,15 @@ navigation
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
+        padding-right: 500px;
         letter-spacing: 1px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .hidden-small{
+       padding-right: 500px; 
     }
     .navbar-custom.top-nav-collapse {
         padding: 20px 0px;
@@ -465,6 +469,23 @@ navigation
     .navbar>.container .navbar-brand-centered,
     .navbar>.container-fluid .navbar-brand-centered {
         margin-left: -80px;
+    }
+     .navbar-custom.top-nav-collapse {
+        padding: 20px 0px;
+        -webkit-box-shadow: 0px 0px 2px #777;
+        box-shadow: 0px 0px 2px #777;
+        background-color: rgba(255, 255, 255, 0.97);
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-custom.top-nav-collapse .nav li a {
+        color: #2c2c2c;
+    }
+    .navbar-custom.top-nav-collapse .nav li.active a {
+        background-color: transparent;
+        color: #E23F43!important;
+    }
+    .navbar-custom.top-nav-collapse .navbar-brand a {
+        color: #2A2A2A;
     }
 }
 
