@@ -109,6 +109,11 @@ margin-right: 15%;
 margin-left: 15%;
 height: 80%;
 }
+.ios{
+	float:left;
+}
+video::-webkit-media-controls {
+display: none !important;
 /*process ================================*/
 .process-wrap {
 margin-bottom: 30px;
@@ -160,10 +165,6 @@ margin-bottom: 30px;
 /* background=================================*/
 .intro-caption {
 padding: 125px 15px;
-}
-.intro-caption:hover {
-    background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50%;
-    overflow: visible;
 }
 .intro-caption h1 {
 font-size: 25px;
