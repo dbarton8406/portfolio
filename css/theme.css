@@ -1446,9 +1446,3 @@ section,
         padding: 2px
     }
 
-
-video::-webkit-media-controls {
-    display:none !important;
-}
-
-.rev_slider video::-webkit-media-controls {display: none !important}
