@@ -94,6 +94,12 @@ border-right: 0px;
 /*about =============================*/
 .skills-wrap {
 margin-top: 40px;
+overflow-x: hidden;
+margin-right: 25px;
+}
+.track{
+	width: 135px;
+	height: 16px;
 }
 .resume {
 width: 35%;
