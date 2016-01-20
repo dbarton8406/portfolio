@@ -209,6 +209,14 @@
 .skills-wrap{
 	margin-top: 40px;
 }
+.profile{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.resume{
+	width: 50px;
+	font-size: 8px;
+}
 
 
 /* education  ===================================*/

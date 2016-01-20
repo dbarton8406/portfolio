@@ -659,8 +659,6 @@ a.link {
 
 
 /*----------------*/
-
-
 /*  Skills Bar
 /*---------------*/
 
@@ -1361,6 +1359,11 @@ h5 {
     box-shadow: none;
     word-wrap: break-word;
 }
+
+.fa-github:before {
+    color: black;
+}
+
 
 .experience {
     margin-top: 20px;
