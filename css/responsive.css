@@ -292,8 +292,13 @@
 .footer-desc{
 	margin-bottom: 30px;
 }
-
+#section-footer{
+	height: 100%;
 }
+.section-social{
+	width:100%;
+}
+
 
 /*section-portfolio==================================*/
 .video{
