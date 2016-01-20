@@ -114,6 +114,7 @@ height: 80%;
 }
 video::-webkit-media-controls {
 display: none !important;
+}
 /*process ================================*/
 .process-wrap {
 margin-bottom: 30px;
