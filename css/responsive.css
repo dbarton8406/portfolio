@@ -161,6 +161,10 @@ margin-bottom: 30px;
 .intro-caption {
 padding: 125px 15px;
 }
+.intro-caption:hover {
+    background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50%;
+    overflow: visible;
+}
 .intro-caption h1 {
 font-size: 25px;
 line-height: 35px;
