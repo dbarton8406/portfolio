@@ -214,17 +214,24 @@
 	margin-right: 10%;
 }
 .resume{
-	width: 50px;
-	font-size: 8px;
+	width: 60%;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 
 /* education  ===================================*/
 .about-info .icon{
-	display: none;
+	height: 32px;
+	width: 32px;
 }
 .about-info-inner {
     margin-left: 0px;
+}
+.about-info{
+	margin-right: 5%;
+	margin-left: 5%;
+	height: 80%;
 }
 
 /*process ================================*/
@@ -300,3 +307,7 @@ padding-right: 50px;
 .embed{
 padding-right: 50px;
 }
+
+input.etsybutton {
+        width: 30%;
+    }

@@ -1410,11 +1410,6 @@ input.etsybutton {
     position: relative;
     right: 30px;
 }
-@media screen and (max-width:360px) {
-    input.etsybutton {
-        width: 70%;
-    }
-}
 .goback {
     float: right;
     position: relative;
