@@ -89,7 +89,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
-    background: url("../images/water.gif")fixed  ;
+    background: url("../images/water.gif")fixed no-repeat top center;
 }
 
 html {
@@ -538,7 +538,7 @@ section about
 .iconbox-icon {
     color: black;
     position: absolute;
-    width: 55px;
+    width: 53px;
     left: 0;
     top: 0;
     font-size: 32px;
@@ -546,12 +546,12 @@ section about
 }
 
 .iconbox-text {
-    color: black;
+    color: #DFF0D8;
     padding-left: 55px;
 }
 
 .iconboxl-title {
-    color: black;
+    color: #DFF0D8;
     margin: 0 0 15px;
     padding: 0;
 }
