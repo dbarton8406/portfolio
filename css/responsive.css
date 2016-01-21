@@ -76,42 +76,14 @@ margin-bottom: 20px;
 .resume {
 width: 35%;
 }
-.profile {
-position: relative;
-top: -60px;	
-margin-left: -10%;
-margin-right: -60%;
-padding-right: 80px;
-}
-.center-block{
-	position: relative;
-	top: -20px;
-}
 .pdf{
 	position: absolute;
-	top:430px;
-	right: 60px;
+	top:750px;
 height: 30px;
 }
 .col-md-4{
-	margin-right: 40px;
+	margin-right: 140px;
 	margin-left: 160px;
-}
-.skill{
-	position: absolute;
-	bottom: -200px;
-	right: 120px;
-	height: 20px;
-	padding-bottom: 100px;
-
-}
-.skillbar{
-	height: 25px;
-	width: 70%
-}
-.iconbox{
-	position: relative;
-	left: 20px;
 }
 }
 /* Small Devices Potrait */
