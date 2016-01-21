@@ -89,7 +89,6 @@ body {
     font-family: 'Oxygen', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
-    background: url("../images/water.gif")fixed no-repeat top center;
 }
 
 html {
@@ -538,7 +537,7 @@ section about
 .iconbox-icon {
     color: black;
     position: absolute;
-    width: 53px;
+    width: 55px;
     left: 0;
     top: 0;
     font-size: 32px;
@@ -546,12 +545,12 @@ section about
 }
 
 .iconbox-text {
-    color: #DFF0D8;
+    color: black;
     padding-left: 55px;
 }
 
 .iconboxl-title {
-    color: #DFF0D8;
+    color: black;
     margin: 0 0 15px;
     padding: 0;
 }
@@ -1426,7 +1425,7 @@ input.etsybutton {
 }
 section,
 #section-edu {
-    /*background-color: #595651;*/
+    background-color: #595651;
 }
 .port_box {
     width: 100%;
