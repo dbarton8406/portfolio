@@ -440,11 +440,9 @@ navigation
         box-shadow: 0px 0px 2px #777;
         background-color: rgba(255, 255, 255, 0.97);
         box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
-        display: none!important;
     }
     .navbar-custom.top-nav-collapse .nav li a {
         color: #2c2c2c;
-        float: none;
     }
     .navbar-custom.top-nav-collapse .nav li.active a {
         background-color: transparent;
@@ -1427,7 +1425,7 @@ input.etsybutton {
 }
 section,
 #section-edu {
-    background-color: #595651;
+    background: #595651 url("../images/water.gif") no-repeat fixed 50% 50%;;
 }
 .port_box {
     width: 100%;
