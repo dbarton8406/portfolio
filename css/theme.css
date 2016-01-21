@@ -429,6 +429,7 @@ navigation
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
+        float:none;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -438,10 +439,12 @@ navigation
         -webkit-box-shadow: 0px 0px 2px #777;
         box-shadow: 0px 0px 2px #777;
         background-color: rgba(255, 255, 255, 0.97);
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+        display: none!important;
     }
     .navbar-custom.top-nav-collapse .nav li a {
         color: #2c2c2c;
+        float: none;
     }
     .navbar-custom.top-nav-collapse .nav li.active a {
         background-color: transparent;
