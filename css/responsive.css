@@ -74,23 +74,24 @@ margin-bottom: 20px;
 /* Styles */
 
 .resume {
-width: 150px;
+width: 35%;
 }
 .profile {
 position: relative;
-top: -90px;	
+top: -60px;	
 margin-left: -10%;
 margin-right: -60%;
 padding-right: 80px;
 }
 .center-block{
-	display:none!important;
+	position: relative;
+	top: -20px;
 }
 .pdf{
 	position: absolute;
 	top:430px;
 	right: 60px;
-height: 35px;
+height: 30px;
 }
 .col-md-4{
 	margin-right: 40px;
@@ -111,9 +112,6 @@ height: 35px;
 .iconbox{
 	position: relative;
 	left: 20px;
-}
-a.page-scroll{
-	padding: none
 }
 }
 /* Small Devices Potrait */
