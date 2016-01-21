@@ -89,6 +89,7 @@ body {
     font-family: 'Oxygen', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
+    background: url("../images/water.gif")fixed  ;
 }
 
 html {
@@ -1425,7 +1426,7 @@ input.etsybutton {
 }
 section,
 #section-edu {
-    background: #595651 url("../images/water.gif") no-repeat fixed 50% 50%;;
+    /*background-color: #595651;*/
 }
 .port_box {
     width: 100%;
