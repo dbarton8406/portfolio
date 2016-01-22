@@ -71,31 +71,55 @@ margin-bottom: 20px;
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 /* Styles */
+
+a{
+	font-size: 14px;
 }
 .resume {
 width: 35%;
 }
+.profile{
+width: 440px;
+position: relative;
+bottom:40px;
+}
 .pdf {
 position: absolute;
-top: 550px;
-left: 500px;
+top: 12px;
+left: 100px;
 height: 600px;
 width: 150px;
 }
 .skill {
 position: relative;
-left: -150px;
+left: -60px;
+}
+.images{
+	position: relative;
+	top:180;
+	left:65;
 }
 .col-md-4 {
 margin-right: 140px;
 margin-left: 160px;
 }
+.col-md-5{
+	position: absolute;
+	top:750px;
+	left:650px;
+}
+.col-md-7{
+	position: relative;
+	left:150px;
+	bottom: -50px;
+}
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
 -moz-transition: background .3s ease-in-out;
 transition: background .3s ease-in-out;
-padding-left: 5em;
-padding-right: 3em;
+padding-left: 4em;
+padding-right: 2em;
+overflow-x:none;
 }
 }
 /* Small Devices Potrait */
@@ -107,7 +131,15 @@ padding-right: 3em;
 height: 450px;
 }
 .intro-caption {
-padding: 125px 15px;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    text-align: center;
+    padding: 70px 15px 0px;
+    position: absolute;
+    color: #fff;
+}
+
 }
 .intro-caption h1 {
 font-size: 25px;
@@ -117,7 +149,7 @@ line-height: 35px;
 font-size: 30px;
 }
 .navbar-custom {
-margin-top: 0px;
+margin-top: 10px;
 background: #333;
 border-right: 0px;
 }
