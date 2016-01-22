@@ -238,9 +238,17 @@ margin-bottom: 30px;
 @media (min-width: 320px) and (max-width: 478px) {
 /* background=================================*/
 .intro-caption {
-padding: 125px 15px;
-}
+        width: 100%;
+        top: 50%;
+        left: 0px;
+        text-align: center;
+        padding: 220px 15px 0px;
+        position: absolute;
+        color: #fff;
+    }
 .intro-caption h1 {
+	position: relative;
+	top:200px;
 font-size: 25px;
 line-height: 35px;
 }
