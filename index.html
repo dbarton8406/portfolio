@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type="image/png" href="/rails.png" sizes="256x256" />
+    <link rel="shortcut icon" type="image/png" href="Users/marbleminded/IYlabs/portfolio/ruby.png" sizes="256x256" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="description" content="Typography Effects with CSS3 and jQuery" />
     <!-- icon placeholder -->
     <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
     <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
     <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
     <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <title>Daniel Barton Portfolio</title>
     <!-- MAIN CSS FILES===================================
         ======================================================= -->
@@ -33,6 +37,56 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+    <script>
+    var host = "dbarton8406.github.io";
+    if ((host == window.location.host) && (window.location.protocol != "https:")) window.location.protocol = "https";
+    </script>
+    <script>
+    // Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+    // Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+    //** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+    //** Call: uniquevar.playclip() to play sound
+
+    var html5_audiotypes = { //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+        "mp3": "audio/mpeg",
+        "mp4": "audio/mp4",
+        "ogg": "audio/ogg",
+        "wav": "audio/wav"
+    }
+
+    function createsoundbite(sound) {
+        var html5audio = document.createElement('audio')
+        if (html5audio.canPlayType) { //check support for HTML5 audio
+            for (var i = 0; i < arguments.length; i++) {
+                var sourceel = document.createElement('source')
+                sourceel.setAttribute('src', arguments[i])
+                if (arguments[i].match(/\.(\w+)$/i))
+                    sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                html5audio.appendChild(sourceel)
+            }
+            html5audio.load()
+            html5audio.playclip = function() {
+                html5audio.pause()
+                html5audio.currentTime = 0
+                html5audio.play()
+
+            }
+            return html5audio
+        } else {
+            return {
+                playclip: function() {
+                    throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+                }
+            }
+        }
+    }
+
+    //Initialize two sound clips with 1 fallback file each:
+
+    var mouseoversound = createsoundbite("images/thunder.ogg", "images/thunder.mp3")
+    var clicksound = createsoundbite("images/star-wars_cutted.mp3", "images/star-wars_cutted.ogg")
+    </script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -67,15 +121,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="intro-caption">
+                    <div class="intro-caption" onmouseover="document.getElementById('mysound').play()" onmouseout="document.getElementById('mysound').pause()">
                         <div class="subtitle">Hello, my name is Daniel Barton and</div>
-                        <h1>I am Back-End Developer</h1>
+                        <div class="gold">
+                            <h1>I am a Back-End Developer</h1></div>
                         <div class="subtitle">creating solutions today for tommorrow's problems</div>
                         <div class="btn-container wow fadeInUp">
-                            <a href="file:///Users/marbleminded/IYlabs/portfolio/index.html#section-portfolio" class="btn btn-primary ">Discover</a>
+                            <audio id="mysound" src="images/thunder.mp3"></audio>
+                            <a href="http://dbarton8406.github.io/portfolio/#section-portfolio" class="button">Discover</a>
                         </div>
                     </div>
                 </div>
+                <!-- "onmouseover="mouseoversound.playclip()" -->
             </div>
             <!-- row end -->
         </div>
@@ -88,96 +145,95 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading text-center">
-                        <h2 class="mid-title">about me</h2>
-                        <hr>
+                        <div class="gold">
+                            <h2 class="mid-title">about me</h2
+></div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--  row heading end -->
-            <div class="row">
-                <div class="col-md-3  col-sm-3 wow fadeInLeft">
-                    <div class="profile">
-                        <br>
-                        <br>
-                        <img src="images/profile photo.png" alt="profile img" class="img-responsive">
+                <!--  row heading end -->
+                <div class="row">
+                    <div class="col-md-3  col-sm-3 wow fadeInLeft">
+                        <div class="profile">
+                            <br>
+                            <br>
+                            <img src="images/profile photo.png" height="200px" width="320px" alt="profile img" class="img-responsive">
+                        </div>
+                        <div class="sign col-md-5 text-center">
+                        <object src="images/sign.gif" alt="sign" class="img-responsive center-block"></object>
+                        </div>
                     </div>
-                    <div class="sign col-md-5 text-center">
-                        <img src="images/sign.gif" alt="sign" class="img-responsive center-block">
-                    </div>
-                </div>
-                <!-- about start -->
-                <div class="col-md-5 col-sm-9 wow fadeInUp">
-                    <div class="row">
-                        <div class="col-sm-10">
-                            <div class="iconbox wow fadeInUp animated">
-                                <div class="iconbox-icon">
-                                    <span class="icon-screen-desktop"></span>
+                    <!-- about start -->
+                    <div class="col-md-5 col-sm-9 wow fadeInUp">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <div class="iconbox wow fadeInUp animated">
+                                    <i class="iconbox-icon">
+                                        <span class="icon-screen-desktop"></span>
+                                    </i>
+                                    <div class="iconbox-text">
+                                        <h6 class="iconbox-title">Backend Developer</h6>
+                                        <div class="iconbox-desc">
+                                            <ul><b>Programming Languages:</b> <i>Ruby, HTML, CSS</i></ul>
+                                            <ul><b>Software Dev Tools:</b> <i>Rails, RubyMine, Sublime Text, Bootstrap, Github, Resque, Sidekiq, Devise, Foreman, Puma, Pry, Paperclip, AWS-sdk3, Heroku, Activerecord, Jbuilder</i></ul>
+                                            <ul><b>Databases:</b><i> MySQL, PostgreSQL, MS Access</i> </ul>
+                                            <ul><b>Operating Systems:</b><i> MS Windows, OS X</i></ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="iconbox-text">
-                                    <h6 class="iconbox-title">Backend Developer</h6>
-                                    <div class="iconbox-desc">
-                                        <ul><b>Programming Languages:</b> <i>Ruby, HTML, CSS</i></ul>
-                                        <ul><b>Software Dev Tools:</b> <i>Rails, RubyMine, Sublime Text, Bootstrap, Github, Resque, Sidekiq, Devise, Foreman, Puma, Pry, Paperclip, AWS-sdk3, Heroku, Activerecord, Jbuilder</i></ul>
-                                        <ul><b>Databases:</b><i> MySQL, PostgreSQL, MS Access</i> </ul>
-                                        <ul><b>Operating Systems:</b><i> MS Windows, OS X</i></ul>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="iconbox wow fadeInUp animated" data-wow-delay=".2s">
+                                    <i class="iconbox-icon">
+                                        <span class="icon-magnifier"></span>
+                                    </i>
+                                    <div class="iconbox-text">
+                                        <h6 class="iconbox-title">Me</h6>
+                                        <div class="iconbox-desc">
+                                            I am a person who has always believed in helping people. For the last 15 years it has been my passion to give my service and expertise to solving customer needs. Now, I am excited not only to provide that service, but I am creating and building that service. This only furthers my passion to ensure that my customers have the product they want and need so that they can live better.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-10">
-                            <div class="iconbox wow fadeInUp animated" data-wow-delay=".2s">
-                                <div class="iconbox-icon">
-                                    <span class="icon-magnifier"></span>
-                                </div>
-                                <div class="iconbox-text">
-                                    <h6 class="iconbox-title">Me</h6>
-                                    <div class="iconbox-desc">
-                                        I am a person who has always believed in helping people. For the last 15 years it has been my passion to give my service and expertice to solving customer needs. Now, I am excited to not only provide that service, but I am creating and building that service. This only furthers my passion to ensure that my customers have the product they want and need so that they can live better.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <!-- SKILLS START -->
-                <br>
-                <br>
-                <div class="col-md-4 col-sm-9 ">
+                    <!-- SKILLS START -->
+                    <br>
+                    <br>
                     <div class="skills-wrap">
-                        <h4>my skills</h4>
-                        <div class="skillbar wow fadeInDown" data-percent="45%" data-wow-delay="0s">
-                            <div class="skillbar-title"><img src="images/ruby.png">Ruby</div>
-                            <div style="width: 45%; height: 5px; background-color: #C31300;" class="skillbar-bar"></div>
+                        <div class="skill col-md-4 col-sm-9 ">
+                            <h4>my skills</h4>
+                            <div class="skillbar wow fadeInDown" data-percent="45%" data-wow-delay="0s">
+                                <div class="skillbar-title"><img src="images/ruby.png">Ruby</div>
+                                <div style="width: 45%; height: 5px; background-color: #C31300;" class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar wow fadeInDown" data-percent="80%" data-wow-delay=".3s">
+                                <div class="skillbar-title"><img src="images/rails.png">Rails</div>
+                                <div style="width: 80%; background-color: transparent;" class="skillbar-bar"><img src="images/track.png" class="track"><img src="images/track.png" class="track"><img src="images/track.png" class="track"></div>
+                            </div>
+                            <div class="skillbar wow fadeInDown" data-percent="60%" data-wow-delay=".9s">
+                                <div class="skillbar-title"><img src="images/HTML5.png">HTML</div>
+                                <div style="width: 60%; height: 5px; background-color: #E44D26;" class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar wow fadeInDown" data-percent="60%" data-wow-delay="1.1s">
+                                <div class="skillbar-title"><img src="images/CSS3_Logo.png">CSS</div>
+                                <div style="width: 60%; height: 5px; background-color: #3267C6;" class="skillbar-bar"></div>
+                            </div>
+                            <div class="skillbar wow fadeInDown" data-percent="80%" data-wow-delay="1.1s">
+                                <div class="skillbar-title"><img src="images/github.png">Github</div>
+                                <div style="width: 80%; height: 5px;" class="skillbar-bar"></div>
+                            </div>
                         </div>
-                        <div class="skillbar wow fadeInDown" data-percent="80%" data-wow-delay=".3s">
-                            <div class="skillbar-title"><img src="images/rails.png">Rails</div>
-                            <div style="width: 80%; background-color: #595651;" class="skillbar-bar"><img src="images/track.png"><img src="images/track.png"><img src="images/track.png"></div>
-                        </div>
-                        <div class="skillbar wow fadeInDown" data-percent="60%" data-wow-delay=".9s">
-                            <div class="skillbar-title"><img src="images/HTML5.png">HTML</div>
-                            <div style="width: 60%; height: 5px; background-color: #E44D26;" class="skillbar-bar"></div>
-                        </div>
-                        <div class="skillbar wow fadeInDown" data-percent="60%" data-wow-delay="1.1s">
-                            <div class="skillbar-title"><img src="images/CSS3_Logo.png">CSS</div>
-                            <div style="width: 60%; height: 5px; background-color: #3267C6;" class="skillbar-bar"></div>
-                        </div>
-                        <div class="skillbar wow fadeInDown" data-percent="80%" data-wow-delay="1.1s">
-                            <div class="skillbar-title"><img src="images/github.png">Github</div>
-                            <div style="width: 80%; height: 5px;" class="skillbar-bar"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="resume">
-                            <h6> <i class="fa fa-download"></i><a href="Daniel_Barton_resume.pdf">download resume</a></h6>
+                        <div class="col-md-7">
+                            <h6 class="pdf">Download Resume</h6>
+                               <a href="Daniel.pdf" div class="button">®</a>
+                            <div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-        <!--  row  end -->
-        </div>
-        <!--  container end -->
+            <!--  row  end -->
+            <!--  container end -->
     </section>
     <!-- section about end -->
     <ul class="list-inline text-center team-socail">
@@ -187,40 +243,28 @@
         <li><a href="https://www.linkedin.com/in/DanielBarton8406"><i class="fa fa-linkedin fa-4x"></i></a></li>
         <li><a href="https://www.facebook.com/daniel.barton.5283"><i class="fa fa-facebook fa-4x"></i></a></li>
     </ul>
-    </div>
     <!-- section portfolio start -->
     <section id="section-portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading text-center">
-                        <h2 class="mid-title wow slideInLeft">my talented works</h2>
+                        <div class="gold"><h2 class="mid-title wow slideInLeft">my talented works</h2></div>
                         <hr>
                     </div>
                 </div>
             </div>
             <div class="row container-masonry js-masonry" id="masonry-grid">
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <a href="200_streamline.html"><i class="fa fa-link"></i>Streamline (Demo Link)</a>
                     <div class="item-wrap">
-                        <video width="340" height="230" controls preload="auto">
-                            <source src="images/ttt_demo.mp4" type="video/mp4; codecs=" avc1.42E01E, mp4a.40.2 "'" class="img-responsive">
+                        <video id="video2" width="100%" height="auto" poster="images/email.png" class="ttt">
+                            <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                            Your browser does not support the video tag.
+                            <!-- <img src="images/email.png" height="820" alt="" class="img-responsive"> -->
                         </video>
                         <div class="item-info">
-                            <h4 class="ttt">Terminal TicTacToe(WarGames)</h4>
-                            <h6>This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</h6>
-                            <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
-                            <p style="color:white;" class="works"><b>Tech:</b> Ruby</p>
-                            <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <a href="200.html_tictactoe"><i class="fa fa-link" style="color:black;"></i>TicTacToe (mobile link)</a>
-                </div>
-                <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
-                    <div class="item-wrap">
-                        <video width="400" height="220" controls preload="auto" class="myhub">
-                            <source src="images/git_demo.mp4" type="video/mp4;" class="img-responsive">
-                        </video>
-                        <div class="item-info">
+
                             <h4 class="ttt">MyHub</h4>
                             <h6>This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </h6>
                             <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
@@ -267,28 +311,37 @@
                     <div class="item-wrap">
                         <img src="images/email.png" height="820" alt="" class="img-responsive">
                         <div class="item-info">
+
                             <h4 class="ttt">Streamline</h4>
                             <h6>This is and App that was created to build curated content for users.</h6>
                             <p style="color:white;" class="works"><b>Role:</b> Back-End Team</p>
                             <p style="color:white;" class="works"><b>Tech:</b> Rails, Heroku, Action mailer, CSVimport, Mandrill API, AWS, Paperclip</p>
                         </div>
                     </div>
-                    <a href="200.html_streamline"><i class="fa fa-link"></i>Streamline (Demo Link)</a>
                 </div>
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <a href="http://duckbills.surge.sh/#/"><i class="fa fa-link"></i>Duckbills (Demo Link)</a>
                     <div class="item-wrap">
-                        <img src="images/duck.png" width="400" height="600" alt="" class="img-responsive">
+                        <video id="video2" width="100%" height="auto" poster="images/duck.png" class="ttt">
+                            <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                            Your browser does not support the video tag.
+                            <!-- <img src="images/duck.png" width="400" height="600" alt="" class="img-responsive"> -->
+                        </video>
                         <div class="item-info">
                             <h4 class="ttt">Hackathon</h4>
                             <h6>Bill Pay app for roomates</h6>
                             <p style="color:white;" class="works"><b>Role:</b> Back-End Team API</p>
                         </div>
                     </div>
-                    <a href="http://duckbills.surge.sh/#/"><i class="fa fa-link"></i>Duckbills (Demo Link)</a>
                 </div>
                 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                    <a href="https://fuhgeddit.herokuapp.com/"><i class="fa fa-link"></i>Reddit Clone (Demo Link)</a>
                     <div class="item-wrap">
-                    <img src="images/reddit.png" width="400" height="900" alt="" class="img-responsive">
+                        <video id="video2" width="100%" height="auto" poster="images/reddit.png" class="ttt">
+                            <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                            Your browser does not support the video tag.
+                            <!-- <img src="images/reddit.png" width="400" height="900" alt="" class="img-responsive"> -->
+                        </video>
                         <div class="item-info">
                             <h4 class="ttt">Fuhgeddit</h4>
                             <h6>A Ugly Reddit Clone</h6>
@@ -297,9 +350,81 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://fuhgeddit.herokuapp.com/"><i class="fa fa-link"></i>Reddit Clone (Demo Link)</a>
-        </div>
-        <!-- container end -->
+            </div>
+            <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+                <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i>Etsy you Betsy</a>
+                <div class="item-wrap" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
+                    <video id="video2" width="100%" height="auto" poster="images/etsy1.png" class="ttt">
+                        <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                        Your browser does not support the video tag.
+                        <!-- <img src="images/etsy1.png" width="100%" height="auto"alt="" class="img-responsive"> -->
+                        <FORM style="color:black;">
+                            <INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh" class="etsybutton">
+                        </FORM>
+                    </video>
+                    <audio id="mysound2" src="images/star-wars_cutted.mp3"></audio>
+                    <div class="mask">
+                        <div style="overflow:hidden; position:absolute; left:0; top:0; width:0px; height:25px;">click me!
+                            <div style="margin-top:-490px;">
+                            </div>
+                        </div>
+                        <p id="start">A short time ago in a browser very, very close&hellip;</p>
+                        <h5>EtsyWars</h5>
+                        <div id="titles">
+                            <div id="titlecontent">
+                                <p class="center" style="color:yellow;font-family: Droid Sans;">EPISODE I
+                                    <br /> A NEW HOPE FOR CSS3</p>
+                                <p class="center" style="color:yellow;font-family: Droid Sans;">A short time ago in a browser very, very close</p>
+                                <p class="center" style="color:yellow;font-family: Droid Sans;">It is a period of recreating.</p>
+                                <p class="center" style="color:yellow;font-family: Droid Sans;">This is a Re-Creation of an Etsy Page.
+                                    <br> It possibly has no practical purpose whatsoever but it looks great
+                                    <br> and actually links to Etsy links.</p>
+                                <p class="center" style="color:yellow;font-family: Droid Sans;">If I run the code with ETSY_KEY=mySecretKey bundle exec ruby lib/etsiest.rb,
+                                    <br> it should start a sinatra app. It use the Etsy API results to render the page!
+                                    <br>The controller method should check for a query parameter called "q" and search the Etsy API for matching listings. .</p>
+                                <p class="center" style="color:yellow;font-family: Droid Sans;"> It does NOT use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize..</p>
+                                <object width="325" height="240" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
+                <FORM style="color:black;">
+                    <INPUT TYPE="button" onClick="history.go(0)" VALUE="«" class="button"> Click to Watch Again
+                </FORM>
+            </div>
+            <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+                <a href="200_myhub.html"><i class="fa fa-link"></i>My Hub (mobile link)</a>
+                <div class="item-wrap">
+                    <video id="video1" width="100%" height="auto" poster="images/git.png">
+                        <!-- <source src="images/git_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-info">
+                        <h4 class="ttt">MyHub</h4>
+                        <h6>This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </h6>
+                        <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
+                        <p style="color:white;" class="works"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-item col-sm-6 col-xs-12">
+                <a href="200_tictactoe.html"><i class="fa fa-link"></i>TicTacToe (mobile link)</a>
+                <div class="item-wrap">
+                    <video id="video2" width="100%" height="auto" poster="images/giphy.gif" autohide=1 class="ttt">
+                        <!-- <source src="images/ttt_demo.mp4" type="video/mp4;" class="img-responsive">  -->
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-info">
+                        <h4 class="ttt">Terminal TicTacToe(WarGames)</h4>
+                        <h6>This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</h6>
+                        <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
+                        <p style="color:white;" class="works"><b>Tech:</b> Ruby</p>
+                        <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- container end -->
     </section>
     <!-- section portfolio end -->
     <!-- section education start -->
@@ -315,9 +440,9 @@
                                 <a href="https://www.theironyard.com/locations/atlanta.html"><img src="images/ironyard.png" class="img-responsive"></a>
                             </div>
                             <div class="about-info-inner">
-                                <h6 class="title">Backend Engineering</h6>
+                                <h6 class="title">Back-end Engineering</h6>
                                 <p class="year">2015</p>
-                                <p class="inst">The Iron Yard(Atlanata) - Ruby on Rails</p>
+                                <p class="inst">The Iron Yard(Atlanta) - Ruby on Rails</p>
                             </div>
                         </div>
                         <!--about info end -->
@@ -366,7 +491,8 @@
                     <section id="section-contact">
                         <div class="container">
                             <div class="contact-info wow fadeInRight">
-                                <h2 class="card">contact me:</h2>
+                                <div class="gold">
+                                    <h2 class="card">contact me:</h2></div>
                                 <div class="card center">
                                     <img src="images/contact.png" class="img-responsive">
                                 </div>
@@ -440,51 +566,68 @@
             gutter: 1
         });
         </script>
+        //
         <script>
-        new WOW().init();
+        // new WOW().init();
+        //
         </script>
+        //
         <script>
-        var vid = document.getElementById("object, embed, video");
-        vid.videoHeight; // returns the intrinsic height of the video
-        vid.videoWidth; // returns the intrinsic width of the video
+        var iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 
-        // Find all videos
-        var $allVideos = $("object, embed, video"),
-            // The element that is fluid width
-            $fluidEl = $("body");
-
-        // Figure out and save aspect ratio for each video
-        $allVideos.each(function() {
-
-            $(this)
-                .data('aspectRatio', this.height / this.width)
-
-            // and remove the hard coded width/height
-            .removeAttr('height')
-                .removeAttr('width');
-
-        });
-
-        // When the window is resized
-        $(window).resize(function() {
-
-            var newWidth = $fluidEl.width();
-
-            // Resize all videos according to their own aspect ratio
-            $allVideos.each(function() {
-
-                var $el = $(this);
-                $el
-                    .width(newWidth)
-                    .height(newWidth * $el.data('aspectRatio'));
-
+        if (iOS) {
+            $(document).on('touchstart click', '.tp-video-play-button', function() {
+                $(this).hide();
             });
+            // var vid = document.getElementById("object, embed, video");
+            // vid.videoHeight; // returns the intrinsic height of the video
+            // vid.videoWidth; // returns the intrinsic width of the video
 
-            // Kick off one resize to fix all videos on page load
-        }).resize();
+            // // Find all videos
+            // var $allVideos = $("object, embed, video"),
+            //     // The element that is fluid width
+            //     $fluidEl = $("body");
+
+            // // Figure out and save aspect ratio for each video
+            // $allVideos.each(function() {
+
+            //     $(this)
+            //         .data('aspectRatio', this.height / this.width)
+
+            //     // and remove the hard coded width/height
+            //     .removeAttr('height')
+            //         .removeAttr('width');
+
+            // });
+
+            // // When the window is resized
+            // $(window).resize(function() {
+
+            //     var newWidth = $fluidEl.width();
+
+            //     // Resize all videos according to their own aspect ratio
+            //     $allVideos.each(function() {
+
+            //         var $el = $(this);
+            //         $el
+            //             .width(newWidth)
+            //             .height(newWidth * $el.data('aspectRatio'));
+
+            //     });
+
+            //     // Kick off one resize to fix all videos on page load
+            // }).resize();
+            //
         </script>
-        <script src="ios-orientationchange-fix.js"></script>
+        <script>
+        function colorImg(x) {
+            x.style.color = "white";
+        }
 
+        function normalImg(x) {
+            x.style.color = "transparent";
+        }
+        </script>
 </body>
 
 </html>
