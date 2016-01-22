@@ -78,7 +78,7 @@ width: 35%;
 position: absolute;
 top: 550px;
 left: 500px;
-height: 60px;
+height: 600px;
 width: 150px;
 }
 .skill {
@@ -88,7 +88,6 @@ left: -150px;
 .col-md-4 {
 margin-right: 140px;
 margin-left: 160px;
-
 }
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
