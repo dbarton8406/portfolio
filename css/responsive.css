@@ -5,15 +5,7 @@
 .dropdown i {
 display: none;
 }
-.card.center{
-    position: relative;
-    left: -300px;
-}
-.col-md-4 {
-margin-right: 15%;
-margin-left: 15%;
-width: 850px;
-}
+
 }
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
@@ -39,14 +31,9 @@ line-height: 16px;
 }
 .navbar-custom {
 margin-top: 0px;
-background: transparent;
+background: #333;
 border-right: 0px;
-height:5%;
 }
-.card.center{
-    position: relative;
-    right:300px;
-    }
 /*process ================================*/
 .process-wrap {
 margin-bottom: 30px;
@@ -85,9 +72,8 @@ margin-bottom: 20px;
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 /* Styles */
 
-
 a{
-	font-size: 14px;
+    font-size: 14px;
 }
 .resume {
 width: 35%;
@@ -109,23 +95,23 @@ position: relative;
 left: -60px;
 }
 .images{
-	position: relative;
-	top:180;
-	left:65;
+    position: relative;
+    top:180;
+    left:65;
 }
 .col-md-4 {
 margin-right: 140px;
 margin-left: 160px;
 }
 .col-md-5{
-	position: absolute;
-	top:750px;
-	left:650px;
+    position: absolute;
+    top:750px;
+    left:650px;
 }
 .col-md-7{
-	position: relative;
-	left:150px;
-	bottom: -50px;
+    position: relative;
+    left:150px;
+    bottom: -50px;
 }
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
@@ -219,7 +205,7 @@ font-size: 30px;
 }
 .navbar-custom {
 margin-top: 10px;
-background: transparent;
+background: #333;
 border-right: 0px;
 }
 /*about =============================*/
@@ -303,28 +289,6 @@ margin-bottom: 30px;
 margin-bottom: 30px;
 }
 }
-@media (max-width: 568px){
-  .col-md-4 {
-margin-right: 50%;
-margin-left: 30%;
-} 
-.edu-inner h3:after {
-position: absolute;
-content: "";
-width: 70%;
-height: 1px;
-top: 15px;
-background: black;
-right: 0px;
-}
-.card.center{
-    position: relative; 
-    right:200px;
-}
-}
-
-
-
 /* Custom, iPhone Retina */
 @media (min-width: 320px) and (max-width: 478px) {
 /* background=================================*/
@@ -338,8 +302,8 @@ right: 0px;
         color: #fff;
     }
 .intro-caption h1 {
-	position: relative;
-	top:00px;
+    position: relative;
+    top:00px;
 font-size: 25px;
 line-height: 35px;
 }
@@ -447,4 +411,3 @@ width: 30%;
 }
 video::-webkit-media-controls {
 display: none !important;
-
