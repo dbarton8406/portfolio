@@ -1356,11 +1356,6 @@ margin-top: 30px;
 box-shadow: none;
 word-wrap: break-word;
 }
-.card.center{
-    position: relative;
-    right:300px;
-}
-
 .fa-github:before {
 color: black;
 }

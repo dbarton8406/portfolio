@@ -5,7 +5,15 @@
 .dropdown i {
 display: none;
 }
-
+.card.center{
+    position: relative;
+    left: -300px;
+}
+.col-md-4 {
+margin-right: 15%;
+margin-left: 15%;
+width: 850px;
+}
 }
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
@@ -31,9 +39,14 @@ line-height: 16px;
 }
 .navbar-custom {
 margin-top: 0px;
-background: #333;
+background: transparent;
 border-right: 0px;
+height:5%;
 }
+.card.center{
+    position: relative;
+    right:300px;
+    }
 /*process ================================*/
 .process-wrap {
 margin-bottom: 30px;
@@ -71,6 +84,7 @@ margin-bottom: 20px;
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 /* Styles */
+
 
 a{
 	font-size: 14px;
@@ -205,7 +219,7 @@ font-size: 30px;
 }
 .navbar-custom {
 margin-top: 10px;
-background: #333;
+background: transparent;
 border-right: 0px;
 }
 /*about =============================*/
@@ -289,6 +303,28 @@ margin-bottom: 30px;
 margin-bottom: 30px;
 }
 }
+@media (max-width: 568px){
+  .col-md-4 {
+margin-right: 50%;
+margin-left: 30%;
+} 
+.edu-inner h3:after {
+position: absolute;
+content: "";
+width: 70%;
+height: 1px;
+top: 15px;
+background: black;
+right: 0px;
+}
+.card.center{
+    position: relative; 
+    right:200px;
+}
+}
+
+
+
 /* Custom, iPhone Retina */
 @media (min-width: 320px) and (max-width: 478px) {
 /* background=================================*/
