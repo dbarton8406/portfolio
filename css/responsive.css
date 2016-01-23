@@ -156,8 +156,8 @@ left: -60px;
     left:65;
 }
 .col-md-4 {
-margin-right: 140px;
-margin-left: 160px;
+margin-right: 50%;
+margin-left: 50%;
 }
 .col-md-5{
     position: absolute;
