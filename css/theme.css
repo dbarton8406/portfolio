@@ -1441,8 +1441,14 @@ background: -webkit-linear-gradient(to left, #274046, #E6DADA, #274046);
 background: linear-gradient(to left, #274046, #E6DADA, #274046);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.port_box{
+	width: 100%;
+	height:80px;
+
 section,
 #section-portfolio {
+
 background: #003973;
 /* fallback for old browsers */
 
@@ -1451,6 +1457,15 @@ background: -webkit-linear-gradient(to left, #003973, #E5E5BE, #003973);
 
 background: linear-gradient(to left, #003973, #E5E5BE, #003973);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: #003973;
+    /* fallback for old browsers */
+    
+    background: -webkit-linear-gradient(to left, #003973, #E5E5BE, #003973);
+    /* Chrome 10-25, Safari 5.1-6 */
+    
+    background: linear-gradient(to left, #003973, #E5E5BE, #003973);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section,
 #section-footer {
@@ -1487,6 +1502,12 @@ padding: 2px
 position: absolute;
 left: 200;
 }
+.item-wrap-myhub{
+	position: relative;
+	bottom:40px;
+
+
+
 /*=========================================================*/
 
 background: #1D2329;
@@ -1606,6 +1627,11 @@ user-select: none;
 box-sizing: border-box;
 border-radius: 35px;
 }
+.item-wrap-stream{
+	position: relative;
+	bottom:-70px;
+}
+
 .button {
 font-family: 'pictos';
 font-size: 45px;
