@@ -2,8 +2,15 @@
 ================================================== */
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
-.dropdown i {
+/*.dropdown i {
 display: none;
+}*/
+.card.center {
+    margin-right: 50%;
+}
+.nav{
+    position: static;
+    background-color: transparent;
 }
 
 }
@@ -289,8 +296,13 @@ margin-bottom: 30px;
 margin-bottom: 30px;
 }
 }
+@media (width: 568px)  {
+
+.col-md-4{margin-left: 18%;}
+
+}
 /* Custom, iPhone Retina */
-@media (min-width: 320px) and (max-width: 478px) {
+@media (min-width: 320px) and (max-width: 567px) {
 /* background=================================*/
 .intro-caption {
         width: 100%;
