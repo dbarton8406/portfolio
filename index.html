@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="shortcut icon" type="image/png" href="/rails.png" sizes="256x256" />
-        <link rel="shortcut icon" type="image/png" href="Users/marbleminded/IYlabs/portfolio/ruby.png" sizes="256x256" />
+        <link rel="shortcut icon" type="image/png" href="images/rails.png" sizes="256x256" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="description" content="Typography Effects with CSS3 and jQuery" />
-        <!-- icon placeholder -->
-        <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
-        <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
-        <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
-        <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <title>Daniel Barton Portfolio</title>
         <!-- MAIN CSS FILES===================================
         ======================================================= -->
@@ -32,6 +25,8 @@
         <!-- Elegant icon font -->
         <link rel="stylesheet" href="css/simple-line-icons.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/myhub.css">
+        
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -79,8 +74,8 @@
         }
         }
         //Initialize two sound clips with 1 fallback file each:
-        var mouseoversound = createsoundbite("images/thunder.ogg", "images/thunder.mp3")
-        var clicksound = createsoundbite("images/star-wars_cutted.mp3", "images/star-wars_cutted.ogg")
+        var mouseoversound = createsoundbite("images/thunder.mp3")
+        var clicksound = createsoundbite("images/star-wars_cutted.mp3")
         </script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -176,7 +171,7 @@
                     <img src="images/profile photo.png" height="200px" width="320px" alt="profile img" class="img-responsive">
                 </div>
                 <div class="sign col-md-5 text-center">
-                    <object src="images/sign.gif" alt="sign" class="img-responsive center-block"></object>
+                    <img src="images/sign.gif" alt="sign" class="img-responsive center-block"></img>
                 </div>
             </div>
             <!-- about start -->
@@ -239,6 +234,7 @@
         <div class="skillbar-title"><img src="images/github.png">Github</div>
         <div style="width: 80%; height: 5px;" class="skillbar-bar"></div>
     </div>
+</div>
 </div>
 <div class="col-md-7">
     <h6 class="pdf">Download Resume</h6>
@@ -314,70 +310,69 @@
             </div>
         </div>
     </div>
+    <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
+        <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i><h6 class="shimmer">Etsy you Betsy</h6></a>
+        <div class="item-wrap" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
+            <video id="video2" width="100%" height="auto" poster="images/etsy1.png" class="ttt">
+                Your browser does not support the video tag.
+            </video>
+        <audio id="mysound2" src="images/star-wars_cutted.mp3"></audio>
+        <div class="mask">
+            <div style="overflow:hidden; position:absolute; left:0; top:0; width:0px; height:25px;">click me!
+                <div style="margin-top:-490px;">
+                </div>
+            </div>
+            <p id="start">A short time ago in a browser very, very close&hellip;</p>
+            <h5>EtsyWars</h5>
+            <div id="titles">
+                <div id="titlecontent">
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">EPISODE I
+                    <br /> A NEW HOPE FOR CSS3</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">A short time ago in a browser very, very close</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">It is a period of recreating.</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">This is a Re-Creation of an Etsy Page.
+                        <br> It possibly has no practical purpose whatsoever but it looks great
+                    <br> and actually links to Etsy links.</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">If I run the code with ETSY_KEY=mySecretKey bundle exec ruby lib/etsiest.rb,
+                        <br> it should start a sinatra app. It use the Etsy API results to render the page!
+                    <br>The controller method should check for a query parameter called "q" and search the Etsy API for matching listings. .</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;"> It does NOT use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize..</p>
+                    <object width="325" height="240" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
+    <FORM style="color:black;">
+        <INPUT TYPE="button" onClick="history.go(0)" VALUE="«" class="button"> Click to Watch Again
+    </FORM>
 </div>
 <div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
-    <a href="https://github.com/dbarton8406/EtsyR"><i class="fa fa-link"></i><h6 class="shimmer">Etsy you Betsy</h6></a>
-    <div class="item-wrap" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
-        <video id="video2" width="100%" height="auto" poster="images/etsy1.png" class="ttt">
+    <a href="200_myhub.html"><i class="fa fa-link"></i><h6 class="shimmer">My Hub (mobile link)</h6></a>
+    <div class="item-wrap">
+        <video id="video1" width="100%" height="auto" poster="images/git.png">
             Your browser does not support the video tag.
         </video>
-    <audio id="mysound2" src="images/star-wars_cutted.mp3"></audio>
-    <div class="mask">
-        <div style="overflow:hidden; position:absolute; left:0; top:0; width:0px; height:25px;">click me!
-            <div style="margin-top:-490px;">
-            </div>
-        </div>
-        <p id="start">A short time ago in a browser very, very close&hellip;</p>
-        <h5>EtsyWars</h5>
-        <div id="titles">
-            <div id="titlecontent">
-                <p class="center" style="color:yellow;font-family: Droid Sans;">EPISODE I
-                <br /> A NEW HOPE FOR CSS3</p>
-                <p class="center" style="color:yellow;font-family: Droid Sans;">A short time ago in a browser very, very close</p>
-                <p class="center" style="color:yellow;font-family: Droid Sans;">It is a period of recreating.</p>
-                <p class="center" style="color:yellow;font-family: Droid Sans;">This is a Re-Creation of an Etsy Page.
-                    <br> It possibly has no practical purpose whatsoever but it looks great
-                <br> and actually links to Etsy links.</p>
-                <p class="center" style="color:yellow;font-family: Droid Sans;">If I run the code with ETSY_KEY=mySecretKey bundle exec ruby lib/etsiest.rb,
-                    <br> it should start a sinatra app. It use the Etsy API results to render the page!
-                <br>The controller method should check for a query parameter called "q" and search the Etsy API for matching listings. .</p>
-                <p class="center" style="color:yellow;font-family: Droid Sans;"> It does NOT use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize..</p>
-                <object width="325" height="240" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
-            </div>
+        <div class="item-info">
+            <h4 class="ttt">MyHub</h4>
+            <h6>This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </h6>
+            <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
+            <p style="color:white;" class="works"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
         </div>
     </div>
-</div>
-<div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
-<FORM style="color:black;">
-    <INPUT TYPE="button" onClick="history.go(0)" VALUE="«" class="button"> Click to Watch Again
-</FORM>
-</div>
-<div class="col-md-4 grid-item  col-sm-6 col-xs-12 ">
-<a href="200_myhub.html"><i class="fa fa-link"></i><h6 class="shimmer">My Hub (mobile link)</h6></a>
-<div class="item-wrap">
-    <video id="video1" width="100%" height="auto" poster="images/git.png">
-        Your browser does not support the video tag.
-    </video>
-    <div class="item-info">
-        <h4 class="ttt">MyHub</h4>
-        <h6>This is another sinatra app that allows me to query the GitHub API for issues and allows me to close the issue from the webpage. </h6>
-        <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
-        <p style="color:white;" class="works"><b>Tech:</b> Ruby, Sinatra, YouTube, HTTParty</p>
-    </div>
-</div>
 </div>
 <div class="col-md-4 grid-item col-sm-6 col-xs-12">
-<a href="200_tictactoe.html"><i class="fa fa-link"></i><h6 class="shimmer">TicTacToe (mobile link)</h6></a>
-<div class="item-wrap">
-    <video id="video2" width="100%" height="auto" poster="images/giphy.gif" autohide=1 class="ttt">
-        Your browser does not support the video tag.
-    </video>
-    <div class="item-info">
-        <h4 class="ttt">Terminal TicTacToe(WarGames)</h4>
-        <h6>This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</h6>
-        <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
-        <p style="color:white;" class="works"><b>Tech:</b> Ruby</p>
-        <a href="https://github.com/dbarton8406/tictactoeR"><i class="fa fa-link"></i></a>
+    <a href="ttt.html"><i class="fa fa-link"></i><h6 class="shimmer">TicTacToe (mobile link)</h6></a>
+    <div class="item-wrap">
+        <video id="video2" width="100%" height="auto" poster="images/giphy.gif" autohide=1 class="ttt">
+            Your browser does not support the video tag.
+        </video>
+        <div class="item-info">
+            <h4 class="ttt">Terminal TicTacToe(WarGames)</h4>
+            <h6>This is a terminal app of everyone's favorite game tictactoe with a little flair. This was my first big app project learning ruby.</h6>
+            <p style="color:white;" class="works"><b>Role:</b> Back-End</p>
+            <p style="color:white;" class="works"><b>Tech:</b> Ruby</p>
+        </div>
     </div>
 </div>
 </div>
@@ -523,6 +518,7 @@
 <script type="text/javascript" src="js/wow.min.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/theme.js"></script>
+
 <script>
 var container = document.querySelector('#masonry-grid');
 var masonry = new Masonry(container, {
@@ -544,35 +540,9 @@ if (iOS) {
 $(document).on('touchstart click', '.tp-video-play-button', function() {
 $(this).hide();
 });
-// var vid = document.getElementById("object, embed, video");
-// vid.videoHeight; // returns the intrinsic height of the video
-// vid.videoWidth; // returns the intrinsic width of the video
-// // Find all videos
-// var $allVideos = $("object, embed, video"),
-//     // The element that is fluid width
-//     $fluidEl = $("body");
-// // Figure out and save aspect ratio for each video
-// $allVideos.each(function() {
-//     $(this)
-//         .data('aspectRatio', this.height / this.width)
-//     // and remove the hard coded width/height
-//     .removeAttr('height')
-//         .removeAttr('width');
-// });
-// // When the window is resized
-// $(window).resize(function() {
-//     var newWidth = $fluidEl.width();
-//     // Resize all videos according to their own aspect ratio
-//     $allVideos.each(function() {
-//         var $el = $(this);
-//         $el
-//             .width(newWidth)
-//             .height(newWidth * $el.data('aspectRatio'));
-//     });
-//     // Kick off one resize to fix all videos on page load
-// }).resize();
-//
+}
 </script>
+
 <script>
 function colorImg(x) {
 x.style.color = "white";
@@ -581,6 +551,37 @@ function normalImg(x) {
 x.style.color = "transparent";
 }
 </script>
+<script>
+    
+// disable :hover on touch devices
+// based on https://gist.github.com/4404503 
+// via https://twitter.com/javan/status/284873379062890496
+// + https://twitter.com/pennig/status/285790598642946048
+// re http://retrogamecrunch.com/tmp/hover
+// NOTE: we should use .no-touch class on CSS
+// instead of relying on this JS code
+function removeHoverCSSRule() {
+  if ('createTouch' in document) {
+    try {
+      var ignore = /:hover/;
+      for (var i = 0; i < document.styleSheets.length; i++) {
+        var sheet = document.styleSheets[i];
+        if (!sheet.cssRules) {
+          continue;
+        }
+        for (var j = sheet.cssRules.length - 1; j >= 0; j--) {
+          var rule = sheet.cssRules[j];
+          if (rule.type === CSSRule.STYLE_RULE && ignore.test(rule.selectorText)) {
+            sheet.deleteRule(j);
+          }
+        }
+      }
+    }
+    catch(e) {
+    }
+  }
+}
+
+</script>
 </body>
 </html>
-Status API Training Shop Blog About Pricing

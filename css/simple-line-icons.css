@@ -242,9 +242,6 @@ you can use the generic selector below, but it's slower:
 .icon-cup:before {
 	content: "\e044";
 }
-.icon-compass:before {
-	content: "\e045";
-}
 .icon-call-out:before {
 	content: "\e046";
 }
