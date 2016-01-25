@@ -19,7 +19,7 @@ Template Name: DANIEL-personal portfolio landing template
 /* 1 - Google Font
 ------------------------------------------------------------------------*/
 
-@import "compass/css3";
+
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -27,7 +27,6 @@ Template Name: DANIEL-personal portfolio landing template
 /* globals */
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
-@import url(prefixes.css);
 @font-face {
 font-family: 'ElegantIcons';
 src: url('fonts/ElegantIcons.eot');
@@ -408,8 +407,8 @@ color: #fff;
 -webkit-transition: background .3s ease-in-out;
 -moz-transition: background .3s ease-in-out;
 transition: background .3s ease-in-out;
-padding-left: 7em;
-padding-right: 5em;
+padding-left: 3em;
+padding-right: 3em;
 }
 
 .navbar-custom .nav li a:hover {
@@ -467,7 +466,6 @@ left: 49%;
 display: block;
 width: 173px;
 text-align: center;
-border: 2px solid#eee;
 color: #fff;
 }
 .navbar>.container .navbar-brand-centered,
@@ -890,7 +888,7 @@ SECTION CONTACT
 ==========================================================*/
 
 #section-contact {
-background: url("../images/bg/contact.jpg") fixed 50% 0%;
+background: url("") fixed 50% 0%;
 position: relative;
 -webkit-background-size: cover;
 background-size: cover;
@@ -1388,6 +1386,9 @@ color: #46629E;
 color: black;
 }
 
+ul.list-inline.text-center.team-socail {
+    background-color: white;
+}
 audio {
 position: absolute;
 width: 40px;
@@ -1461,10 +1462,10 @@ section,
 background: #16222A;
 /* fallback for old browsers */
 
-background: -webkit-linear-gradient(to left, #16222A, #3A6073);
+background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
 
-background: linear-gradient(to left, #16222A, #3A6073);
+background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .about-info{
