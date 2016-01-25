@@ -32,12 +32,6 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-
-        
-   
-// prettyphoto
-
- $("a[data-rel^='prettyPhoto']").prettyPhoto();
  
     
  
