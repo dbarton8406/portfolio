@@ -3,7 +3,8 @@ html {
 }
 body{
   height: 100%;
-  top: 0px;
+  position: absolute;
+  top: -120px;
   bottom: 0px;
   background-color: #000;
 }
@@ -202,7 +203,24 @@ body{
 }
 
 .myhub{
-  position: relative;
-  top:65%;
-  left:25%;
+  position: absolute;
+  top:50%;
+  left:28%;
+}
+button{position: fixed;
+    left: 45%;}
+
+}
+/*==============================*/
+/* Custom, iPhone Retina */
+@media (min-width: 320px) and (max-width: 567px) {
+body{
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  overflow-x : hidden;
+  overflow-y : hidden  
+}
+button{position: fixed;
+    left: 51%;}
 }
