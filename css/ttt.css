@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+html{
+position: relative;
+    left: 35%;
+  }
 body{
   background:#00000c;
   margin-right: 1000px;
@@ -42,9 +47,19 @@ center{
 .blinker{ opacity:0.1 }
 .profile-header{ background:url(https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/12032231_1179492925401698_5808026066308281545_n.jpg?oh=347fc2f6e7f5a9efbafc7d15cb78d6d9&oe=569E3594) top center no-repeat; background-size:100% }
 
-.myhub{
-  position: fixed;
+video{
+  position: relative;
   top:5%;
-  left:38%;
+  left:-162%;
 
 }
+img{  
+  position: relative;
+  left: 75%;
+  bottom: 368px;
+  height: 370px;
+  width: 226%;
+
+}
+
+
