@@ -29,8 +29,8 @@ $('span').on('input', function() {
       $('center').text('Only winning move is not to play!');
       t.text('3...2....1...');
       setTimeout(function() {
-        l.after(' <video src="https://www.dbarton8406.github.io/images/ttt_demo.mp4" width="640px" controls preload="auto"/><img src="images/WG.gif" height="100%"/>');
-      }, 1000);
+        l.after('<video src="images/ttt_demo.mp4" width="640px" controls muted autoplay preload="auto"/><img src="images/WG.gif" height="100%"/>');
+      }, 10);
       break;
     default:
       if (g == 1 && v.length > 5) {
