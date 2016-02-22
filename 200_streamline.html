@@ -35,36 +35,42 @@
         <![endif]-->
     </head>
     <body>
-        <!-- CONTROLS -->
-        
-        <input type="radio" checked id="radio-front" name="select-face"/>
-        <input type="radio" id="radio-left" name="select-face"/>
-        <input type="radio" id="radio-right" name="select-face"/>
-        <input type="radio" id="radio-top" name="select-face"/>
-        <input type="radio" id="radio-bottom" name="select-face"/>
-        <input type="radio" id="radio-back" name="select-face"/>
-        <div class="separator"></div>
-        <div class="space3d">
-            
-            
-            <div class="_3dbox">
-                <div class="_3dface _3dface--front"></div>
-                <img src="images/streamhome.png" height="200px" width="320px" alt="" class="img-responsive">
-                <div class="_3dface _3dface--top"></div>
-                <img src="images/screenhome2.png" height="200px" width="320px" alt="" class="img-responsive">
-                <div class="_3dface _3dface--bottom"></div>
-                <img src="images/stream3.png" height="200px" width="320px" alt="" class="img-responsive">
-                <div class="_3dface _3dface--left"></div>
-                <img src="images/stream4.png" height="200px" width="320px" alt="" class="img-responsive">
-                <div class="_3dface _3dface--right"></div>
-                <img src="images/stream5.png" height="200px" width="320px" alt="" class="img-responsive">
-                <div class="_3dface _3dface--back"></div>
-                <img src="images/stream6.png" height="200px" width="320px" alt="" class="img-responsive">
-            </div>
-            
-        </div>
-        <div class="separator"></div>
-        <br><br>
+        <div class="demo-cube">
+<input type="radio" checked id="rDepan" name="select-face" class="regular-radio"/>  
+<label for="rDepan"></label>
+<input type="radio" id="rKiri" name="select-face" class="regular-radio"/>
+<label for="rKiri"></label>
+<input type="radio" id="rKanan" name="select-face" class="regular-radio"/>
+<label for="rKanan"></label>
+<input type="radio" id="rAtas" name="select-face" class="regular-radio"/>
+<label for="rAtas"></label>
+<input type="radio" id="rBawah" name="select-face" class="regular-radio"/>
+<label for="rBawah"></label>
+<input type="radio" id="rBelakang" name="select-face" class="regular-radio"/>
+<label for="rBelakang"></label>
+<div class="wrap-cube">
+  <div class="cube">
+    <div class="depan">
+    <img src="images/streamhome.png" height="100%" width="100%">
+    </div>
+    <div class="belakang">
+    <img src="images/screenhome2.png" height="100%" width="100%">
+    </div>
+    <div class="atas">
+    <img src="images/stream3.png" height="100%" width="100%">
+    </div>
+    <div class="bawah">
+    <img src="images/stream4.png" height="100%" width="100%">
+    </div>
+    <div class="kiri">
+    <img src="images/stream5.png" height="100%" width="100%">
+    </div>
+    <div class="kanan">
+    <img src="images/stream6.png" height="100%" width="100%">
+    </div>
+  </div>
+</div>
+</div>
         <script>
         function goBack() {
         window.history.back();

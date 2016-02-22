@@ -1,156 +1,115 @@
-@import "compass/css3";
-
-// toggle the cube dimensions here.
-$cubeWidth: 250px;
-$cubeHeight: 250px;
-$cubeDepth: $cubeHeight;
-
-body {
-  color: #333;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial;
+body {background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:3em}
+.wrap-cube {
+margin-top: 145px;
+perspective: 1000px;
+perspective-origin: 150% 150%;
+height: 200px;
+width: 200px;
 }
-
-.separator {
-  margin-top: 40px;
+.cube {
+margin: auto;
+position: relative;
+width: inherit;
+height: inherit;
+transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d;
+transition: transform .6s;
+-webkit-transition: transform .6s;
 }
-  
-.twitter {
-  color: #FFF;
-  text-decoration: none;
-  border-radius: 4px;
-  background: #00ACED;
-  display: inline-block;
-  padding: 10px 8px;
-  margin-bottom: 15px;
-  font-weight: bold;
+.cube div {
+position: absolute;
+padding: 10px;
+height: 100%;
+width: 100%;
+border: solid 1px #eee;
+color: #fff;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
-
-/* 3D Cube */
-.space3d {
-    perspective: 1000px;
-    width: $cubeWidth;
-    height: $cubeHeight;
-    text-align: center;
-    display: inline-block;
+.depan {
+transform: translateZ(100px);
+-webkit-transform: translateZ(100px);
+background: blue;
+background-size: 110%;
 }
-
-._3dbox {
-    display: inline-block;
-    transition: all 0.85s cubic-bezier(0.175,0.885,0.320,1.275);
-
-  text-align: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-  transform: rotateX(-15deg) rotateY(15deg);
+.belakang {
+transform: translateZ(-100px) rotateY(180deg);
+-webkit-transform: translateZ(-100px) rotateY(180deg);
+background: blue;
+background-size: 100%;
 }
-
-._3dface {
-    overflow: hidden;
-    position: absolute;
-  
-    border: 1px solid #888;
-    background: #FFF;
-    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1),
- 0 0 50px rgba(0, 0, 0, 0.3);
-  color: #333;
-  line-height: $cubeWidth;
-  opacity: 0.8;
+.kanan {
+transform: rotateY(-270deg) translateX(100px);
+-webkit-transform: rotateY(-270deg) translateX(100px);
+transform-origin: right top;
+-webkit-transform-origin: right top;
+background: blue;
+background-size: 100%;
 }
-
-
-._3dface--front {
-  width: $cubeWidth;
-  height: $cubeHeight;
-  transform: translate3d(0, 0, $cubeDepth / 2);
+.kiri {
+transform: rotateY(270deg) translateX(-100px);
+-webkit-transform: rotateY(270deg) translateX(-100px);
+transform-origin: center left;
+-webkit-transform-origin: center left;
+background: blue;
+background-size: 115%;
 }
-  
-._3dface--top {
-  width: $cubeWidth;
-  height: $cubeDepth;
-  transform: rotateX(90deg) translate3d(0, 0, $cubeHeight / 2);
+.atas {
+transform: rotateX(-270deg) translateY(-100px);
+-webkit-transform: rotateX(-270deg) translateY(-100px);
+-ms-transform: rotateX(-270deg) translateY(-100px);
+transform-origin: top center;
+-ms-transform-origin: top center;
+-webkit-transform-origin: top center;
+background: blue;
+background-size: 175%;
 }
-
-._3dface--bottom {
-  width: $cubeWidth;
-  height: $cubeDepth;
-    transform: rotateX(-90deg) translate3d(0, 0, $cubeHeight / 2);
+.bawah {
+transform: rotateX(270deg) translateY(100px);
+-webkit-transform: rotateX(270deg) translateY(100px);
+-ms-transform: rotateX(270deg) translateY(100px);
+transform-origin: bottom center;
+-ms-transform-origin: bottom center;
+-webkit-transform-origin: bottom center;
+background: blue;
+background-size: 90%;
 }
-
-._3dface--left {
-    width: $cubeDepth;
-  height: $cubeHeight;
-  left: 50%;
-  margin-left: -$cubeDepth / 2;
-  transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2);
+#rBelakang:checked ~ .wrap-cube .cube {
+transform: rotateY(180deg);
 }
-
-
-._3dface--right {
-  width: $cubeDepth;
-  height: $cubeHeight;
-  left: 50%;
-  margin-left: -$cubeDepth / 2;
-    transform: rotateY(90deg) translate3d(0, 0, $cubeWidth / 2);
+#rKiri:checked ~ .wrap-cube .cube {
+transform: rotateY(90deg);
 }
-
-
-._3dface--back {
-  width: $cubeWidth;
-  height: $cubeHeight;
-    transform: rotateY(180deg) translate3d(0, 0, $cubeDepth / 2);
+#rKanan:checked ~ .wrap-cube .cube {
+transform: rotateY(-90deg);
 }
-
-#radio-left:checked ~ .space3d ._3dbox {
-  transform: rotateY(90deg); 
+#rAtas:checked ~ .wrap-cube .cube {
+transform: rotateX(-90deg);
 }
-  
-#radio-right:checked ~ .space3d ._3dbox {
-  transform: rotateY(-90deg); 
+#rBawah:checked ~ .wrap-cube .cube {
+transform: rotateX(90deg);
 }
-  
-#radio-bottom:checked ~ .space3d ._3dbox {
-  transform: rotateX(90deg); 
+.demo-cube {
+width: 200px;
+margin: 0 auto;
 }
-
-#radio-top:checked ~ .space3d ._3dbox {
-  transform: rotateX(-90deg); 
+.regular-radio {
+display: none;
 }
-  
-#radio-back:checked ~ .space3d ._3dbox {
-  transform: rotateY(180deg); 
+.regular-radio + label {
+-webkit-appearance: none;
+background-color: #e1e1e1;
+border: 4px solid #e1e1e1;
+border-radius: 10px;
+width: 100%;
+display: inline-block;
+position: relative;
+width: 10px;
+height: 10px;
+cursor: pointer;
 }
-
-  // Apply backgrounds
-  ._3dface--front {
-  background: url(http://2.bp.blogspot.com/-JxKfUObT4L8/UYYaRhRNJmI/AAAAAAAAAUY/243IlIOKj2c/s320/brahama.jpg);
-  background-size: 100%;
-}
-  
-  ._3dface--left {
-  background: url(http://4.bp.blogspot.com/-HGFGdCGFTkw/UXVq6PNmS4I/AAAAAAAAAUE/hBNmVCOVlu4/s400/durga+wm.jpg);
-  background-size: auto 100%;
-}
-  
-   ._3dface--right {
-  background: url(http://2.bp.blogspot.com/-yrnBD8wJ-g0/UNRtPF8pR7I/AAAAAAAAATE/YSpLvqTNyoQ/s320/A+P+J+abdul+kalam_+swm+.jpg);
-  background-size: auto 100%;
-}
-  
-   ._3dface--top {
-  background: url(http://3.bp.blogspot.com/-mySu8dy4ux4/ULiVKS4YBbI/AAAAAAAAAR0/vBMi_4dAPDE/s400/rajiv+dixit+s.jpg);
-  background-size: auto 100%;
-}
-  
-   ._3dface--bottom {
-  background: url(http://2.bp.blogspot.com/-B9QWFtc9bVY/UHFs7y9GqkI/AAAAAAAAARI/YLDkoHYr3g4/s400/Gau+wm.jpg);
-  background-size: auto 100%;
-}
-  
-  ._3dface--back {
-  background: url(http://3.bp.blogspot.com/-ofufG97PpiU/UBzXu-1AisI/AAAAAAAAAP0/iDnhOh-vrb8/s400/shiv+ji.jpg);
-  background-size: auto 100%;
+.regular-radio:checked + label {
+background: grey;
+border: 4px solid #e1e1e1;
 }
