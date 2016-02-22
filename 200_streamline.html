@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- icon placeholder -->
-    <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
-    <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
-    <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
-    <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
-    <title>Daniel Barton Portfolio</title>
-    <!-- MAIN CSS FILES===================================
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- icon placeholder -->
+        <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
+        <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
+        <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
+        <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
+        <title>Daniel Barton Portfolio</title>
+        <!-- MAIN CSS FILES===================================
         ======================================================= -->
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Animation -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Custom CSS -->
-    <link href="css/theme.css" rel="stylesheet">
-    <!-- Responsive styles-->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- Elegant icon font -->
-    <link rel="stylesheet" href="css/simple-line-icons.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Animation -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Custom CSS -->
+        <link href="css/theme.css" rel="stylesheet">
+        <!-- Responsive styles-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Elegant icon font -->
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+        <link rel="stylesheet" href="css/streamline.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-</head>
-
-<body>
-   <object data=http://streamliners.surge.sh/#/ width="100%" height="100%" class="embed">
-                                <embed src=http://streamliners.surge.sh/#/ width="100%" height="100%"> </embed> Error: Embedded data could not be displayed.
-                            </object>
-    <button onclick="goBack()" class="goback">Go Back</button>
-
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
-</body>
-
-
-
-
-
-
-
+    </head>
+    <body>
+        <!-- CONTROLS -->
+        
+        <input type="radio" checked id="radio-front" name="select-face"/>
+        <input type="radio" id="radio-left" name="select-face"/>
+        <input type="radio" id="radio-right" name="select-face"/>
+        <input type="radio" id="radio-top" name="select-face"/>
+        <input type="radio" id="radio-bottom" name="select-face"/>
+        <input type="radio" id="radio-back" name="select-face"/>
+        <div class="separator"></div>
+        <div class="space3d">
+            
+            
+            <div class="_3dbox">
+                <div class="_3dface _3dface--front"></div>
+                <img src="images/streamhome.png" height="200px" width="320px" alt="" class="img-responsive">
+                <div class="_3dface _3dface--top"></div>
+                <img src="images/screenhome2.png" height="200px" width="320px" alt="" class="img-responsive">
+                <div class="_3dface _3dface--bottom"></div>
+                <img src="images/stream3.png" height="200px" width="320px" alt="" class="img-responsive">
+                <div class="_3dface _3dface--left"></div>
+                <img src="images/stream4.png" height="200px" width="320px" alt="" class="img-responsive">
+                <div class="_3dface _3dface--right"></div>
+                <img src="images/stream5.png" height="200px" width="320px" alt="" class="img-responsive">
+                <div class="_3dface _3dface--back"></div>
+                <img src="images/stream6.png" height="200px" width="320px" alt="" class="img-responsive">
+            </div>
+            
+        </div>
+        <div class="separator"></div>
+        <br><br>
+        <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
+    </body>
