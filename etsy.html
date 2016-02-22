@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/png" href="images/rails.png" sizes="256x256" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="description" content="Typography Effects with CSS3 and jQuery" />
+        <title>Daniel Barton Portfolio</title>
+        <!-- MAIN CSS FILES===================================
+        ======================================================= -->
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Animation -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Custom CSS -->
+        <link href="css/css.css" rel="stylesheet">
+        <link href="css/theme.css" rel="stylesheet">
+        <!-- Responsive styles-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Elegant icon font -->
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/myhub.css">
+        <link rel="stylesheet" href="css/streamline.css">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script>
+        var host = "dbarton8406.github.io";
+        if ((host == window.location.host) && (window.location.protocol != "https:")) window.location.protocol = "https";
+        </script>
+        /<script>
+        Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+        Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+        ** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+        ** Call: uniquevar.playclip() to play sound
+        var html5_audiotypes = { //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+        "mp3": "audio/mpeg",
+        "mp4": "audio/mp4",
+        "ogg": "audio/ogg",
+        "wav": "audio/wav"
+        }
+        function createsoundbite(sound) {
+        var html5audio = document.createElement('audio')
+        if (html5audio.canPlayType) { //check support for HTML5 audio
+        for (var i = 0; i < arguments.length; i++) {
+        var sourceel = document.createElement('source')
+        sourceel.setAttribute('src', arguments[i])
+        if (arguments[i].match(/\.(\w+)$/i))
+        sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+        html5audio.appendChild(sourceel)
+        }
+        html5audio.load()
+        html5audio.playclip = function() {
+        html5audio.pause()
+        html5audio.currentTime = 0
+        html5audio.play()
+        }
+        return html5audio
+        } else {
+        return {
+        playclip: function() {
+        throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+        }
+        }
+        }
+        }
+        Initialize two sound clips with 1 fallback file each:
+        var mouseoversound = createsoundbite("images/thunder.mp3")
+        var clicksound = createsoundbite("images/star-wars_cutted.mp3")
+        </script>
+    </head>
+    <body>
+    <div></div>
+        <div class="etsy" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
+            <img src="images/etsy1.png" width="50%" height="auto" class="ttt">
+        <audio id="mysound2" src="images/star-wars_cutted.mp3"></audio>
+        <div class="mask">
+            <div style="overflow:hidden; position:absolute; left:0; top:0; width:0px; height:25px;">click me!
+                <div style="margin-top:-490px;">
+                </div>
+            </div>
+            <p id="start">A short time ago in a browser very, very close&hellip;</p>
+            <h5>EtsyWars</h5>
+            <div id="titles">
+                <div id="titlecontent">
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">EPISODE I
+                    <br /> A NEW HOPE FOR CSS3</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">A short time ago in a browser very, very close</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">It is a period of recreating.</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">This is a Re-Creation of an Etsy Page.
+                        <br> It possibly has no practical purpose whatsoever but it looks great
+                    <br> and actually links to Etsy links.</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;">If I run the code with ETSY_KEY=mySecretKey bundle exec ruby lib/etsiest.rb,
+                        <br> it should start a sinatra app. It use the Etsy API results to render the page!
+                    <br>The controller method should check for a query parameter called "q" and search the Etsy API for matching listings. .</p>
+                    <p class="center" style="color:yellow;font-family: Droid Sans;"> It does NOT use a CSS Framework such as Twitter Bootstrap or Zerb Foundation or Materialize..</p>
+                    <object width="325" height="240" data="https://cloud.githubusercontent.com/assets/14100111/11482830/00e2f274-9773-11e5-8923-6ca1f5af43b9.png"></object>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
+    <a id="refresh">Click to Watch Again
+    <FORM >
+        <INPUT TYPE="button" onClick="history.go(0)" VALUE="«" class="button">
+    </FORM>
+    </a>
+
+<script>
+    $(function() {
+      $("#refresh").click(function(evt) {
+         $("#randomdiv").load("index.php")
+         evt.preventDefault();
+      })
+    })
+</script>
+    </body>

@@ -18,14 +18,11 @@ Template Name: DANIEL-personal portfolio landing template
 */
 /* 1 - Google Font
 ------------------------------------------------------------------------*/
-
-
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400,700,400italic,700italic);
 /* globals */
-
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
 @font-face {
 font-family: 'ElegantIcons';
@@ -37,14 +34,12 @@ font-style: normal;
 /* 2 - General styles
 ------------------------------------------------------------------------*/
 /* input palceholder text style*/
-
 :-moz-placeholder {
 color: #FFF;
 letter-spacing: 2px;
 font-size: 12px;
 text-transform: capitalize;
 }
-
 ::-moz-placeholder {
 /* Firefox 19+ */
 color: #FFF;
@@ -52,27 +47,23 @@ letter-spacing: 2px;
 font-size: 12px;
 text-transform: capitalize;
 }
-
 :-ms-input-placeholder {
 color: #FFF;
 font-size: 12px;
 letter-spacing: 2px;
 text-transform: capitalize;
 }
-
 ::-webkit-input-placeholder {
 color: #FFF;
 font-size: 12px;
 letter-spacing: 2px;
 text-transform: capitalize;
 }
-
 input[placeholder],
 [placeholder],
 *[placeholder] {
 color: #ddd!important;
 }
-
 body {
 width: 100%;
 height: 100%;
@@ -80,20 +71,17 @@ overflow-x: hidden;
 line-height: 24px;
 color: rgba(0, 0, 0, .0001);
 font-size: 13px;
-font-family: 'Oxygen', sans-serif;
+font-family: Sans-Serif;
 font-weight: normal;
 letter-spacing: 1px;
 }
-
 html {
 width: 100%;
 height: 100%;
 }
-
 .no-padding {
 padding: 0;
 }
-
 a,
 a:focus,
 a:active,
@@ -101,17 +89,15 @@ a:link,
 img {
 outline: none;
 }
-
 a {
 color: #555;
-font-size: 17px;
+font-size: 20px;
 -webkit-transition: color .2s ease;
 -moz-transition: color .2s ease;
 -ms-transition: color .2s ease;
 -o-transition: color .2s ease;
 transition: color .2s ease;
 }
-
 a {
 cursor: pointer;
 text-decoration: none;
@@ -121,7 +107,6 @@ transition: all 0.25s ease 0s;
 -webkit-transition: all 0.25s ease 0s;
 -o-transition: all 0.25s ease 0s;
 }
-
 a:hover {
 color: black;
 text-decoration: none;
@@ -130,26 +115,22 @@ transition: all 0.25s ease 0s;
 -webkit-transition: all 0.25s ease 0s;
 -o-transition: all 0.25s ease 0s;
 }
-
 a:focus,
 a:hover {
 outline: none!important;
 outline-offset: 0;
 color: black;
 }
-
 a:link,
 a:visited {
 text-decoration: none;
 }
-
 p {
 line-height: 26px;
 font-size: 14px;
 font-weight: 400;
-color: #666;
+color: white;
 }
-
 img {
 /*height: auto;*/
 /*max-width: 100%;*/
@@ -160,42 +141,42 @@ transition: all 0.2s ease 0s;
 -webkit-transition: all 0.2s ease 0s;
 -o-transition: all 0.2s ease 0s;
 }
-
 iframe,
 audio {
 width: 100%;
 height: auto;
 border: none;
 }
-
 ul,
 li {
 list-style-type: none;
 margin: 0px;
 padding: 0px;
+font-family: 'Playfair Display', serif;
+font-size: 14px;
+letter-spacing: 1px;
 }
 /* 2.1 - Headings
 --------------------------------------------- */
-
 h1,
 h2,
 h3,
 h4,
 h6,
 i,
-a {
+a,
+b {
 color: #D5AD6D;
 /*if no support for background-clip*/
-background: -webkit-linear-gradient(transparent, transparent), 
--webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, 
-    rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, 
-    rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, 
-    rgba(213, 173, 109, 1) 100%);
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
 background: -o-linear-gradient(transparent, transparent);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-
 h2,
 h3,
 h4,
@@ -203,19 +184,17 @@ h5,
 h6 {
 color: black;
 text-transform: uppercase;
-font-family: "Volkhov", serif;
+font-family: Serif;
 font-weight: 700;
 margin-top: 0px;
 margin-bottom: 10px;
 }
-
 h1 {
 color: #FFFFFF;
 font-size: 43px;
 letter-spacing: 2px;
 line-height: 40px;
 }
-
 h2 {
 font-size: 27px;
 letter-spacing: 2px;
@@ -223,26 +202,22 @@ line-height: 37px;
 margin-bottom: 20px;
 padding-top: 10px;
 }
-
 h3 {
 font-size: 21px;
 letter-spacing: 4px;
 line-height: 32px;
 }
-
 h4 {
 font-size: 25px;
 letter-spacing: 2px;
 line-height: 18px;
 }
-
 h5 {
 font-size: 15px;
 letter-spacing: 2px;
 line-height: 23px;
 font-weight: 600;
 }
-
 h6 {
 font-size: 15px;
 letter-spacing: 2px;
@@ -250,7 +225,6 @@ line-height: 10px;
 font-weight: 600;
 }
 /* buttons style */
-
 .btn {
 padding: 10px 30px;
 font-size: 13px;
@@ -259,11 +233,9 @@ border-radius: 0px;
 text-transform: uppercase;
 letter-spacing: 1px;
 }
-
 .btn-container {
 margin-top: 35px;
 }
-
 .btn-primary.black {
 background: #2A2A2A;
 border: 1px solid#2A2A2A;
@@ -272,13 +244,11 @@ color: #fff;
 -o-transition: all .3s ease 0s;
 transition: all .3s ease 0s;
 }
-
 .btn-primary.black:hover {
 border-color: #333;
 background: #fff;
 color: #2A2A2A;
 }
-
 .btn-primary {
 border-color: #E23F43;
 background: #E23F43;
@@ -287,13 +257,11 @@ color: #fff;
 -o-transition: all .3s ease 0s;
 transition: all .3s ease 0s;
 }
-
 .btn-primary:hover {
 background: #fff;
 border: 1px solid#fff;
 color: #2A2A2A;
 }
-
 .btn-primary.grey {
 border-color: #eee;
 background: #fff;
@@ -304,13 +272,11 @@ margin-top: 20px;
 -o-transition: all .3s ease 0s;
 transition: all .3s ease 0s;
 }
-
 .btn-primary.grey:hover {
 background: #2A2A2A;
 color: #fff;
 border-color: #2A2A2A;
 }
-
 .btn-primary.feature {
 background: #2A2A2A;
 border: 1px solid#2A2A2A;
@@ -319,28 +285,23 @@ color: #fff;
 -o-transition: all .3s ease 0s;
 transition: all .3s ease 0s;
 }
-
 .btn-primary.feature:hover {
 background: #fff;
 color: #2A2A2A;
 border-color: #999;
 }
-
 .section-padding {
 padding-bottom: 80px;
 }
 /*==================== section heading ========================*/
-
 .section-heading {
 margin-bottom: 50px;
 padding-top: 40px;
 }
-
 .section-heading hr {
 width: 100%;
 border-color: black;
 }
-
 .mid-title {
 font-size: 30px;
 font-weight: 500;
@@ -348,20 +309,17 @@ font-family: 'Volkhov', serif;
 font-style: italic;
 text-transform: capitalize;
 }
-
 .sub-title {
 font-weight: normal;
 text-transform: capitalize;
 letter-spacing: 4px;
 }
-
 .subtitle {
 font-family: 'Playfair Display', serif;
 font-style: italic;
 font-size: 14px;
 letter-spacing: 1px;
 }
-
 .parallax-overlay {
 position: absolute;
 top: 0px;
@@ -373,36 +331,29 @@ background: rgba(0, 0, 0, 0.8);
 /*======================================================
 navigation
 ==========================================================*/
-
 .navbar-custom {
 margin-bottom: 0;
 text-transform: uppercase;
-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: Sans-Serif;
 }
-
 .navbar-custom .navbar-brand {
 font-weight: 700;
 }
-
 .navbar-custom .navbar-brand:focus {
 outline: 0;
 }
-
 .navbar-custom .navbar-brand .navbar-toggle {
 padding: 4px 6px;
 font-size: 16px;
 color: #fff;
 }
-
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
 outline: 0;
 }
-
 .navbar-custom a {
 color: #fff;
 }
-
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
 -moz-transition: background .3s ease-in-out;
@@ -410,29 +361,25 @@ transition: background .3s ease-in-out;
 padding-left: 3em;
 padding-right: 3em;
 }
-
 .navbar-custom .nav li a:hover {
 outline: 0;
 color: rgba(255, 255, 255, .8);
-background-color: transparent;
+background-color: black;
 }
-
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
 outline: 0;
-background-color: transparent;
+background-color: black;
 }
-
 .navbar-custom .nav li.active {
 outline: 0;
 }
-
 @media(min-width:768px) {
 .navbar-custom {
 padding: 20px 0;
 border-bottom: 0;
 letter-spacing: 1px;
-background: 0 0;
+background: black;
 -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
 -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
 transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -444,21 +391,20 @@ display: none !important;
 padding: 20px 0px;
 -webkit-box-shadow: 0px 0px 2px #777;
 box-shadow: 0px 0px 2px #777;
-background-color: rgba(0, 0, 0, 0);
+background-color: black
 box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .navbar-custom.top-nav-collapse .nav li a {
 color: #2c2c2c;
 }
 .navbar-custom.top-nav-collapse .nav li.active a {
-background-color: transparent;
+background-color: black;
 color: #E23F43!important;
 }
 .navbar-custom.top-nav-collapse .navbar-brand a {
 color: #2A2A2A;
 }
 }
-
 @media screen and (min-width:768px) {
 .navbar-brand-centered {
 position: absolute;
@@ -476,7 +422,6 @@ margin-left: -80px;
 /*============================================
 SLIDER SECTION
 ===============================================*/
-
 #section-intro {
 height: 190%;
 background-position: 50% 0px;
@@ -491,7 +436,6 @@ position: relative;
 max-height: 600px;
 overflow: hidden;
 }
-
 .intro-caption {
 width: 100%;
 top: 50%;
@@ -501,12 +445,10 @@ padding: 220px 15px 0px;
 position: absolute;
 color: #fff;
 }
-
 .intro-caption:hover {
-background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50%;
+/*background: black url("../images/red_lightning2.gif") no-repeat fixed 50% 50%;*/
 overflow: transparent;
 }
-
 .intro-caption h1 {
 font-size: 50px;
 color: #fff;
@@ -514,34 +456,28 @@ line-height: 60px;
 letter-spacing: 4px;
 margin: 10px 0px;
 }
-
 .intro-caption .subtitle {
 margin: 10px 0px;
 }
-
 .intro-caption .btn-container {
 margin-top: 40px;
 }
 /*================================================================
 section about
 ===============================================================*/
-
 #section-about {
 padding-bottom: 80px;
 }
-
 .margin-0 {
 margin: 0!important;
 }
-
 .iconbox {
-color: black;
+color: white;
 position: relative;
 margin: 0 0 50px;
 }
-
 .iconbox-icon {
-color: black;
+color: white;
 position: absolute;
 width: 55px;
 left: 0;
@@ -549,40 +485,32 @@ top: 0;
 font-size: 32px;
 line-height: 1;
 }
-
 .iconbox-text {
-color: black;
+color: white;
 padding-left: 55px;
-text-shadow: rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
 }
-
 .iconboxl-title {
-color: black;
+color: white;
 margin: 0 0 15px;
 padding: 0;
 }
-
 .about-box,
 .skills-wrap h4 {
 margin-bottom: 20px;
 }
-
 .about-box p {
 margin: 30px 0px;
 }
 /*resume*/
-
 .resume {
 text-align: center;
 color: #595651;
 }
-
 .resume i {
 font-size: 16px;
 color: #E23F43;
 margin-right: 8px;
 }
-
 .resume h6 {
 background-color: #198FFF;
 border: 1px solid#eee;
@@ -592,7 +520,6 @@ margin-top: 28px;
 -o-transition: all .4s ease;
 transition: all .4s ease;
 }
-
 .resume h6:hover {
 background: #eee;
 cursor: pointer;
@@ -600,7 +527,6 @@ cursor: pointer;
 /*===================================================
 mask
 ===================================================*/
-
 .box {
 width: 620px;
 height: 400px;
@@ -614,7 +540,6 @@ box-shadow: 0px 0px 5px #aaa;
 display: block;
 position: relative;
 }
-
 a.link {
 background: url(Link image URL) center no-repeat;
 background-size: 50px 50px;
@@ -629,13 +554,12 @@ top: -15px;
 opacity: 0;
 transition: opacity 0.1s 0s ease-in-out;
 }
-
 .mask {
 width: 820px;
 height: 140px;
 position: absolute;
 bottom: 25px;
-left: -130px;
+left: 30px;
 opacity: 0;
 overflow: visible;
 border: 5px solid rgba(0, 0, 0, 0.9);
@@ -643,7 +567,6 @@ color: FFFFFF;
 box-sizing: border-box;
 transition: all 0.4s ease-in-out;
 }
-
 .mask:hover,
 .mask:focus,
 .mask:focus {
@@ -652,7 +575,6 @@ opacity: 1;
 border: 220px solid rgba(0, 0, 0, 0.7);
 color: white;
 }
-
 .mask:hover,
 .mask:focus,
 .mask:focus a.link {
@@ -663,14 +585,12 @@ transition-delay: 0.3s;
 /*----------------*/
 /*  Skills Bar
 /*---------------*/
-
 .skillbar {
 position: relative;
 display: block;
 width: 100%;
 margin-bottom: 30px;
 }
-
 .skillbar-bar:before {
 background: transparent;
 content: "";
@@ -679,7 +599,6 @@ position: absolute;
 width: 100%;
 z-index: -1;
 }
-
 .skillbar-bar {
 height: 3px;
 width: 0px;
@@ -690,47 +609,37 @@ background: #323232;
 -o-transition-property: width, background-color;
 transition-property: width, background-color;
 }
-
 .skillbar-title {
 display: inline-block;
 }
-
 .skillbar-title,
 .skill-bar-percent {
-color: #323232;
+color: white;
 font-size: 16px;
-font-weight: 600;
+font-style: italic;
 text-transform: uppercase;
-font-family: cursive;
+font-family: 'Playfair Display', serif;
+letter-spacing: 1px;
 }
-
 .skill-bar-percent {
 float: right;
 display: inline-block;
 }
-
 .pdf {
 position: absolute;
 left: 80px;
 bottom: 55px;
-text-shadow: rgba(0, 0, 0, 0.5) -1px 0,
-rgba(0, 0, 0, 0.3) 0 -1px,
-rgba(255, 255, 255, 0.5) 0 1px,
-rgba(0, 0, 0, 0.3) -1px -2px;
 }
 /*============================================
 SECTION PORTFOLIO
 ===============================================*/
-
 #section-portfolio {
 padding-bottom: 5px;
 overflow-x: hidden;
 }
-
 #section-portfolio .section-heading {
 padding-top: 78px;
 }
-
 .item-wrap {
 position: relative;
 overflow: hidden;
@@ -738,7 +647,6 @@ display: block;
 max-width: 100%;
 margin: 20px 0px;
 }
-
 .item-wrap {
 -webkit-transition: all .4s ease;
 -moz-transition: all .4s ease;
@@ -746,13 +654,11 @@ margin: 20px 0px;
 -ms-transition: all .4s ease;
 transition: all .4s ease;
 }
-
 .item-wrap:hover {
 transform: scale(1.07);
 -ms-transform: scale(1.07);
 -webkit-transform: scale(1.07)
 }
-
 .item-info {
 width: 90%;
 height: 130%;
@@ -773,28 +679,23 @@ transition: opacity .3s ease;
 background: rgba(0, 0, 0, 0.8);
 text-align: center;
 }
-
 .item-wrap:hover .item-info {
 opacity: 1;
 filter: alpha(opacity=100);
 -ms-filter: "alpha(Opacity=100)"
 }
-
 .item-info {
 color: #fff;
 font-size: 1px;
 }
-
 .item-info h4,
 .item-info h6 {
 color: #fff;
 }
-
 .item-info h6 {
 font-weight: 100;
-font-size: 8px;
+font-size: 12px;
 }
-
 .item-info a {
 width: 50px;
 height: 50px;
@@ -810,19 +711,16 @@ margin: 40px auto 0px;
 /*=====================================================
 SECTION education & Experiecne
 ==========================================================*/
-
 #section-edu {
 padding: 89px 0px 95px;
 background: #FAFAFC;
 }
-
 .edu-inner h3 {
 font-style: italic;
 padding-bottom: 20px;
 position: relative;
 text-transform: capitalize;
 }
-
 .edu-inner h3:after {
 position: absolute;
 content: "";
@@ -832,14 +730,12 @@ top: 15px;
 background: black;
 right: 0px;
 }
-
 .about-info {
 margin-top: 50px;
 background: #fff;
 padding: 18px 15px;
 margin-right: 30px;
 }
-
 .about-info .icon {
 float: left;
 margin-right: 40px;
@@ -847,7 +743,6 @@ font-size: 20px;
 line-height: 30px;
 margin-top: 20px;
 }
-
 .about-info .icon i {
 color: #444;
 background: #ddd;
@@ -859,14 +754,12 @@ box-shadow: 0px 0px 0px 3px #ddd;
 border: 4px solid#fff;
 margin-left: -30px;
 }
-
 .about-info p.inst {
 text-transform: capitalize;
 font-weight: 600;
-color: #555;
+color: white;
 letter-spacing: 2px;
 }
-
 .title {
 font-weight: 700;
 text-transform: uppercase;
@@ -875,35 +768,29 @@ font-size: 16px;
 line-height: 26px;
 color: #222;
 }
-
 .about-info p.year {
 font-weight: 700;
 border-bottom: 1px solid #eee padding-bottom: 10px;
 }
-
 .about-info-inner {
 margin-left: 70px;
 }
 /*=====================================================
 SECTION CONTACT
 ==========================================================*/
-
 #section-contact {
 background: url("") fixed 50% 0%;
 position: relative;
 -webkit-background-size: cover;
 background-size: cover;
 }
-
 #section-contact .parallax-overlay {
 background: rgba(255, 255, 255, .85);
 }
-
 .contact-box {
 background: #333333;
 padding: 60px 60px 40px;
 }
-
 .form-control {
 border-radius: 0px;
 box-shadow: none!important;
@@ -914,33 +801,26 @@ border-right: transparent;
 background: transparent;
 border-color: #747474;
 }
-
 .form-control:focus {
 border-color: #E23F43;
 }
-
 #contactForm .form-group {
 margin-bottom: 20px;
 }
-
 .contact-info {
 padding-top: 40px;
 /*padding-left: 350px;*/
 margin-bottom: 50px;
 }
-
 .contact-info ul {
 margin-top: 50px;
 }
-
 .contact-info ul li {
 margin: 25px 0px;
 }
-
 .contact-info ul li p {
 font-weight: 600;
 }
-
 .contact-info ul i {
 float: right;
 font-size: 30px;
@@ -949,25 +829,20 @@ margin-right: 40px;
 /*=====================================================
 SECTION FOOTER
 ==========================================================*/
-
 #section-footer {
 padding: 40px 0px;
 background: url("../images/bbg.png")repeat;
 background: #272727;
 }
-
 .footer-box {
 text-align: center;
 }
-
 .footer-box h1 {
 color: #fff;
 }
-
 .footer-socail {
 margin: 10px 0px 23px;
 }
-
 .footer-socail li a {
 display: block;
 font-weight: 700;
@@ -978,60 +853,52 @@ height: 35px;
 display: block;
 padding-top: 10px;
 }
-
 .footer-socail li a:hover {
 background: rgba(0, 0, 0, 0);
 }
-
 .footer-menu li a:hover {
 color: #E23F43;
 background: black
 }
-
 .footer-menu li a {
 color: #fff;
 }
-
 .footer-desc h3 {
 color: #fff;
 line-height: 30px;
 }
-
 .copy {
 color: #eee;
 text-transform: capitalize;
 }
-
 .copy span {
 color: #E23F43;
 font-weight: 700;
 }
-
 .metal{
-	position: relative;
-	top:5px;
+position: relative;
+top:5px;
 background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
-    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
-    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
-    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
-    
-    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
-    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
-    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
-    
-    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+-webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+-webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+-webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+-webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+-webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+-webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+-webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
 }
 /*custom css*/
 /*===================================================
 rolling
 ===================================================*/
-
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 * {
 padding: 0;
 margin: 0;
+font-family: 'Playfair Display', serif;
+font-size: 14px;
+letter-spacing: 1px;
 }
-
 p#start {
 position: relative;
 right: 20%;
@@ -1049,7 +916,6 @@ z-index: 1;
 -o-animation: intro 4s ease-out;
 animation: intro 4s ease-out;
 }
-
 @-webkit-keyframes intro {
 0% {
 opacity: 1;
@@ -1061,7 +927,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-moz-keyframes intro {
 0% {
 opacity: 1;
@@ -1073,7 +938,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-ms-keyframes intro {
 0% {
 opacity: 1;
@@ -1085,7 +949,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-o-keyframes intro {
 0% {
 opacity: 1;
@@ -1097,7 +960,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @keyframes intro {
 0% {
 opacity: 1;
@@ -1109,7 +971,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 h5 {
 position: relative;
 width: 1.6em;
@@ -1130,7 +991,6 @@ z-index: 1;
 -o-animation: logo 5s linear 4s;
 animation: logo 5s linear 4s;
 }
-
 @-webkit-keyframes logo {
 0% {
 -webkit-transform: scale(1);
@@ -1144,7 +1004,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-moz-keyframes logo {
 0% {
 -moz-transform: scale(1);
@@ -1158,7 +1017,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-ms-keyframes logo {
 0% {
 -ms-transform: scale(1);
@@ -1172,7 +1030,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @-o-keyframes logo {
 0% {
 -o-transform: scale(1);
@@ -1186,7 +1043,6 @@ opacity: 1;
 opacity: 0;
 }
 }
-
 @keyframes logo {
 0% {
 transform: scale(1);
@@ -1201,7 +1057,6 @@ opacity: 0;
 }
 }
 /* the interesting 3D scrolling stuff */
-
 #titles {
 position: absolute;
 width: 18em;
@@ -1223,7 +1078,6 @@ transform-origin: 50% 100%;
 -o-transform: perspective(100px) rotateX(15deg);
 transform: perspective(100px) rotateX(15deg);
 }
-
 #titles:after {
 position: absolute;
 content: ' ';
@@ -1238,21 +1092,17 @@ background-image: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%)
 background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
 pointer-events: none;
 }
-
 #titles p {
 text-align: justify;
 margin: 0.8em 0;
 }
-
 #titles p.center {
 text-align: center;
 }
-
 #titles a {
 color: #ff6;
 text-decoration: underline;
 }
-
 #titlecontent {
 position: absolute;
 top: 100%;
@@ -1263,7 +1113,6 @@ top: 100%;
 animation: scroll 160s linear 6 infinite;
 }
 /* animation */
-
 @-webkit-keyframes scroll {
 0% {
 top: 100%;
@@ -1272,7 +1121,6 @@ top: 100%;
 top: -170%;
 }
 }
-
 @-moz-keyframes scroll {
 0% {
 top: 100%;
@@ -1281,7 +1129,6 @@ top: 100%;
 top: -170%;
 }
 }
-
 @-ms-keyframes scroll {
 0% {
 top: 100%;
@@ -1290,7 +1137,6 @@ top: 100%;
 top: -170%;
 }
 }
-
 @-o-keyframes scroll {
 0% {
 top: 100%;
@@ -1299,7 +1145,6 @@ top: 100%;
 top: -170%;
 }
 }
-
 @keyframes scroll {
 0% {
 top: 100%;
@@ -1309,7 +1154,6 @@ top: -170%;
 }
 }
 /*=========================*/
-
 #ttt_box {
 float: left;
 width: 20em;
@@ -1320,18 +1164,15 @@ margin-right: 80px;
 box-shadow: none;
 word-wrap: break-word;
 }
-
 .ttt {
 font-weight: 100;
 font-size: 13px;
 }
-
 .etsy {
 box-shadow: none;
 position: relative;
 right: 55px;
 }
-
 #war_box {
 float: left;
 width: 20em;
@@ -1342,16 +1183,13 @@ margin-top: 80px;
 box-shadow: none;
 word-wrap: break-word;
 }
-
 .works {
-font-size: 9px;
+font-size: 12px;
 }
-
 .streamline {
 text-align: center;
 padding-top: 70px;
 }
-
 #stream_box {
 width: 20em;
 height: 30em;
@@ -1360,7 +1198,6 @@ margin-right: 80px;
 box-shadow: 2px solid;
 word-wrap: break-word;
 }
-
 #myhub_box {
 width: 20em;
 height: 30em;
@@ -1373,49 +1210,39 @@ word-wrap: break-word;
 .fa-github:before {
 color: black;
 }
-
 .experience {
 margin-top: 20px;
 }
-
 .fa-github.fa-2x:before {
 color: #FFFFFF;
 }
-
 .fa-twitter:before {
 color: #4B97D2;
 }
-
 .fa-skype:before {
 color: #009EE5;
 }
-
 .fa-linkedin:before {
 color: #575757;
 }
-
 .fa-facebook:before {
 color: #46629E;
 }
-
 .fa-download {
 color: black;
 }
-
 ul.list-inline.text-center.team-socail {
-    background-color: white;
+background-color: white;
 }
 audio {
 position: absolute;
 width: 40px;
 height: 10px
 }
-
 video {
 position: relative;
 top: -15px;
 }
-
 #video2 {
 height: 220px;
 }
@@ -1441,56 +1268,48 @@ box-shadow: 2px solid black;
 }
 section,
 #section-edu {
-background: #1e130c;
+background: #000000;
 /* fallback for old browsers */
-
-background: -webkit-linear-gradient(to left, #1e130c, #9a8478, );
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
 /* Chrome 10-25, Safari 5.1-6 */
-
-background: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
+background: linear-gradient(to left, #000000, #A6362B, #000000);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section,
 #section-about {
-background: #E6DADA;
+background: #16222A;
 /* fallback for old browsers */
-
-background: -webkit-linear-gradient(to left, #274046, #E6DADA, #274046);
+background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
-
-background: linear-gradient(to left, #274046, #E6DADA, #274046);
+background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section,
 #section-portfolio {
-background: #003973;
+background: #16222A;
 /* fallback for old browsers */
-
-background: -webkit-linear-gradient(to left, #003973, #E5E5BE, #003973);
+background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
-
-background: linear-gradient(to left, #003973, #E5E5BE, #003973);
-
+background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section,
 #section-footer {
 background: #16222A;
 /* fallback for old browsers */
-
 background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
-
 background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .about-info{
-
-
-background: #8e9eab; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3, #8e9eab); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #8e9eab , #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+background: #16222A;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #16222A, #3A6073, #16222A);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 }
 .port_box {
 width: 100%;
@@ -1508,17 +1327,14 @@ width: 320px;
 height: 230px;
 margin: auto
 }
-
 form {
 padding: 2px
 }
-
 .pdf {
 position: absolute;
 left: 200;
 }
 /*=========================================================*/
-
 background: #1D2329;
 background-image: -webkit-linear-gradient(left,
 rgba(0,
@@ -1646,7 +1462,7 @@ text-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px, black 0px 1px 2px;
 width: 60px;
 height: 60px;
 padding: 10px;
-margin: 50px auto;
+margin: 30px auto;
 position: static;
 z-index: 50;
 cursor: pointer;
@@ -1695,7 +1511,6 @@ margin-top: -60px;
 margin-left: -16px;
 background: rgba(0, 0, 0, 0.1);
 box-shadow: inset rgba(255, 255, 255, 0.1) 0px -5px 5px, rgba(0, 0, 0, 0.1) 0px 3px 3px, rgba(255, 255, 255, 0.05) 0px -3px 3px;
-
 }
 .button:hover {
 color: rgba(0, 0, 0, 0.6);
@@ -1714,295 +1529,291 @@ margin-top: -11px;
 .button:active:after {
 margin-top: -56px;
 }
-
+strong{
+font-family: 'Playfair Display', serif;
+font-size: 14px;
+}
+form{
+color: white;
+font-family: 'Playfair Display', serif;
+font-size: 14px;
+}
+}
 /*==============================*/
-
 @import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:300');
 .shimmer{
-    /* styling stuff */
-    /*margin:0 auto;
-    padding: 0 40px;
-    text-align: center;
-    color: rgba(255,255,255,0.1);*/
+/* styling stuff */
+/*margin:0 auto;
+padding: 0 40px;
+text-align: center;
+color: rgba(255,255,255,0.1);*/
 }
 .shimmer:hover {
-  /* the shimmer magic */
-  background: -webkit-gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
-  background: -moz-gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
-  background: gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  -webkit-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: .5s;
-  -moz-animation-duration: .5s;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color:#FAEDDB;
+/* the shimmer magic */
+background: -webkit-gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
+background: -moz-gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
+background: gradient(linear,left top,right top,from(),to(),from(),color-stop(.5,#fff));
+-webkit-background-size: 125px 100%;
+-moz-background-size: 125px 100%;
+background-size: 125px 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-animation-name: shimmer;
+-moz-animation-name: shimmer;
+-webkit-animation-name: shimmer;
+animation-name: shimmer;
+-webkit-animation-duration: .5s;
+-moz-animation-duration: .5s;
+-webkit-animation-duration: .5s;
+animation-duration: .5s;
+-webkit-animation-iteration-count: 1;
+-moz-animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+background-repeat: no-repeat;
+background-position: 0 0;
+background-color:#FAEDDB;
 }
-
 @-moz-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
+0% {
+background-position: top left;
 }
-
+100% {
+background-position: top right;
+}
+}
 @-webkit-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
+0% {
+background-position: top left;
 }
-
+100% {
+background-position: top right;
+}
+}
 @-o-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
+0% {
+background-position: top left;
 }
-
+100% {
+background-position: top right;
+}
+}
 @-ms-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
+0% {
+background-position: top left;
 }
-
+100% {
+background-position: top right;
+}
+}
 @keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-
-  100% {
-    background-position: top right;
-  }
+0% {
+background-position: top left;
+}
+100% {
+background-position: top right;
+}
 }
 /*=======================================*/
 /*myhub*/
 html {
-  background-color: #000;
+background-color: #000;
 }
 body{
-  height: 100%;
-  top: 0px;
-  bottom: 0px;
+height: 100%;
+top: 0px;
+bottom: 0px;
 }
 @keyframes spinsun {
-  0% { transform: rotate(0); }
-  100%   { transform: rotate(-360deg); }
+0% { transform: rotate(0); }
+100%   { transform: rotate(-360deg); }
 }
 @keyframes shadow {
-  0% { background-position: 130% 0%; }
-  33%{ background-position: 50% 0%; }
-  55% { background-position: 0% 0%; }
-  80%{ background-position: -50% 0%; }
-  100%{ background-position: -50% 0%; }
+0% { background-position: 130% 0%; }
+33%{ background-position: 50% 0%; }
+55% { background-position: 0% 0%; }
+80%{ background-position: -50% 0%; }
+100%{ background-position: -50% 0%; }
 }
 @keyframes orbitmercury {
-  0% { z-index:2; transform: rotateY(0); }
-  49% { z-index:2; }
-  50% { z-index:-2; }
-  99% { z-index:-2; }
-  100%   { z-index:2; transform: rotateY(360deg); }
+0% { z-index:2; transform: rotateY(0); }
+49% { z-index:2; }
+50% { z-index:-2; }
+99% { z-index:-2; }
+100%   { z-index:2; transform: rotateY(360deg); }
 }
 @keyframes orbitvenus {
-  0% { z-index:3; transform: rotateY(0); }
-  49% { z-index:3; }
-  50% { z-index:-3; }
-  99% { z-index:-3; }
-  100%   { z-index:3; transform: rotateY(360deg); }
+0% { z-index:3; transform: rotateY(0); }
+49% { z-index:3; }
+50% { z-index:-3; }
+99% { z-index:-3; }
+100%   { z-index:3; transform: rotateY(360deg); }
 }
 @keyframes orbitearth {
-  0% { z-index:4; transform: rotateY(0); opacity:1;}
-  49% {z-index:4;}
-  50% {z-index:-4;}
-  99% {z-index:-4;}
-  100%   { z-index:4; transform: rotateY(360deg);}
+0% { z-index:4; transform: rotateY(0); opacity:1;}
+49% {z-index:4;}
+50% {z-index:-4;}
+99% {z-index:-4;}
+100%   { z-index:4; transform: rotateY(360deg);}
 }
 @keyframes orbitmars {
-  0% { z-index:5; transform: rotateY(0); }
-  49% { z-index:5; }
-  50% { z-index:-5; }
-  99% { z-index:-5; }
-  100%   { z-index:5; transform: rotateY(360deg); }
+0% { z-index:5; transform: rotateY(0); }
+49% { z-index:5; }
+50% { z-index:-5; }
+99% { z-index:-5; }
+100%   { z-index:5; transform: rotateY(360deg); }
 }
 @keyframes orbitjupiter {
-  0% { z-index:6; transform: rotateY(270); }
-  49% { z-index:6; }
-  50% { z-index:-6; }
-  99% { z-index:-6; }
-  100%   { z-index:6; transform: rotateY(360deg); }
+0% { z-index:6; transform: rotateY(270); }
+49% { z-index:6; }
+50% { z-index:-6; }
+99% { z-index:-6; }
+100%   { z-index:6; transform: rotateY(360deg); }
 }
 @keyframes orbitsaturn {
-  0% { z-index:7; transform: rotateY(270); }
-  49% { z-index:7; }
-  50% { z-index:-7; }
-  99% { z-index:-7; }
-  100%   { z-index:7; transform: rotateY(360deg); }
+0% { z-index:7; transform: rotateY(270); }
+49% { z-index:7; }
+50% { z-index:-7; }
+99% { z-index:-7; }
+100%   { z-index:7; transform: rotateY(360deg); }
 }
 /* Keep planet image flat */
 @keyframes anti-spin {
-  from { transform: rotateY(0); }
-  to   { transform: rotateY(-360deg); }
+from { transform: rotateY(0); }
+to   { transform: rotateY(-360deg); }
 }
 @keyframes anti-spin-rings {
-  from { transform: rotateY(0) rotateX(73deg); }
-  to   { transform: rotateY(-360deg) rotateX(73deg); }
+from { transform: rotateY(0) rotateX(73deg); }
+to   { transform: rotateY(-360deg) rotateX(73deg); }
 }
-
 /* scene wrapper */
 .wrapper{
-  position:relative;
-  margin: 0 auto;
-  display:block;
-  margin-top: 200px;
-  perspective: 1000px;
-    perspective-origin: 60% 50%;
-  transform: rotate(-10deg);
-  
+position:relative;
+margin: 0 auto;
+display:block;
+margin-top: 200px;
+perspective: 1000px;
+perspective-origin: 60% 50%;
+transform: rotate(-10deg);
 }
 .wrapper > div {
-  position: relative;
-  margin: 0 auto;
-  transform-style: preserve-3d;
-  height: 0px;
+position: relative;
+margin: 0 auto;
+transform-style: preserve-3d;
+height: 0px;
 }
 .sun {
-  width: 250px;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-  height: 125px !important;
+width: 250px;
+position: absolute;
+top: 0px;
+z-index: 1;
+height: 125px !important;
 }
 .sun .star {
-  width: 250px;
-  height: 250px;
-  background: url(http://www.waynedunkley.com/img/solar_system/sun.png) no-repeat;
-  background-size: cover;
-  border-radius: 250px;
-  margin: 0 auto;
-  animation: spinsun 40s infinite linear;
+width: 250px;
+height: 250px;
+background: url(http://www.waynedunkley.com/img/solar_system/sun.png) no-repeat;
+background-size: cover;
+border-radius: 250px;
+margin: 0 auto;
+animation: spinsun 40s infinite linear;
 }
 .planet {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  animation-iteration-count: infinite;
-  overflow:hidden;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: transparent;
+animation-iteration-count: infinite;
+overflow:hidden;
 }
 .shadow {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: transparent url(http://www.waynedunkley.com/img/solar_system/shadow.png) 0% 0% no-repeat;
-  background-size: cover;
-  border-radius: 100%;
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+background: transparent url(http://www.waynedunkley.com/img/solar_system/shadow.png) 0% 0% no-repeat;
+background-size: cover;
+border-radius: 100%;
 }
 .mercury {
-  position: absolute;
-  width: 400px;
-  z-index:2;
-  animation: orbitmercury 12s infinite linear;
-  top: -7.5px; /*half of planets height to keep orbits in line*/
+position: absolute;
+width: 400px;
+z-index:2;
+animation: orbitmercury 12s infinite linear;
+top: -7.5px; /*half of planets height to keep orbits in line*/
 }
 .mercury .planet {
-  width:15px;
-  height:15px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/mercury.png);
-  animation: anti-spin 12s infinite linear;
+width:15px;
+height:15px;
+background-image: url(http://www.waynedunkley.com/img/solar_system/mercury.png);
+animation: anti-spin 12s infinite linear;
 }
 .mercury .shadow {
-  animation: shadow 12s infinite linear;
+animation: shadow 12s infinite linear;
 }
 .venus {
-  position: absolute;
-  width: 506px;
-  z-index:3;
-  animation: orbitvenus 15s infinite linear;
-  top: -19px;
+position: absolute;
+width: 506px;
+z-index:3;
+animation: orbitvenus 15s infinite linear;
+top: -19px;
 }
 .venus .planet {
-  width:38px;
-  height:38px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/venus.png);
-  animation: anti-spin 15s infinite linear;
+width:38px;
+height:38px;
+background-image: url(http://www.waynedunkley.com/img/solar_system/venus.png);
+animation: anti-spin 15s infinite linear;
 }
 .venus .shadow {
-  animation: shadow 15s infinite linear;
+animation: shadow 15s infinite linear;
 }
 .earth {
-  position: absolute;
-  width: 610px;
-  z-index:4;
-  animation: orbitearth 20s infinite linear;
-  top: -20px;
+position: absolute;
+width: 610px;
+z-index:4;
+animation: orbitearth 20s infinite linear;
+top: -20px;
 }
 .earth .planet {
-  width:40px;
-  height:40px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/earth.png?v=2);
-  animation: anti-spin 20s infinite linear;
+width:40px;
+height:40px;
+background-image: url(http://www.waynedunkley.com/img/solar_system/earth.png?v=2);
+animation: anti-spin 20s infinite linear;
 }
 .earth .shadow {
-  animation: shadow 20s infinite linear;
+animation: shadow 20s infinite linear;
 }
 .mars {
-  position: absolute;
-  width: 706px;
-  z-index:5;
-  animation: orbitmars 30s infinite linear;
-  top: -11px;
+position: absolute;
+width: 706px;
+z-index:5;
+animation: orbitmars 30s infinite linear;
+top: -11px;
 }
 .mars .planet {
-  width:22px;
-  height:22px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/mars.png);
-  animation: anti-spin 30s infinite linear;
+width:22px;
+height:22px;
+background-image: url(http://www.waynedunkley.com/img/solar_system/mars.png);
+animation: anti-spin 30s infinite linear;
 }
 .mars .shadow {
-  animation: shadow 30s infinite linear;
+animation: shadow 30s infinite linear;
 }
 .jupiter {
-  position: absolute;
-  width: 1100px;
-  z-index:6;
-  animation: orbitjupiter 50s infinite linear;
-  top: -64px;
+position: absolute;
+width: 1100px;
+z-index:6;
+animation: orbitjupiter 50s infinite linear;
+top: -64px;
 }
 .jupiter .planet {
-  width:128px;
-  height:128px;
-  background-image: url(http://www.waynedunkley.com/img/solar_system/jupiter.png);
-  animation: anti-spin 50s infinite linear;
+width:128px;
+height:128px;
+background-image: url(http://www.waynedunkley.com/img/solar_system/jupiter.png);
+animation: anti-spin 50s infinite linear;
 }
 .jupiter .shadow {
-  animation: shadow 50s infinite linear;
+animation: shadow 50s infinite linear;
 }
 /*=======================================*/
