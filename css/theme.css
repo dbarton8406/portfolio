@@ -555,11 +555,9 @@ opacity: 0;
 transition: opacity 0.1s 0s ease-in-out;
 }
 .mask {
-width: 820px;
+width: 640px;
 height: 140px;
 position: absolute;
-bottom: 25px;
-left: 30px;
 opacity: 0;
 overflow: visible;
 border: 5px solid rgba(0, 0, 0, 0.9);
@@ -1171,7 +1169,8 @@ font-size: 13px;
 .etsy {
 box-shadow: none;
 position: relative;
-right: 55px;
+    top: 196px;
+    right: -470px
 }
 #war_box {
 float: left;
