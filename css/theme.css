@@ -800,10 +800,11 @@ background: transparent;
 border-color: #747474;
 }
 .form-control:focus {
-border-color: #E23F43;
+border-color: white;
 }
 #contactForm .form-group {
 margin-bottom: 20px;
+background-color: white;
 }
 .contact-info {
 padding-top: 40px;
@@ -829,8 +830,9 @@ SECTION FOOTER
 ==========================================================*/
 #section-footer {
 padding: 40px 0px;
-background: url("../images/bbg.png")repeat;
+// background: url("../images/")repeat;
 background: #272727;
+height: 100px;
 }
 .footer-box {
 text-align: center;
@@ -839,7 +841,8 @@ text-align: center;
 color: #fff;
 }
 .footer-socail {
-margin: 10px 0px 23px;
+position: relative;
+bottom: 20px;
 }
 .footer-socail li a {
 display: block;
@@ -1169,8 +1172,8 @@ font-size: 13px;
 .etsy {
 box-shadow: none;
 position: relative;
-    top: 196px;
-    right: -470px
+top: 196px;
+right: -470px
 }
 #war_box {
 float: left;
@@ -1325,9 +1328,6 @@ video {
 width: 320px;
 height: 230px;
 margin: auto
-}
-form {
-padding: 2px
 }
 .pdf {
 position: absolute;
@@ -1533,7 +1533,7 @@ font-family: 'Playfair Display', serif;
 font-size: 14px;
 }
 form{
-color: white;
+color: black;
 font-family: 'Playfair Display', serif;
 font-size: 14px;
 }
