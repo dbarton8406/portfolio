@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/myhub.css">
         <link rel="stylesheet" href="css/streamline.css">
-       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -79,7 +79,7 @@
         </script>
     </head>
     <body>
-    <div></div>
+        <div class="wrap"></div>
         <div class="etsy" onclick="document.getElementById('mysound2').play()" ondblclick="document.getElementById('mysound2').pause()">
             <img src="images/etsy1.png" width="50%" height="auto" class="ttt">
         <audio id="mysound2" src="images/star-wars_cutted.mp3"></audio>
@@ -109,19 +109,17 @@
         </div>
     </div>
     <div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
-    <a id="refresh">Hover on image or Click button to start Again
-    <FORM >
-        <INPUT TYPE="button" onClick="history.go(0)" VALUE="«" class="button">
-    </FORM>
-    </a>
-
+    <a id="refresh">Hover on image or Click button to start Again</a>
+        <FORM >
+            <INPUT TYPE="button" onClick="history.go(0)" VALUE="replay" class="button">
+        </FORM>
+</body>
 <script>
     $(function() {
-      $("#refresh").click(function(evt) {
-         $("#randomdiv").load("index.php")
-         evt.preventDefault();
-      })
+    $("#refresh").click(function(evt) {
+    $("#randomdiv").load("index.php")
+    evt.preventDefault();
     })
-</script>
-    </body>
-    </html>
+    })
+    </script>
+</html>
