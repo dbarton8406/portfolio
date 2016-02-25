@@ -237,7 +237,12 @@ letter-spacing: 1px;
 margin-top: 35px;
 }
 .btn-primary.black {
-background: #2A2A2A;
+background: #16222A;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #16222A, #3A6073, #16222A);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 border: 1px solid#2A2A2A;
 color: #fff;
 -webkit-transition: all .3s ease 0s;
@@ -558,6 +563,7 @@ transition: opacity 0.1s 0s ease-in-out;
 width: 640px;
 height: 140px;
 position: absolute;
+top: 10px;
 opacity: 0;
 overflow: visible;
 border: 5px solid rgba(0, 0, 0, 0.9);
@@ -1453,7 +1459,7 @@ border-radius: 35px;
 }
 .button {
 font-family: 'pictos';
-font-size: 45px;
+font-size: 15px;
 line-height: 40px;
 text-align: center;
 color: rgba(0, 0, 0, 0.5);
@@ -1534,7 +1540,7 @@ font-size: 14px;
 }
 form{
 color: black;
-font-family: 'Playfair Display', serif;
+font-family: serif;
 font-size: 14px;
 }
 }
