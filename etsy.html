@@ -111,7 +111,7 @@
     <div style="color:transparent;" onmouseover="colorImg(this);" onmouseout="normalImg(this);">click on picture after refresh. dblclick to stop.</div>
     <a id="refresh">Hover on image or Click button to start Again</a>
         <FORM >
-            <INPUT TYPE="button" onClick="history.go(0)" VALUE="replay" class="button">
+            <INPUT TYPE="button" onClick="history.go(0)" VALUE="↻" class="button">
         </FORM>
 </body>
 <script>
@@ -122,4 +122,12 @@
     })
     })
     </script>
+    <script>
+function colorImg(x) {
+x.style.color = "white";
+}
+function normalImg(x) {
+x.style.color = "transparent";
+}
+</script>
 </html>

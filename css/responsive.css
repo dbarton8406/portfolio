@@ -6,13 +6,12 @@
 display: none;
 }*/
 .card.center {
-    margin-right: 56%;
+margin-right: 56%;
 }
 .nav{
-    position: ;
-    background-color: transparent;
+position: ;
+background-color: transparent;
 }
-
 }
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
@@ -78,9 +77,8 @@ margin-bottom: 20px;
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 /* Styles */
-
 a{
-    font-size: 14px;
+font-size: 14px;
 }
 .resume {
 width: 35%;
@@ -102,23 +100,23 @@ position: relative;
 left: -60px;
 }
 .images{
-    position: relative;
-    top:180;
-    left:65;
+position: relative;
+top:180;
+left:65;
 }
 .col-md-4 {
 margin-right: 140px;
 margin-left: 160px;
 }
 .col-md-5{
-    position: absolute;
-    top:750px;
-    left:650px;
+position: absolute;
+top:750px;
+left:650px;
 }
 .col-md-7{
-    position: relative;
-    left:150px;
-    bottom: -50px;
+position: relative;
+left:150px;
+bottom: -50px;
 }
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
@@ -131,12 +129,10 @@ overflow-x:none;
 }
 /* Small Devices Potrait */
 @media (max-width: 767px) {
-    video::-webkit-media-controls {
+video::-webkit-media-controls {
 display: none !important;
-
-
 a{
-    font-size: 14px;
+font-size: 14px;
 }
 .resume {
 width: 35%;
@@ -158,23 +154,23 @@ position: relative;
 left: -60px;
 }
 .images{
-    position: relative;
-    top:180;
-    left:65;
+position: relative;
+top:180;
+left:65;
 }
 .col-md-4 {
 margin-right: 50%;
 margin-left: 50%;
 }
 .col-md-5{
-    position: absolute;
-    top:750px;
-    left:650px;
+position: absolute;
+top:750px;
+left:650px;
 }
 .col-md-7{
-    position: relative;
-    left:150px;
-    bottom: -50px;
+position: relative;
+left:150px;
+bottom: -50px;
 }
 .navbar-custom .nav li a {
 -webkit-transition: background .3s ease-in-out;
@@ -193,15 +189,14 @@ overflow-x:none;
 height: 450px;
 }
 .intro-caption {
-    width: 100%;
-    top: 50%;
-    left: 0px;
-    text-align: center;
-    padding: 70px 15px 0px;
-    position: absolute;
-    color: #fff;
+width: 100%;
+top: 50%;
+left: 0px;
+text-align: center;
+padding: 70px 15px 0px;
+position: absolute;
+color: #fff;
 }
-
 }
 .intro-caption h1 {
 font-size: 25px;
@@ -297,25 +292,23 @@ margin-bottom: 30px;
 }
 }
 @media (width: 568px)  {
-
 .col-md-4{margin-left: 18%;}
-
 }
 /* Custom, iPhone Retina */
-@media (min-width: 320px) and (max-width: 567px) {
+@media (min-width: 320px) and (max-width: 568px)  {
 /* background=================================*/
 .intro-caption {
-        width: 100%;
-        top: 50%;
-        left: 0px;
-        text-align: center;
-        padding: 220px 15px 0px;
-        position: absolute;
-        color: #fff;
-    }
+width: 100%;
+top: 50%;
+left: 0px;
+text-align: center;
+padding: 220px 15px 0px;
+position: absolute;
+color: #fff;
+}
 .intro-caption h1 {
-    position: relative;
-    top:00px;
+position: relative;
+top:00px;
 font-size: 25px;
 line-height: 35px;
 }
@@ -423,3 +416,193 @@ width: 30%;
 }
 video::-webkit-media-controls {
 display: none !important;
+}
+.button {
+font-family: 'pictos';
+font-size: 25px;
+line-height: 15px;
+text-align: center;
+color: rgba(0, 0, 0, 0.5);
+text-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px, black 0px 1px 2px;
+width: 30px;
+height:30px;
+padding: 5px;
+}
+#refresh{
+font-size: 12px;
+position: relative;
+bottom: -170px;
+}
+.ttt {
+font-weight: 100;
+font-size: 13px;
+position: relative;
+right: 430px;
+top: 100px;
+width: 80%;
+}
+.mask{
+width: 160px;
+height: 100px;
+position: absolute;
+top: 50px;
+right: 475px;
+opacity: 0;
+overflow: visible;
+border: 5px solid rgba(0, 0, 0, 0.9);
+color: FFFFFF;
+box-sizing: border-box;
+transition: all 0.4s ease-in-out;
+}
+@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+/* background=================================*/
+.intro-caption {
+width: 100%;
+top: 50%;
+left: 0px;
+text-align: center;
+padding: 220px 15px 0px;
+position: absolute;
+color: #fff;
+}
+.intro-caption h1 {
+position: relative;
+top:00px;
+font-size: 25px;
+line-height: 35px;
+}
+.mid-title {
+font-size: 30px;
+}
+.navbar-custom {
+margin-top: 0px;
+background: #333;
+border-right: 0px;
+}
+/*about =============================*/
+.skills-wrap {
+margin-top: 40px;
+}
+.profile {
+margin-left: 10%;
+margin-right: 10%;
+}
+.resume {
+width: 60%;
+margin-right: 10%;
+margin-left: 10%;
+}
+/* education  ===================================*/
+.about-info .icon {
+height: 32px;
+width: 32px;
+}
+.about-info-inner {
+margin-left: 0px;
+}
+.about-info {
+margin-right: 5%;
+margin-left: 5%;
+height: 80%;
+}
+/*process ================================*/
+.process-wrap {
+margin-bottom: 30px;
+}
+.process-heading {
+margin-top: 40px;
+}
+/*testimonial =================================*/
+#testimonial {
+padding-bottom: 100px;
+}
+#testimonial-carousel .item p {
+width: 100%;
+}
+#testimonial-carousel .item h5 {
+margin-top: 20px;
+}
+#testimonial-carousel .carousel-indicators {
+margin-top: 30px;
+}
+#testimonial-carousel .carousel-indicators li {
+width: 45px;
+height: 40px;
+float: left;
+}
+#testimonial-carousel .carousel-indicators li img {
+width: 45px;
+height: 40px;
+border-radius: 0px;
+border: 0px;
+}
+#testimonial-carousel .carousel-indicators {
+top: 90%;
+}
+/* contact ==========================================*/
+.contact-info-wrap {
+margin-bottom: 60px;
+}
+.contact-box {
+margin-bottom: 30px;
+}
+.contact-info {
+padding-top: 45px;
+padding-bottom: 40px;
+}
+/*footer=============================================*/
+.footer-desc {
+margin-bottom: 30px;
+}
+#section-footer {
+height: 100%;
+}
+.section-social {
+width: 100%;
+}
+/*section-portfolio==================================*/
+.video {
+padding-right: 50px;
+}
+.object {
+padding-right: 50px;
+}
+.embed {
+padding-right: 50px;
+}
+input.etsybutton {
+width: 30%;
+}
+video::-webkit-media-controls {
+display: none !important;
+}
+.button {
+font-family: 'pictos';
+font-size: 25px;
+line-height: 15px;
+text-align: center;
+color: rgba(0, 0, 0, 0.5);
+text-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px, black 0px 1px 2px;
+width: 30px;
+height:30px;
+padding: 5px;
+.ttt {
+font-weight: 100;
+font-size: 13px;
+position: relative;
+right: 365px;
+top: 60px;
+}
+.mask{
+width: 160px;
+height: 100px;
+position: absolute;
+top: 10px;
+right: 475px;
+opacity: 0;
+overflow: visible;
+border: 5px solid rgba(0, 0, 0, 0.9);
+color: FFFFFF;
+box-sizing: border-box;
+transition: all 0.4s ease-in-out;
+}
