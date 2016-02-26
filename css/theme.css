@@ -561,7 +561,7 @@ transition: opacity 0.1s 0s ease-in-out;
 }
 .mask {
 width: 640px;
-height: 140px;
+height: 440px;
 position: absolute;
 top: 10px;
 opacity: 0;
@@ -1178,7 +1178,7 @@ font-size: 13px;
 .etsy {
 box-shadow: none;
 position: relative;
-top: 196px;
+top: 90px;
 right: -470px
 }
 #war_box {
@@ -1339,6 +1339,7 @@ margin: auto
 position: absolute;
 left: 200;
 }
+
 /*=========================================================*/
 background: #1D2329;
 background-image: -webkit-linear-gradient(left,
@@ -1459,7 +1460,7 @@ border-radius: 35px;
 }
 .button {
 font-family: 'pictos';
-font-size: 15px;
+font-size: 45px;
 line-height: 40px;
 text-align: center;
 color: rgba(0, 0, 0, 0.5);
