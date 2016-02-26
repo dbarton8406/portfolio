@@ -1182,7 +1182,8 @@ top: 50px;
 right: -470px;
 }
 .blob{
-	float:center ;
+	position: relative;
+	top: 10px;
 }
 #war_box {
 float: left;
