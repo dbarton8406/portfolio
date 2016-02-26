@@ -5,6 +5,11 @@
 /*.dropdown i {
 display: none;
 }*/
+#refresh{
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
 .card.center {
 margin-right: 56%;
 }
@@ -429,23 +434,24 @@ height:30px;
 padding: 5px;
 }
 #refresh{
-font-size: 12px;
+font-size: 10px;
 position: relative;
-bottom: -170px;
+bottom: -75px;
+left: 50px;
 }
 .ttt {
 font-weight: 100;
 font-size: 13px;
 position: relative;
-right: 430px;
-top: 100px;
-width: 80%;
+right: 465px;
+top: 10px;
+width: 97%;
 }
 .mask{
 width: 160px;
 height: 100px;
 position: absolute;
-top: 50px;
+top: 10px;
 right: 475px;
 opacity: 0;
 overflow: visible;

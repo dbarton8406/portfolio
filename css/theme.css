@@ -66,7 +66,7 @@ color: #ddd!important;
 }
 body {
 width: 100%;
-height: 100%;
+height: auto%;
 overflow-x: hidden;
 line-height: 24px;
 color: rgba(0, 0, 0, .0001);
@@ -1178,8 +1178,11 @@ font-size: 13px;
 .etsy {
 box-shadow: none;
 position: relative;
-top: 90px;
-right: -470px
+top: 50px;
+right: -470px;
+}
+.blob{
+	float:center ;
 }
 #war_box {
 float: left;
@@ -1339,7 +1342,6 @@ margin: auto
 position: absolute;
 left: 200;
 }
-
 /*=========================================================*/
 background: #1D2329;
 background-image: -webkit-linear-gradient(left,
@@ -1627,7 +1629,7 @@ html {
 background-color: #000;
 }
 body{
-height: 100%;
+height: auto%;
 top: 0px;
 bottom: 0px;
 }
