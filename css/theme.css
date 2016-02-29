@@ -1185,6 +1185,10 @@ right: -470px;
 	position: relative;
 	top: 10px;
 }
+.blib{
+	position: relative;
+	top: 60px;
+}
 #war_box {
 float: left;
 width: 20em;
