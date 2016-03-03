@@ -5,156 +5,6 @@ background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:3em}
-/*.wrap-cube {
-margin-top: 275px;
-perspective: 1000px;
-perspective-origin: 150% 150%;
-height: 300px;
-width: 300px;
-}
-.cube {
-margin: auto;
-position: relative;
-top; 50px;
-width: inherit;
-height: inherit;
-transform-style: preserve-3d;
--webkit-transform-style: preserve-3d;
-transition: transform .6s;
--webkit-transition: transform .6s;
-}
-.cube div {
-position: absolute;
-padding: 10px;
-height: 100%;
-width: 100%;
-border: solid 1px #eee;
-color: #fff;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-/*}
-.depan {
-transform: translateZ(100px);
--webkit-transform: translateZ(200px);
-background: background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-size: 110%;
-}
-/*.belakang {
-transform: translateZ(-100px) rotateY(180deg);
--webkit-transform: translateZ(-100px) rotateY(180deg);
-background: background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-size: 100%;
-}
-/*.kanan {*/
-transform: rotateY(-270deg) translateX(100px);
--webkit-transform: rotateY(-270deg) translateX(100px);
-transform-origin: right top;
--webkit-transform-origin: right top;
-background: background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-siz*/e: 100%;
-}
-/*.kiri {*/
-transform: rotateY(270deg) translateX(-100px);
--webkit-transform: rotateY(270deg) translateX(-100px);
-transform-origin: center left;
--webkit-transform-origin: center left;
-background: background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-size: 115%;
-}
-/*.atas {*/
-transform: rotateX(-270deg) translateY(-100px);
--webkit-transform: rotateX(-270deg) translateY(-100px);
--ms-transform: rotateX(-270deg) translateY(-100px);
-transform-origin: top center;
--ms-transform-origin: top center;
--webkit-transform-origin: top center;
-background: background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-size: 175%;
-}
-/*.bawah {*/
-transform: rotateX(270deg) translateY(100px);
--webkit-transform: rotateX(270deg) translateY(100px);
--ms-transform: rotateX(270deg) translateY(100px);
-transform-origin: bottom center;
--ms-transform-origin: bottom center;
--webkit-transform-origin: bottom center;
-background: #16222A;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-background-size: 90%;
-}
-/*#rBelakang:checked ~ .wrap-cube .cube {
-transform: rotateY(180deg);
-}
-#rKiri:checked ~ .wrap-cube .cube {
-transform: rotateY(90deg);
-}
-#rKanan:checked ~ .wrap-cube .cube {
-transform: rotateY(-90deg);
-}
-#rAtas:checked ~ .wrap-cube .cube {
-transform: rotateX(-90deg);
-}
-#rBawah:checked ~ .wrap-cube .cube {
-transform: rotateX(90deg);
-}
-.demo-cube {
-width: 200px;
-margin: 0 auto;
-}
-.regular-radio {
-background: transparent;
-display: none;
-}
-.regular-radio + label {
--webkit-appearance: none;
-background: transparent;
-// border: 4px solid #e1e1e1;
-border-radius: 10px;
-width: 100%;
-display: inline-block;
-position: relative;
-top: 350px;
-left: -180%;
-width: 10px;
-height: 10px;
-cursor: pointer;
-letter-spacing: 10px;
-}
-.regular-radio:checked + label {
-background: transparent;
-// border: 4px solid #e1e1e1;*/
-/*}*/
-
 
 ==========================================================
 
@@ -203,6 +53,9 @@ background: linear-gradient(to left, #16222A, #3A6073, #16222A);
   color: #333;
   line-height: 250px;
   /*opacity: 0.8;*/
+  border: solid 2px #000000;
+  box-shadow: 1px 1px 5px #888888;
+
 }
 
 ._3dface--front {
@@ -269,6 +122,7 @@ background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 ._3dface--front {
   background: url("../images/streamhome.png")50% 50%;
   background-size: auto 100%;
+  border:;
 }
 
 ._3dface--left {
@@ -304,14 +158,6 @@ input[type=radio] {
     top: 65px;
 }
 
-/*.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  font-size: 16px;
-  transform: scale(0.8);
-  transition: 0.5s;
-  }*/
   input[type="radio"]:checked
  {
     opacity: 1;
@@ -325,3 +171,6 @@ img.zoom:hover {
   -webkit-transform: scale(1.9);
   transform: scale(1.9);
 }
+
+
+
