@@ -203,6 +203,9 @@ background: linear-gradient(to left, #16222A, #3A6073, #16222A);
   color: #333;
   line-height: 250px;
   /*opacity: 0.8;*/
+  border: solid 2px #000000;
+  box-shadow: 1px 1px 5px #888888;
+
 }
 
 ._3dface--front {
@@ -269,6 +272,7 @@ background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 ._3dface--front {
   background: url("../images/streamhome.png")50% 50%;
   background-size: auto 100%;
+  border:;
 }
 
 ._3dface--left {
@@ -304,14 +308,6 @@ input[type=radio] {
     top: 65px;
 }
 
-/*.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  font-size: 16px;
-  transform: scale(0.8);
-  transition: 0.5s;
-  }*/
   input[type="radio"]:checked
  {
     opacity: 1;
@@ -325,3 +321,6 @@ img.zoom:hover {
   -webkit-transform: scale(1.9);
   transform: scale(1.9);
 }
+
+
+
