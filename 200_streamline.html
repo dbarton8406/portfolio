@@ -27,6 +27,8 @@
         <!-- Elegant icon font -->
         <link rel="stylesheet" href="css/simple-line-icons.css">
         <link rel="stylesheet" href="css/streamline.css">
+        <link href="ninja-slider.css" rel="stylesheet" />
+        <script src="ninja-slider.js" type="text/javascript"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -71,107 +73,244 @@
         <!-- /.container -->
     </nav>
     <!-- navbar end -->
- <!--    <h1 class="blib">Streamline</h1>
-    <div class="demo-cube">
-        <input type="radio" checked id="rDepan" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rDepan"><img src="images/ruby.png"></label>
-        <TEXTAREA id="depan" style="display: none;" NAME="data" ROWS=10 COLS=50>one</TEXTAREA>
-        <input type="radio" id="rKiri" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rKiri"><img src="images/ruby.png"></label>
-        <TEXTAREA id="area2" style="display: none;" NAME="data" ROWS=10 COLS=50>two</TEXTAREA>
-        <input type="radio" id="rKanan" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rKanan"><img src="images/ruby.png"></label>
-        <TEXTAREA id="area3" style="display: none;" NAME="data" ROWS=10 COLS=50>3</TEXTAREA>
-        <input type="radio" id="rAtas" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rAtas"><img src="images/ruby.png"></label>
-        <TEXTAREA id="area4" style="display: none;" NAME="data" ROWS=10 COLS=50>4</TEXTAREA>
-        <input type="radio" id="rBawah" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rBawah"><img src="images/ruby.png"></label>
-        <TEXTAREA id="area5" style="display: none;" NAME="data" ROWS=10 COLS=50>5</TEXTAREA>
-        <input type="radio" id="rBelakang" name="select-face" class="regular-radio" onclick="show();"/>
-        <label for="rBelakang"><img src="images/ruby.png"></label>
-        <TEXTAREA id="area6" style="display: none;" NAME="data" ROWS=10 COLS=50>six</TEXTAREA>
-
-
-        <div class="wrap-cube">
-            <div class="cube">
-                <div class="depan">
-                    <img src="images/streamhome.png" height="100%" width="100%">
-                </div>
-                <div class="belakang">
-                    <img src="images/email.png" height="100%" width="100%">
-                </div>
-                <div class="atas">
-                    <img src="images/stream3.png" height="100%" width="100%">
-                </div>
-                <div class="bawah">
-                    <img src="images/stream4.png" height="100%" width="100%">
-                </div>
-                <div class="kiri">
-                    <img src="images/stream5.png" height="100%" width="100%">
-                </div>
-                <div class="kanan">
-                    <img src="images/stream6.png" height="100%" width="100%">
-                </div>
-            </div>
-        </div>
-      -</div> -->
+    
     <!-- CONTROLS -->
-<h1 class="blib">Streamline</h1><br><br><br><br><br>
-<input type="radio" checked id="radio-front" name="select-face"/>
-<input type="radio" id="radio-left" name="select-face" />
-<input type="radio" id="radio-right" name="select-face" />
-<input type="radio" id="radio-top" name="select-face" />
-<input type="radio" id="radio-bottom" name="select-face" />
-<input type="radio" id="radio-back" name="select-face" />
-
-<div class="separator"></div>
-
-
-<div class="space3d">
-
-
-  <div class="_3dbox">
-    <div class="_3dface _3dface--front"></div>
-    <div class="_3dface _3dface--top"></div>
-    <div class="_3dface _3dface--bottom"></div>
-    <div class="_3dface _3dface--left"></div>
-    <div class="_3dface _3dface--right"></div>
-    <div class="_3dface _3dface--back"></div>
-  </div>
-
-</div>
-
+    <h1 class="blib">Streamline</h1><br><br><br><br><br>
+    <input type="radio" checked="checked" id="radio-front" name="select-face" value="red"/>
+    <input type="radio" id="radio-left" name="select-face" value="blue"/>
+    <input type="radio" id="radio-right" name="select-face" value="green"/>
+    <input type="radio" id="radio-top" name="select-face" value="yellow"/>
+    <input type="radio" id="radio-bottom" name="select-face" value="purple"/>
+    <input type="radio" id="radio-back" name="select-face" value="orange"/>
+    <div class="red box">Streamline and app that  <strong>curates content</strong> for example a company news letter
+        <img src="images/screenhome2.png" height="70%" width="90%" class="zoom">
+    </div>
+    <div class="green box">The company can then build a newsletter based off the subjects that they provide for the customers to select.  <strong>Articles and photos are stored in the apps data base and are sent to the blast page which uses the backend logic to curate.</strong></div>
+    <div class="blue box">Using a mailing service<strong>for example Mandrill</strong> and a API key a comapany can email their subscribers content that only that user wants based off of selection the user makes that get stored into the database.</div>
+    <div class="yellow box">This is where the magic happens and the content is deployed to the masses<strong>Just push the Streamline Logo </strong>You can even check what is being deployed from this page before content is sent, how many articles being sent, and how many subscribers receiving content.</div>
+    <div class="orange box"> VOILA!! This is and real live email sent to a demo email address with only the content requested.  </div>
+    <div class="purple box">You can keep track of subscribers and e-mail adresses here as they are stored in the data base.  <strong>There is even and option to CSV subscribers the company already has in a CSV file. </strong> clients can also be removed from this page.</div>
+    <div class="separator"></div>
+    <div class="space3d">
+        <div class="_3dbox ">
+            <div class="_3dface _3dface--front"></div>
+            <div class="_3dface _3dface--top"></div>
+            <div class="_3dface _3dface--bottom"></div>
+            <div class="_3dface _3dface--left"></div>
+            <div class="_3dface _3dface--right"></div>
+            <div class="_3dface _3dface--back"></div>
+        </div>
+    </div>
+</body>
 <div class="separator"></div>
 <br><br>
-
 <div></div>
-    <section>
-        <!-- section footer start -->
-        <footer id="section-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center wow pulse">
-                        <div class="footer-link ">
-                            <ul class="list-inline footer-socail ">
-                                <li><a href="https://github.com/dbarton8406"><i class="metal fa fa-github fa-2x"></i></a></li>
-                                <li><a href="https://twitter.com/marbleminded78"><img src="images/Twitter-04.png"  class="img-responsive"></a></li>
-                                <li><a href="skype:dbarton8406?userinfo"><img src="images/Skype-02.png" class="img-responsive"></a></li>
-                                <li><a href="https://www.linkedin.com/in/DanielBarton8406"><img src="images/LinkedIn-02.png" height= "32px"></a></li>
-                                <li><a href="https://www.facebook.com/daniel.barton.5283"><img src="images/Facebook-02.png" class="img-responsive"></a></li>
-                            </ul>
-                        </div>
+<section>
+    <!-- section footer start -->
+    <footer id="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow pulse">
+                    <div class="footer-link ">
+                        <ul class="list-inline footer-socail ">
+                            <li><a href="https://github.com/dbarton8406"><i class="metal fa fa-github fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/marbleminded78"><img src="images/Twitter-04.png"  class="img-responsive"></a></li>
+                            <li><a href="skype:dbarton8406?userinfo"><img src="images/Skype-02.png" class="img-responsive"></a></li>
+                            <li><a href="https://www.linkedin.com/in/DanielBarton8406"><img src="images/LinkedIn-02.png" height= "32px"></a></li>
+                            <li><a href="https://www.facebook.com/daniel.barton.5283"><img src="images/Facebook-02.png" class="img-responsive"></a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- row end -->
             </div>
+            <!-- row end -->
+        </div>
+        <style type="text/css">
+        .box{
+        display: none;
+        margin-top: 100px;
+        margin-left: -235px;
+        border: 1px solid #000;
+        width:230px;
+        height:250px;
+        }
+        .red{
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        right: -1120px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        .green{
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        right: -1120px;
+        top: -85px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        .blue{
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        left: 340px;
+        top: 20px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        .orange{background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        right: -750px;
+        bottom: 215px;
+        height: 175px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        .purple{background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        right: -1120px;
+        top: 160px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        .yellow{background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000000, #A6362B, #000000);
+        color: #D5AD6D;
+        /*if no support for background-clip*/
+        background: -webkit-linear-gradient(transparent, transparent),
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+        rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        right: -350px;
+        top: 160px;
+        animation: pulse 3s;
+        border-radius: 25px;
+        }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+        if($(this).attr("value")=="red"){
+        $(".box").not(".red").hide();
+        $(".red").show();
+        }
+        if($(this).attr("value")=="green"){
+        $(".box").not(".green").hide();
+        $(".green").show();
+        }
+        if($(this).attr("value")=="blue"){
+        $(".box").not(".blue").hide();
+        $(".blue").show();
+        }
+        if($(this).attr("value")=="yellow"){
+        $(".box").not(".yellow").hide();
+        $(".yellow").show();
+        }
+        if($(this).attr("value")=="purple"){
+        $(".box").not(".purple").hide();
+        $(".purple").show();
+        }
+        if($(this).attr("value")=="orange"){
+        $(".box").not(".orange").hide();
+        $(".orange").show();
+        }
+        });
+        });
+        </script>
+        <script>
+        $('.button next').click(function() {
+        var $all     = $('.getradiotomove');
+        var $current = $('.getradiotomove:checked');
+        
+        var index = $all.index($current) + 1;
+        if(index >= $all.length)
+        index = 0;
+        $($all[index]).attr('checked', 'checked');
+        return false;
+        });
+        });</script>
+    </head>
+    <body>
+        <div>
             <!-- container end -->
         </footer>
     </section>
-    <script>
-    function goBack() {
-    window.history.back();
-    }
-    </script>
 </body>
 </html>

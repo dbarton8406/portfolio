@@ -247,6 +247,7 @@ background: linear-gradient(to left, #16222A, #3A6073, #16222A);
 
 #radio-left:checked ~ .space3d ._3dbox {
   transform: rotateY(90deg);
+
 }
 
 #radio-right:checked ~ .space3d ._3dbox {
@@ -303,12 +304,24 @@ input[type=radio] {
     top: 65px;
 }
 
-.reveal-if-active {
+/*.reveal-if-active {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
   font-size: 16px;
   transform: scale(0.8);
   transition: 0.5s;
-  
-
+  }*/
+  input[type="radio"]:checked
+ {
+    opacity: 1;
+    max-height: 100px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+  }
+img.zoom:hover {
+  -moz-transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+  transform: scale(1.9);
+}
