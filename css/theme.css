@@ -152,7 +152,7 @@ li {
 list-style-type: none;
 margin: 0px;
 padding: 0px;
-font-family: 'Playfair Display', serif;
+font-family: 'Sans-Serif';
 font-size: 14px;
 letter-spacing: 1px;
 }
@@ -184,7 +184,7 @@ h5,
 h6 {
 color: black;
 text-transform: uppercase;
-font-family: Serif;
+font-family:'Sans-Serif';
 font-weight: 700;
 margin-top: 0px;
 margin-bottom: 10px;
@@ -310,7 +310,7 @@ border-color: black;
 .mid-title {
 font-size: 30px;
 font-weight: 500;
-font-family: 'Volkhov', serif;
+font-family: 'Sans-Serif';
 font-style: italic;
 text-transform: capitalize;
 }
@@ -320,7 +320,7 @@ text-transform: capitalize;
 letter-spacing: 4px;
 }
 .subtitle {
-font-family: 'Playfair Display', serif;
+font-family: 'Sans-Serif';
 font-style: italic;
 font-size: 14px;
 letter-spacing: 1px;
@@ -622,7 +622,7 @@ color: white;
 font-size: 16px;
 font-style: italic;
 text-transform: uppercase;
-font-family: 'Playfair Display', serif;
+font-family: 'Sans-Serif';
 letter-spacing: 1px;
 }
 .skill-bar-percent {
@@ -902,7 +902,7 @@ rolling
 * {
 padding: 0;
 margin: 0;
-font-family: 'Playfair Display', serif;
+font-family: 'Sans-Serif';
 font-size: 14px;
 letter-spacing: 1px;
 }
