@@ -27,16 +27,29 @@
         <!-- Elegant icon font -->
         <link rel="stylesheet" href="css/simple-line-icons.css">
         <link rel="stylesheet" href="css/streamline.css">
-        <link href="ninja-slider.css" rel="stylesheet" />
-        <script src="ninja-slider.js" type="text/javascript"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        JavaScript
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+//paste this code under the head tag or in a separate js file.
+    // Wait for window load
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+
+</script>
     </head>
     <body>
+
+<div class="se-pre-con"></div>
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top">
             <div class="container">
@@ -72,7 +85,6 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- navbar end -->
     
     <!-- CONTROLS -->
     <h1 class="blib">Streamline</h1><br><br><br><br><br>
