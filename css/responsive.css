@@ -6,9 +6,9 @@
 display: none;
 }*/
 #refresh{
-    position: relative;
-    top: 100px;
-    left: 80px;
+position: relative;
+top: -5px;
+left: 80px;
 }
 .card.center {
 margin-right: 56%;
@@ -436,23 +436,23 @@ padding: 5px;
 #refresh{
 font-size: 10px;
 position: relative;
-bottom: -75px;
+top: -20px;
 left: 50px;
 }
 .ttt {
 font-weight: 100;
 font-size: 13px;
 position: relative;
-right: 465px;
-top: 10px;
-width: 97%;
+right: 440px;
+top: -30px;
+width: 85%;
 }
 .mask{
-width: 160px;
-height: 100px;
+width: 60%;
+height: 0px;
 position: absolute;
-top: 10px;
-right: 475px;
+top: -30px;
+right: 455px;
 opacity: 0;
 overflow: visible;
 border: 5px solid rgba(0, 0, 0, 0.9);
