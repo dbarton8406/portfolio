@@ -1182,12 +1182,12 @@ top: 50px;
 right: -470px;
 }
 .blob{
-	position: relative;
-	top: 10px;
+position: relative;
+top: 10px;
 }
 .blib{
-	position: relative;
-	top: 60px;
+position: relative;
+top: 60px;
 }
 #war_box {
 float: left;
@@ -1543,14 +1543,23 @@ margin-top: -11px;
 margin-top: -56px;
 }
 strong{
-font-family: 'Playfair Display', serif;
+font-family: 'Sans-Serif';
 font-size: 14px;
 }
 form{
 color: black;
-font-family: serif;
+font-family: 'Sans-Serif';
 font-size: 14px;
 }
+#refresh{
+font-size: 14px;
+position: relative;
+top: 5px;
+left: 80px;
+}
+#reboot{
+position: relative;
+top: -100px;
 }
 /*==============================*/
 @import url('http://fonts.googleapis.com/css?family=Alegreya+Sans:300');
@@ -1830,19 +1839,17 @@ animation: anti-spin 50s infinite linear;
 animation: shadow 50s infinite linear;
 }
 /*=======================================*/
-
-
 /* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
+/* This only works with JavaScript,
 if it's not present, don't show loader */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
