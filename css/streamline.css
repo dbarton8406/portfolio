@@ -10,7 +10,7 @@ body {
 color: #333;
 padding: 20px;
 text-align: center;
-font-family: 'Sans-Serif';
+font-family: Arial;
 }
 .separator {
 margin-top: 40px;
@@ -27,9 +27,8 @@ display: inline-block;
 display: inline-block;
 transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 text-align: center;
-position: relative;
-top:50px;
-left:450px;
+margin-left: 180%;
+margin-top: 15%;
 width: 100%;
 height: 100%;
 transform-style: preserve-3d;
@@ -85,43 +84,43 @@ height: 250px;
 transform: rotateY(180deg) translate3d(0, 0, 125px);
 }
 #radio-left:checked ~ .space3d ._3dbox {
-transform: rotateY(90deg);
-}
-#radio-right:checked ~ .space3d ._3dbox {
 transform: rotateY(-90deg);
 }
-#radio-bottom:checked ~ .space3d ._3dbox {
-transform: rotateX(90deg);
+#radio-right:checked ~ .space3d ._3dbox {
+transform: rotateY(90deg);
 }
-#radio-top:checked ~ .space3d ._3dbox {
+#radio-bottom:checked ~ .space3d ._3dbox {
 transform: rotateX(-90deg);
 }
+#radio-top:checked ~ .space3d ._3dbox {
+transform: rotateX(90deg);
+}
 #radio-back:checked ~ .space3d ._3dbox {
-transform: rotateY(180deg);
+transform: rotateY(-180deg);
 }
 ._3dface--front {
-background: url("../images/streamhome.png")50% 50%;
+background: url("../images/db1.png" )50% 50%;
 background-size: auto 100%;
 border:;
 }
 ._3dface--left {
-background: url("../images/stream3.png")50% 50%;
+background: url("../images/db2.png")50% 50%;
 background-size: auto 100%;
 }
 ._3dface--right {
-background: url("../images/stream4.png");
+background: url("../images/db3.png");
 background-size: auto 100%;
 }
 ._3dface--top {
-background: url("../images/stream5.png");
+background: url("../images/db4.png");
 background-size: auto 100%;
 }
 ._3dface--bottom {
-background: url("../images/stream6.png");
+background: url("../images/db5.png");
 background-size: auto 100%;
 }
 ._3dface--back {
-background: url("../images/email.png");
+background: #BCBEBB;
 background-size: auto 100%;
 }
 input[type=radio] {
@@ -150,18 +149,85 @@ position: relative;
 left: 150px;
 top: 100px;
 }
-
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url("../images/Preloader_2.gif") center no-repeat #fff;
+@media (min-width: 320px) and (max-width: 567px)  {
+._3dbox {
+position: relative;
+top: -115px;
+right: 380px;
+width: 60%;
+height: 60%;
+}
+._3dface--front {
+width: 150px;
+height: 150px;
+transform: translate3d(0, 0, 75px);
+}
+._3dface--top {
+width: 150px;
+height: 150px;
+transform: rotateX(90deg) translate3d(0, 0, 75px);
+}
+._3dface--bottom {
+width: 150px;
+height: 150px;
+transform: rotateX(-90deg) translate3d(0, 0, 75px);
+}
+._3dface--left {
+width: 150px;
+height: 150px;
+left: 83%;
+margin-left: -125px;
+transform: rotateY(-90deg) translate3d(0, 0, 75px);
+}
+._3dface--right {
+width: 150px;
+height: 150px;
+left: 83%;
+margin-left: -125px;
+transform: rotateY(90deg) translate3d(0, 0, 75px);
+}
+._3dface--back {
+width: 150px;
+height: 150px;
+transform: rotateY(180deg) translate3d(0, 0, 75px);
+}
+input[type=radio] {
+margin: 4px 0 0;
+margin-top: 1px \9;
+line-height: normal;
+position: relative;
+left: 95px;
+top: -50px;
+}
+input[type="radio"]:checked
+{
+opacity: 1;
+max-height: 100px;
+padding: 10px 20px;
+transform: scale(1);
+overflow: visible;
+}
+.goback{
+position: relative;
+top: -90px;
+left: -95px;
+}
+.blib{
+position: relative;
+left: 50px;
+top: 30px;
+}
+.red
+{
+position: relative;
+left: 310px;
+top: 35px;
+font-size: 10px;
+}
+}
+.navbar-toggle {
+float: none;
+position: relative;
+left: 85px;
+}
 }

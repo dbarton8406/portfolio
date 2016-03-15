@@ -1188,6 +1188,7 @@ top: 10px;
 .blib{
 position: relative;
 top: 60px;
+left: 10px
 }
 #war_box {
 float: left;
@@ -1643,7 +1644,7 @@ html {
 background-color: #000;
 }
 body{
-height: auto%;
+height: 100%;
 top: 0px;
 bottom: 0px;
 }
