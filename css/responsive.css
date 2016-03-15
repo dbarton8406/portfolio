@@ -300,7 +300,7 @@ margin-bottom: 30px;
 .col-md-4{margin-left: 18%;}
 }
 /* Custom, iPhone Retina */
-@media (min-width: 320px) and (max-width: 568px)  {
+@media (min-width: 320px) and (max-width: 567px)  {
 /* background=================================*/
 .intro-caption {
 width: 100%;
@@ -612,3 +612,5 @@ color: FFFFFF;
 box-sizing: border-box;
 transition: all 0.4s ease-in-out;
 }
+.space3d {
+	

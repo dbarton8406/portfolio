@@ -34,127 +34,126 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-//paste this code under the head tag or in a separate js file.
-    // Wait for window load
-    $(window).load(function() {
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+        <script>
+        //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;
-    });
-
-</script>
+        });
+        </script>
     </head>
- 
+    
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-<script type='text/javascript' src='loadImg.js'></script>
-<script type='text/javascript'>
+    <script type='text/javascript' src='loadImg.js'></script>
+    <script type='text/javascript'>
     $(function(){
-        $('img').imgPreload()
+    $('img').imgPreload()
     })
-</script>
-<script>
-(function() {
-  (function($) {
+    </script>
+    <script>
+    (function() {
+    (function($) {
     return $.fn.imgPreload = function(options) {
-      var delay_completion, i, image_stack, placeholder_stack, replace, settings, spinner_stack, src, x, _i, _len;
-      settings = {
-        fake_delay: 10,
-        animation_duration: 1000,
-        spinner_src: 'spinner.gif'
-      };
-      if (options) {
-        $.extend(settings, options);
-      }
-      image_stack = [];
-      placeholder_stack = [];
-      spinner_stack = [];
-      window.delay_completed = false;
-      delay_completion = function() {
-        var x, _i, _len, _results;
-        window.delay_completed = true;
-        _results = [];
-        for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
-          x = image_stack[_i];
-          _results.push($(x).attr('data-load-after-delay') === 'true' ? (replace(x), $(x).removeAttr('data-load-after-delay')) : void 0);
-        }
-        return _results;
-      };
-      setTimeout(delay_completion, settings.fake_delay);
-      this.each(function() {
-        var $image, $placeholder, $spinner_img, offset_left, offset_top;
-        $image = $(this);
-        offset_top = $image.offset().top;
-        offset_left = $image.offset().left;
-        $spinner_img = $('<img>');
-        $placeholder = $('<img>').attr({
-          src: 'data:image/gif;base64,R0lGODlhAQABA\
-                IABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
-        });
-        $placeholder.attr({
-          width: $image.attr('width')
-        });
-        $placeholder.attr({
-          height: $image.attr('height')
-        });
-        spinner_stack.push($spinner_img);
-        placeholder_stack.push($placeholder);
-        image_stack.push($image.replaceWith($placeholder));
-        $('body').append($spinner_img);
-        $spinner_img.css({
-          position: 'absolute'
-        });
-        $spinner_img.css('z-index', 9999);
-        $spinner_img.load(function() {
-          $(this).css({
-            left: (offset_left + $placeholder.width() / 2) - $(this).width() / 2
-          });
-          return $(this).css({
-            top: (offset_top + $placeholder.height() / 2) - $(this).height() / 2
-          });
-        });
-        return $spinner_img.attr({
-          src: settings.spinner_src
-        });
-      });
-      i = 0;
-      for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
-        x = image_stack[_i];
-        x.attr({
-          no: i++
-        });
-        src = x.attr('src');
-        x.attr({
-          src: ''
-        });
-        x.load(function() {
-          if (window.delay_completed) {
-            return replace(this);
-          } else {
-            return $(this).attr('data-load-after-delay', true);
-          }
-        });
-        x.attr({
-          src: src
-        });
-      }
-      replace = function(image) {
-        var $image, no_;
-        $image = $(image);
-        no_ = $image.attr('no');
-        placeholder_stack[no_].replaceWith($image);
-        spinner_stack[no_].fadeOut(settings.animation_duration / 2, function() {
-          return $(this).remove();
-        });
-        return $image.fadeOut(0).fadeIn(settings.animation_duration);
-      };
-      return this;
+    var delay_completion, i, image_stack, placeholder_stack, replace, settings, spinner_stack, src, x, _i, _len;
+    settings = {
+    fake_delay: 10,
+    animation_duration: 1000,
+    spinner_src: 'spinner.gif'
     };
-  })(jQuery);
-}).call(this);
-</script>
+    if (options) {
+    $.extend(settings, options);
+    }
+    image_stack = [];
+    placeholder_stack = [];
+    spinner_stack = [];
+    window.delay_completed = false;
+    delay_completion = function() {
+    var x, _i, _len, _results;
+    window.delay_completed = true;
+    _results = [];
+    for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
+    x = image_stack[_i];
+    _results.push($(x).attr('data-load-after-delay') === 'true' ? (replace(x), $(x).removeAttr('data-load-after-delay')) : void 0);
+    }
+    return _results;
+    };
+    setTimeout(delay_completion, settings.fake_delay);
+    this.each(function() {
+    var $image, $placeholder, $spinner_img, offset_left, offset_top;
+    $image = $(this);
+    offset_top = $image.offset().top;
+    offset_left = $image.offset().left;
+    $spinner_img = $('<img>');
+    $placeholder = $('<img>').attr({
+    src: 'data:image/gif;base64,R0lGODlhAQABA\
+    IABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+    });
+    $placeholder.attr({
+    width: $image.attr('width')
+    });
+    $placeholder.attr({
+    height: $image.attr('height')
+    });
+    spinner_stack.push($spinner_img);
+    placeholder_stack.push($placeholder);
+    image_stack.push($image.replaceWith($placeholder));
+    $('body').append($spinner_img);
+    $spinner_img.css({
+    position: 'absolute'
+    });
+    $spinner_img.css('z-index', 9999);
+    $spinner_img.load(function() {
+    $(this).css({
+    left: (offset_left + $placeholder.width() / 2) - $(this).width() / 2
+    });
+    return $(this).css({
+    top: (offset_top + $placeholder.height() / 2) - $(this).height() / 2
+    });
+    });
+    return $spinner_img.attr({
+    src: settings.spinner_src
+    });
+    });
+    i = 0;
+    for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
+    x = image_stack[_i];
+    x.attr({
+    no: i++
+    });
+    src = x.attr('src');
+    x.attr({
+    src: ''
+    });
+    x.load(function() {
+    if (window.delay_completed) {
+    return replace(this);
+    } else {
+    return $(this).attr('data-load-after-delay', true);
+    }
+    });
+    x.attr({
+    src: src
+    });
+    }
+    replace = function(image) {
+    var $image, no_;
+    $image = $(image);
+    no_ = $image.attr('no');
+    placeholder_stack[no_].replaceWith($image);
+    spinner_stack[no_].fadeOut(settings.animation_duration / 2, function() {
+    return $(this).remove();
+    });
+    return $image.fadeOut(0).fadeIn(settings.animation_duration);
+    };
+    return this;
+    };
+    })(jQuery);
+    }).call(this);
+    </script>
     <body>
-    <div class="se-pre-con"></div>
+        <div class="se-pre-con"></div>
         <!-- Navigation -->
         <nav class="navbar navbar-custom navbar-fixed-top">
             <div class="container">
@@ -191,29 +190,30 @@
         <!-- /.container -->
     </nav>
     <!-- navbar end -->
-    
     <!-- CONTROLS -->
     <h1 class="blib">Duckbills</h1><br><br><br><br><br>
-    <button onclick="goBack()" class="goback">Go Back</button></div>
-         <script> 
-        function goBack() { 
-         window.history.back(); 
-         } 
-         </script> 
+    <button onclick="goBack()" class="goback">Go Back</button></h1>
+    <script>
+    function goBack() {
+    window.history.back();
+    }
+    </script>
+    
     <input type="radio" checked="checked" id="radio-front" name="select-face" value="red"/>
     <input type="radio" id="radio-left" name="select-face" value="blue"/>
     <input type="radio" id="radio-right" name="select-face" value="green"/>
     <input type="radio" id="radio-top" name="select-face" value="yellow"/>
     <input type="radio" id="radio-bottom" name="select-face" value="purple"/>
     <input type="radio" id="radio-back" name="select-face" value="orange"/>
-    <div class="red box">Duckbills the app that  <strong>helps room mates know their responsibilities</strong> so they cant duck on the bills.
-        <img src="images/bill.png" height="70%" width="90%" class="zoom">
+    
+    <div class="red box"><br/>Duckbills the app that helps room mates know their bill responsibilities.
+        <img src="images/bill.png" height="50%" width="75%" class="zoom">
     </div>
-    <div class="blue box">Using the Database the room mate that is the Admin creates and account for the house. </div>
-    <div class="green box"> The Admin creates and account where they can add or delete room mates. The Admin is the only person that can add or remove room mates. This also collects email addresses so that reminders can be sent when a bill is due. </div>
-    <div class="yellow box">Any room mate can add a house bill and who is responsible for it. They can also put how much of that bill they are responsible for and when it is due. Future expansion would allow bill photo to be added as well as auto email when bill is close.</div>
-    <div class="purple box"> Roomates can see all the current bills and the one close to due date here. this application could be used for landlord applications as well.   </div>
-    <div class="orange box">Hackathon Weekend Nov 2015</div>
+    <div class="blue box"><br/>Using the Database the room mate that is the Admin creates and account for the house. </div>
+    <div class="green box"><br/> The Admin creates and account where they can add or delete room mates. The Admin is the only person that can add or remove room mates. This also collects email addresses so that reminders can be sent when a bill is due. </div>
+    <div class="yellow box"><br/>Any room mate can add a house bill and who is responsible for it. They can also put how much of that bill they are responsible for and when it is due. Future expansion would allow bill photo to be added as well as auto email when bill is close.</div>
+    <div class="purple box"><br/> Roomates can see all the current bills and the one close to due date here. this application could be used for landlord applications as well.   </div>
+    <div class="orange box"><br/><br/><br/>Hackathon Weekend Nov 2015</div>
     <div class="separator"></div>
     <div class="space3d">
         <div class="_3dbox ">
@@ -225,262 +225,269 @@
             <div class="_3dface _3dface--back">Dont Duck You Bills</div>
         </div>
     </div>
+</div>
 </body>
 <div class="separator"></div>
 <br><br>
 <div></div>
-
-        <style type="text/css">
-        .box{
-        display: none;
-        margin-top: 100px;
-        margin-left: -235px;
-        border: 1px solid #000;
-        width:230px;
-        height:250px;
-        }
-        .red{
-        background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        right: -1120px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        display: block
-        }
-        .green{
-        background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        right: -1120px;
-        top: -85px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        }
-        .blue{
-        background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        left: 340px;
-        top: 20px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        }
-        .orange{background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        right: -750px;
-        bottom: 215px;
-        height: 175px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        }
-        .purple{background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        right: -1120px;
-        top: 160px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        }
-        .yellow{background: #000000;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000000, #A6362B, #000000);
-        color: #D5AD6D;
-        /*if no support for background-clip*/
-        background: -webkit-linear-gradient(transparent, transparent),
-        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
-        rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
-        rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
-        rgba(213, 173, 109, 1) 100%);
-        background: -o-linear-gradient(transparent, transparent);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        right: -350px;
-        top: 160px;
-        animation: pulse 3s;
-        border-radius: 25px;
-        }
-        </style>
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-        $('input[type="radio"]').click(function(){
-        if($(this).attr("value")=="red"){
-        $(".box").not(".red").hide();
-        $(".red").show();
-        }
-        if($(this).attr("value")=="green"){
-        $(".box").not(".green").hide();
-        $(".green").show();
-        }
-        if($(this).attr("value")=="blue"){
-        $(".box").not(".blue").hide();
-        $(".blue").show();
-        }
-        if($(this).attr("value")=="yellow"){
-        $(".box").not(".yellow").hide();
-        $(".yellow").show();
-        }
-        if($(this).attr("value")=="purple"){
-        $(".box").not(".purple").hide();
-        $(".purple").show();
-        }
-        if($(this).attr("value")=="orange"){
-        $(".box").not(".orange").hide();
-        $(".orange").show();
-        }
-        });
-        });
-        </script>
-        <script>
-        $('.button next').click(function() {
-        var $all     = $('.getradiotomove');
-        var $current = $('.getradiotomove:checked');
-        
-        var index = $all.index($current) + 1;
-        if(index >= $all.length)
-        index = 0;
-        $($all[index]).attr('checked', 'checked');
-        return false;
-        });
-        });</script>
-
-
-
-
-
-
-
-       <script>
-
-          $(function () {
-
-        var $box = $('#box')
-          , $indicators = $('.goto-slide')
-          , $effects = $('.effect')
-          , $timeIndicator = $('#time-indicator')
-          , slideInterval = 5000;
-
-        var switchIndicator = function ($c, $n, currIndex, nextIndex) {
-          $timeIndicator.stop().css('width', 0);
-          $indicators.removeClass('current').eq(nextIndex).addClass('current');
-        };
-
-        var startTimeIndicator = function () {
-          $timeIndicator.animate({width: '680px'}, slideInterval);
-        };
-
-        // initialize the plugin with the desired settings
-        $box.boxSlider({
-            speed: 1000
-          , autoScroll: true
-          , timeout: slideInterval
-          , next: '#next'
-          , prev: '#prev'
-          , pause: '#pause'
-          , effect: 'scrollVert3d'
-          , blindCount: 15
-          , onbefore: switchIndicator
-          , onafter: startTimeIndicator
-        });
-
-        startTimeIndicator();
-
-        // pagination isn't built in simply because it's easy to
-        // roll your own with the plugin API methods
-        $('#controls').on('click', '.goto-slide', function (ev) {
-          $box.boxSlider('showSlide', $(this).data('slideindex'));
-          ev.preventDefault();
-        });
-
-        $('#effect-list').on('click', '.effect', function (ev) {
-          var $effect = $(this);
-
-          $box.boxSlider('option', 'effect', $effect.data('fx'));
-          $effects.removeClass('current');
-          $effect.addClass('current');
-
-          switchIndicator(null, null, 0, 0);
-          ev.preventDefault();
-        });
-
-          });
-
-        </script> 
-    </head>
-    <body>
-        <div>
-            <!-- container end -->
-        </footer>
-    </section>
+<style type="text/css">
+.box{
+display: none;
+margin-top: 110px;
+margin-left: -235px;
+border: 1px solid #000;
+width:230px;
+height:250px;
+}
+.red{
+background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+right: -1120px;
+animation: bounceInRight 3s;
+border-radius: 25px;
+display: block
+}
+.green{
+background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+right: -1120px;
+top: -85px;
+animation: bounceInLeft 3s;
+border-radius: 25px;
+}
+.blue{
+background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+left: 340px;
+top: -70px;
+animation: bounceInRight 3s;
+border-radius: 25px;
+}
+.orange{background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+right: -750px;
+bottom: 215px;
+height: 175px;
+animation: pulse 3s;
+border-radius: 25px;
+}
+.purple{background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+right: -1120px;
+top: 50px;
+animation: flipInYb  3s;
+border-radius: 25px;
+}
+.yellow{background: #000000;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000, #A6362B, #000000);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000, #A6362B, #000000);
+color: #D5AD6D;
+/*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%,
+rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%,
+rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%,
+rgba(213, 173, 109, 1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+right: -350px;
+top: 50px;
+animation: flipInYa  3s;
+border-radius: 25px;
+}
+@media (min-width: 320px) and (max-width: 567px){
+.box{
+width:55%;
+height:30%;
+}
+.green{
+position: relative;
+right: -110%;
+top: 45px;
+font-size: 10px;
+}
+.blue, .yellow{
+position: relative;
+top: 45px;
+font-size: 10px;
+}
+.purple{
+position: relative;
+right: -105%;
+top: 45px;
+font-size: 10px;
+}
+.orange{
+position: relative;
+right: -115%;
+top: 45px;
+font-size: 10px;
+}
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('input[type="radio"]').click(function(){
+if($(this).attr("value")=="red"){
+$(".box").not(".red").hide();
+$(".red").show();
+}
+if($(this).attr("value")=="green"){
+$(".box").not(".green").hide();
+$(".green").show();
+}
+if($(this).attr("value")=="blue"){
+$(".box").not(".blue").hide();
+$(".blue").show();
+}
+if($(this).attr("value")=="yellow"){
+$(".box").not(".yellow").hide();
+$(".yellow").show();
+}
+if($(this).attr("value")=="purple"){
+$(".box").not(".purple").hide();
+$(".purple").show();
+}
+if($(this).attr("value")=="orange"){
+$(".box").not(".orange").hide();
+$(".orange").show();
+}
+});
+});
+</script>
+<script>
+$('.button next').click(function() {
+var $all     = $('.getradiotomove');
+var $current = $('.getradiotomove:checked');
+var index = $all.index($current) + 1;
+if(index >= $all.length)
+index = 0;
+$($all[index]).attr('checked', 'checked');
+return false;
+});
+};
+</script>
+<script>
+$(function () {
+var $box = $('#box')
+, $indicators = $('.goto-slide')
+, $effects = $('.effect')
+, $timeIndicator = $('#time-indicator')
+, slideInterval = 5000;
+var switchIndicator = function ($c, $n, currIndex, nextIndex) {
+$timeIndicator.stop().css('width', 0);
+$indicators.removeClass('current').eq(nextIndex).addClass('current');
+};
+var startTimeIndicator = function () {
+$timeIndicator.animate({width: '680px'}, slideInterval);
+};
+// initialize the plugin with the desired settings
+$box.boxSlider({
+speed: 1000
+, autoScroll: true
+, timeout: slideInterval
+, next: '#next'
+, prev: '#prev'
+, pause: '#pause'
+, effect: 'scrollVert3d'
+, blindCount: 15
+, onbefore: switchIndicator
+, onafter: startTimeIndicator
+});
+startTimeIndicator();
+// pagination isn't built in simply because it's easy to
+// roll your own with the plugin API methods
+$('#controls').on('click', '.goto-slide', function (ev) {
+$box.boxSlider('showSlide', $(this).data('slideindex'));
+ev.preventDefault();
+});
+$('#effect-list').on('click', '.effect', function (ev) {
+var $effect = $(this);
+$box.boxSlider('option', 'effect', $effect.data('fx'));
+$effects.removeClass('current');
+$effect.addClass('current');
+switchIndicator(null, null, 0, 0);
+ev.preventDefault();
+});
+});
+</script>
+<!-- container end -->
+</footer>
+</section>
 </body>
 </html>
