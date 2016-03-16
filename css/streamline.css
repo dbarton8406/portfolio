@@ -11,6 +11,7 @@ color: #333;
 padding: 20px;
 text-align: center;
 font-family: 'Sans-Serif';
+overflow-y: hidden;
 }
 .separator {
 margin-top: 40px;
@@ -168,7 +169,7 @@ background: url("../images/Preloader_2.gif") center no-repeat #fff;
 ._3dbox {
 position: relative;
 top: -75px;
-left: 20px;
+left: -5px;
 width: 60%;
 height: 60%;
 }
@@ -211,7 +212,7 @@ margin: 4px 0 0;
 margin-top: 1px \9;
 line-height: normal;
 position: relative;
-left: 95px;
+left: 75px;
 top: -50px;
 }
 input[type="radio"]:checked
@@ -225,24 +226,27 @@ overflow: visible;
 .goback{
 position: relative;
 top: -90px;
-left: -95px;
+left: -115px;
 }
 .blib{
 position: relative;
-left: 50px;
+left: 10px;
 top: 30px;
 }
 .red
 {
 position: relative;
-left: 310px;
+left: 285px;
 top: 35px;
-font-size: 10px;
+font-size: 8px;
+line-height: 15px;
+animation: pulse 3s;
 }
 }
 .navbar-toggle {
 float: none;
 position: relative;
-left: 85px;
+left: 20px;
+display: none;
 }
 }
