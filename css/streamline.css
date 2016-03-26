@@ -1,10 +1,11 @@
-html body {
+body {
 background: #16222A;
 /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:3em}
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:2em}
+overflow-y: hidden;
 ==========================================================
 body {
 color: #333;
@@ -15,6 +16,9 @@ overflow-y: hidden;
 }
 .separator {
 margin-top: 40px;
+}
+label{
+padding: 8px;
 }
 /* 3D Cube */
 .space3d {
@@ -29,7 +33,7 @@ display: inline-block;
 transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 text-align: center;
 position: relative;
-top:50px;
+top:40px;
 left:450px;
 width: 100%;
 height: 100%;
@@ -126,12 +130,23 @@ background: url("../images/email.png");
 background-size: auto 100%;
 }
 input[type=radio] {
+display: none;
 margin: 4px 0 0;
 margin-top: 1px \9;
 line-height: normal;
 position: relative;
-left: 578px;
-top: 65px;
+left: 75px;
+top: -50px;
+}
+input[type=radio] + label.button{
+display:inline-block;
+cursor: pointer;
+outline: 0;
+width: 128px;
+height: 128px;
+background-repeat: no-repeat;
+background-position: 0 0;
+text-indent: -99999px;
 }
 input[type="radio"]:checked
 {
@@ -151,6 +166,16 @@ position: relative;
 left: 150px;
 top: 100px;
 }
+.goback{
+background: url("../images/loader5.gif") center no-repeat #fff;
+background-color: black;
+border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+
+.goback:hover { background-color: #00B00C; }
 /* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript,
 if it's not present, don't show loader */
@@ -164,6 +189,7 @@ width: 100%;
 height: 100%;
 z-index: 9999;
 background: url("../images/Preloader_2.gif") center no-repeat #fff;
+background-color: green;
 }
 @media (min-width: 320px) and (max-width: 567px)  {
 ._3dbox {
@@ -208,12 +234,24 @@ height: 150px;
 transform: rotateY(180deg) translate3d(0, 0, 75px);
 }
 input[type=radio] {
+display: none;
 margin: 4px 0 0;
 margin-top: 1px \9;
 line-height: normal;
 position: relative;
 left: 75px;
 top: -50px;
+}
+input[type=radio] + label.button{
+display:inline-block;
+cursor: pointer;
+outline: 0;
+width: 128px;
+height: 128px;
+background-image: url("../images/button.png");
+background-repeat: no-repeat;
+background-position: 0 0;
+text-indent: -99999px;
 }
 input[type="radio"]:checked
 {
