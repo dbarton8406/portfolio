@@ -1,210 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- icon placeholder -->
-        <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
-        <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
-        <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
-        <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
-        <title>Daniel Barton Portfolio</title>
-        <!-- MAIN CSS FILES===================================
-        ======================================================= -->
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Animation -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Custom CSS -->
-        <link href="css/theme.css" rel="stylesheet">
-        <!-- Responsive styles-->
-        <link rel="stylesheet" href="css/responsive.css">
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- Elegant icon font -->
-        <link rel="stylesheet" href="css/simple-line-icons.css">
-        <link rel="stylesheet" href="css/streamline.css">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- icon placeholder -->
+    <link rel="icon" sizes="144x144" href="icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" />
+    <link rel="icon" sizes="114x114" href="icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" />
+    <link rel="icon" sizes="72x72" href="icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" />
+    <link rel="icon" href="icons/themeforest.net/apple-touch-icon-precomposed.png" />
+    <title>Daniel Barton Portfolio</title>
+    <!-- MAIN CSS FILES===================================
+    ======================================================= -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Custom CSS -->
+    <link href="css/theme.css" rel="stylesheet">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Elegant icon font -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/streamline.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!-- <link href="css/myhub.css" rel="stylesheet"> -->
     <!-- <link href="css/responsiveness.css" rel="stylesheet"> -->
     
   </head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-    // Wait for window load
-    $(window).load(function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
-    });
-    </script>
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
-<script type='text/javascript' src='loadImg.js'></script>
-<script type='text/javascript'>
-    $(function(){
-        $('img').imgPreload()
-    })
-</script>
-<script>
-(function() {
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <script>
+  // Wait for window load
+  $(window).load(function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");;
+  });
+  </script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+  <script type='text/javascript' src='loadImg.js'></script>
+  <script type='text/javascript'>
+  $(function(){
+  $('img').imgPreload()
+  })
+  </script>
+  <script>
+  (function() {
   (function($) {
-    return $.fn.imgPreload = function(options) {
-      var delay_completion, i, image_stack, placeholder_stack, replace, settings, spinner_stack, src, x, _i, _len;
-      settings = {
-        fake_delay: 10,
-        animation_duration: 1000,
-        spinner_src: 'spinner.gif'
-      };
-      if (options) {
-        $.extend(settings, options);
-      }
-      image_stack = [];
-      placeholder_stack = [];
-      spinner_stack = [];
-      window.delay_completed = false;
-      delay_completion = function() {
-        var x, _i, _len, _results;
-        window.delay_completed = true;
-        _results = [];
-        for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
-          x = image_stack[_i];
-          _results.push($(x).attr('data-load-after-delay') === 'true' ? (replace(x), $(x).removeAttr('data-load-after-delay')) : void 0);
-        }
-        return _results;
-      };
-      setTimeout(delay_completion, settings.fake_delay);
-      this.each(function() {
-        var $image, $placeholder, $spinner_img, offset_left, offset_top;
-        $image = $(this);
-        offset_top = $image.offset().top;
-        offset_left = $image.offset().left;
-        $spinner_img = $('<img>');
-        $placeholder = $('<img>').attr({
-          src: 'data:image/gif;base64,R0lGODlhAQABA\
-                IABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
-        });
-        $placeholder.attr({
-          width: $image.attr('width')
-        });
-        $placeholder.attr({
-          height: $image.attr('height')
-        });
-        spinner_stack.push($spinner_img);
-        placeholder_stack.push($placeholder);
-        image_stack.push($image.replaceWith($placeholder));
-        $('body').append($spinner_img);
-        $spinner_img.css({
-          position: 'absolute'
-        });
-        $spinner_img.css('z-index', 9999);
-        $spinner_img.load(function() {
-          $(this).css({
-            left: (offset_left + $placeholder.width() / 2) - $(this).width() / 2
-          });
-          return $(this).css({
-            top: (offset_top + $placeholder.height() / 2) - $(this).height() / 2
-          });
-        });
-        return $spinner_img.attr({
-          src: settings.spinner_src
-        });
-      });
-      i = 0;
-      for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
-        x = image_stack[_i];
-        x.attr({
-          no: i++
-        });
-        src = x.attr('src');
-        x.attr({
-          src: ''
-        });
-        x.load(function() {
-          if (window.delay_completed) {
-            return replace(this);
-          } else {
-            return $(this).attr('data-load-after-delay', true);
-          }
-        });
-        x.attr({
-          src: src
-        });
-      }
-      replace = function(image) {
-        var $image, no_;
-        $image = $(image);
-        no_ = $image.attr('no');
-        placeholder_stack[no_].replaceWith($image);
-        spinner_stack[no_].fadeOut(settings.animation_duration / 2, function() {
-          return $(this).remove();
-        });
-        return $image.fadeOut(0).fadeIn(settings.animation_duration);
-      };
-      return this;
-    };
+  return $.fn.imgPreload = function(options) {
+  var delay_completion, i, image_stack, placeholder_stack, replace, settings, spinner_stack, src, x, _i, _len;
+  settings = {
+  fake_delay: 10,
+  animation_duration: 1000,
+  spinner_src: 'spinner.gif'
+  };
+  if (options) {
+  $.extend(settings, options);
+  }
+  image_stack = [];
+  placeholder_stack = [];
+  spinner_stack = [];
+  window.delay_completed = false;
+  delay_completion = function() {
+  var x, _i, _len, _results;
+  window.delay_completed = true;
+  _results = [];
+  for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
+  x = image_stack[_i];
+  _results.push($(x).attr('data-load-after-delay') === 'true' ? (replace(x), $(x).removeAttr('data-load-after-delay')) : void 0);
+  }
+  return _results;
+  };
+  setTimeout(delay_completion, settings.fake_delay);
+  this.each(function() {
+  var $image, $placeholder, $spinner_img, offset_left, offset_top;
+  $image = $(this);
+  offset_top = $image.offset().top;
+  offset_left = $image.offset().left;
+  $spinner_img = $('<img>');
+  $placeholder = $('<img>').attr({
+  src: 'data:image/gif;base64,R0lGODlhAQABA\
+  IABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+  });
+  $placeholder.attr({
+  width: $image.attr('width')
+  });
+  $placeholder.attr({
+  height: $image.attr('height')
+  });
+  spinner_stack.push($spinner_img);
+  placeholder_stack.push($placeholder);
+  image_stack.push($image.replaceWith($placeholder));
+  $('body').append($spinner_img);
+  $spinner_img.css({
+  position: 'absolute'
+  });
+  $spinner_img.css('z-index', 9999);
+  $spinner_img.load(function() {
+  $(this).css({
+  left: (offset_left + $placeholder.width() / 2) - $(this).width() / 2
+  });
+  return $(this).css({
+  top: (offset_top + $placeholder.height() / 2) - $(this).height() / 2
+  });
+  });
+  return $spinner_img.attr({
+  src: settings.spinner_src
+  });
+  });
+  i = 0;
+  for (_i = 0, _len = image_stack.length; _i < _len; _i++) {
+  x = image_stack[_i];
+  x.attr({
+  no: i++
+  });
+  src = x.attr('src');
+  x.attr({
+  src: ''
+  });
+  x.load(function() {
+  if (window.delay_completed) {
+  return replace(this);
+  } else {
+  return $(this).attr('data-load-after-delay', true);
+  }
+  });
+  x.attr({
+  src: src
+  });
+  }
+  replace = function(image) {
+  var $image, no_;
+  $image = $(image);
+  no_ = $image.attr('no');
+  placeholder_stack[no_].replaceWith($image);
+  spinner_stack[no_].fadeOut(settings.animation_duration / 2, function() {
+  return $(this).remove();
+  });
+  return $image.fadeOut(0).fadeIn(settings.animation_duration);
+  };
+  return this;
+  };
   })(jQuery);
-}).call(this);
-</script>
+  }).call(this);
+  </script>
   <body>
-  <nav class="navbar navbar-custom navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" width="160px" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-                    <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="navbar-brand navbar-brand-centered hidden-md">
-                        <class="page-scroll">
-                        <ul class="list-inline text-center team-socail">
-                            <li><a href="https://github.com/dbarton8406"><i class="fa fa-github fa-2x"></i></a></li>
-                            <li><a href="https://twitter.com/marbleminded78"><i class="fa fa-twitter fa-2x"></i></a></li>
-                            <li><a href="skype:dbarton8406?userinfo"><i class="fa fa-skype fa-2x"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/DanielBarton8406"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="https://www.facebook.com/daniel.barton.5283"><i class="fa fa-facebook fa-2x"></i></a></li>
-                        </ul>
-                    </a>
-                </div>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navigation" id="navbar-brand-centered">
-                <ul class="nav navbar-nav">
-                    <li><a class="page-scroll" href="/portfolio/#section-intro">Home</a></li>
-                    <li><a class="page-scroll" href="/porfolio/#section-about">About</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="/porfolio/#section-portfolio">portfolio</a></li>
-                    <li><a class="page-scroll" href="/portfolio/#section-contact">contact</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-            <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" width="160px" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+          <i class="fa fa-bars"></i>
+          </button>
+          <div class="navbar-brand navbar-brand-centered hidden-md">
+            <class="page-scroll">
+            <ul class="list-inline text-center team-socail">
+              <li><a href="https://github.com/dbarton8406"><i class="fa fa-github fa-2x"></i></a></li>
+              <li><a href="https://twitter.com/marbleminded78"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="skype:dbarton8406?userinfo"><i class="fa fa-skype fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/DanielBarton8406"><i class="fa fa-linkedin fa-2x"></i></a></li>
+              <li><a href="https://www.facebook.com/daniel.barton.5283"><i class="fa fa-facebook fa-2x"></i></a></li>
+            </ul>
+          </a>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- navbar end -->  
-  </head>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navigation" id="navbar-brand-centered">
+        <ul class="nav navbar-nav">
+          <li><a class="page-scroll" href="/portfolio/#section-intro">Home</a></li>
+          <li><a class="page-scroll" href="/porfolio/#section-about">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="/porfolio/#section-portfolio">portfolio</a></li>
+          <li><a class="page-scroll" href="/portfolio/#section-contact">contact</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- navbar end -->
+</head>
+<body><hr>
+  <h1 class="blib">TIC TAC TOE</h1><br><br><br><br><br>
+<button onclick="goBack()" class="goback">Go Back</button></div>
+<script>
+function goBack() {
+window.history.back();
+}
+</script>
+<video width="60%" height="100%" controls autoplay preload="auto" class="myhub">
+  <source src="images/ttt_demo.mp4" type="video/mp4;"  class="img-responsive">
+  <source src="images/ttt_demo.m4v" type="video/mp4;" class="img-responsive">
+</video>
+</div><br/><br/><br/><br/><br/>
 
-  <body>
-        <div><h1 class="blib">War Games Tic Tac Toe</h1><br><br><br><br><br>
-        
-<video width="70%" height="100%" style="background:black;" controls autoplay muted class="ttt2">
-            <source src="images/ttt_demo.mp4" type="video/mp4;"  class="img-responsive">
-            <source src="images/ttt_demo.m4v" type="video/mp4;" class="img-responsive">
-        </video>
-        <button onclick="goBack()" class="goback">Go Back</button></div>
-         <script> 
-        function goBack() { 
-         window.history.back(); 
-         } 
-         </script> 
-         </div><br/><br/><br/><br/><br/>
-    
-  </body>
+</body>
 </html>

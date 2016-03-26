@@ -191,7 +191,7 @@
     </nav>
     <!-- navbar end -->
     <!-- CONTROLS -->
-    <h1 class="blib">Duckbills</h1><br><br><br><br><br>
+    <hr><h1 class="blib">Duckbills</h1><br>
     <button onclick="goBack()" class="goback">Go Back</button></h1>
     <script>
     function goBack() {
@@ -199,12 +199,18 @@
     }
     </script>
     
-    <input type="radio" checked="checked" id="radio-front" name="select-face" value="red"/>
-    <input type="radio" id="radio-left" name="select-face" value="blue"/>
-    <input type="radio" id="radio-right" name="select-face" value="green"/>
-    <input type="radio" id="radio-top" name="select-face" value="yellow"/>
-    <input type="radio" id="radio-bottom" name="select-face" value="purple"/>
-    <input type="radio" id="radio-back" name="select-face" value="orange"/>
+    <input type="radio" checked="checked" id="radio-front" name="select-face" value="red" /><h6 class="blib">click the rubies!</h6>  
+<label for="radio-front"><img src="images/ruby.png" height="20%"></label>
+<input type="radio" id="radio-left" name="select-face" value="blue"/>
+<label for="radio-left"><img src="images/ruby.png" height="20%"></label>
+<input type="radio" id="radio-right" name="select-face" value="green"/>
+<label for="radio-right"><img src="images/ruby.png" height="20%"></label>
+<input type="radio" id="radio-top" name="select-face" value="yellow"/>
+<label for="radio-top"><img src="images/ruby.png" height="20%"></label>
+<input type="radio" id="radio-bottom" name="select-face" value="purple"/>
+<label for="radio-bottom"><img src="images/ruby.png" height="20%"></label>
+<input type="radio" id="radio-back" name="select-face" value="orange"/>
+<label for="radio-back"><img src="images/ruby.png" height="20%"></label>
     
     <div class="red box"><br/>Duckbills the app that helps room mates know their bill responsibilities.
         <img src="images/bill.png" height="50%" width="75%" class="zoom">
@@ -213,7 +219,7 @@
     <div class="green box"><br/> The Admin creates and account where they can add or delete room mates. The Admin is the only person that can add or remove room mates. This also collects email addresses so that reminders can be sent when a bill is due. </div>
     <div class="yellow box"><br/>Any room mate can add a house bill and who is responsible for it. They can also put how much of that bill they are responsible for and when it is due. Future expansion would allow bill photo to be added as well as auto email when bill is close.</div>
     <div class="purple box"><br/> Roomates can see all the current bills and the one close to due date here. this application could be used for landlord applications as well.   </div>
-    <div class="orange box"><br/><br/><br/>Hackathon Weekend Nov 2015</div>
+    <div class="orange box"><br/><br/><br/>Hackathon Weekend Nov 2015<br><a href= "http://duckbills.surge.sh/#/">http://duckbills.surge.sh/#/</a></div>
     <div class="separator"></div>
     <div class="space3d">
         <div class="_3dbox ">
@@ -231,6 +237,9 @@
 <br><br>
 <div></div>
 <style type="text/css">
+a{
+font-size: 15px;
+}
 .box{
 display: none;
 margin-top: 110px;
@@ -301,7 +310,7 @@ background: -o-linear-gradient(transparent, transparent);
 -webkit-text-fill-color: transparent;
 position: relative;
 left: 340px;
-top: -70px;
+top: -40px;
 animation: bounceInRight 3s;
 border-radius: 25px;
 }
@@ -322,7 +331,7 @@ background: -o-linear-gradient(transparent, transparent);
 -webkit-text-fill-color: transparent;
 position: relative;
 right: -750px;
-bottom: 215px;
+bottom: 150px;
 height: 175px;
 animation: pulse 3s;
 border-radius: 25px;

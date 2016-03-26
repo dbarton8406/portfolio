@@ -1,20 +1,24 @@
-html body {
+body {
 background: #16222A;
 /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #16222A, #3A6073, #16222A);
 /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #16222A, #3A6073, #16222A);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:3em}
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; none repeat scroll 0% 0% rgba(0, 0, 0, 0.9);margin-top:2em}
+overflow-y: hidden;
 ==========================================================
 body {
 color: #333;
 padding: 20px;
 text-align: center;
-font-family: Arial;
+font-family: 'Sans-Serif';
 overflow-y: hidden;
 }
 .separator {
 margin-top: 40px;
+}
+label{
+padding: 8px;
 }
 /* 3D Cube */
 .space3d {
@@ -29,7 +33,7 @@ display: inline-block;
 transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 text-align: center;
 margin-left: 180%;
-margin-top: 15%;
+margin-top: 35%;
 width: 100%;
 height: 100%;
 transform-style: preserve-3d;
@@ -125,6 +129,7 @@ background: #BCBEBB;
 background-size: auto 100%;
 }
 input[type=radio] {
+display: none;
 margin: 4px 0 0;
 margin-top: 1px \9;
 line-height: normal;
@@ -149,6 +154,28 @@ transform: scale(1.9);
 position: relative;
 left: 150px;
 top: 100px;
+}
+.goback{
+background: url("../images/loader5.gif") center no-repeat #fff;
+background-color: black;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+}
+.goback:hover { background-color: #00B00C; }
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript,
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+position: fixed;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 100%;
+z-index: 9999;
+background: url("../images/Preloader_2.gif") center no-repeat #fff;
 }
 @media (min-width: 320px) and (max-width: 567px)  {
 ._3dbox {
@@ -212,6 +239,9 @@ overflow: visible;
 position: relative;
 top: -90px;
 left: -95px;
+}
+.flexbox{
+    height:115%;
 }
 .blib{
 position: relative;
