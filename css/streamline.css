@@ -189,7 +189,7 @@ z-index: 9999;
 background: url("../images/Preloader_2.gif") center no-repeat #fff;
 background-color: green;
 }
-@media (min-width: 320px) and (max-width: 567px)  {
+@media (min-width: 320px) and (max-width: 567px) and (orientation: portrait) {
 ._3dbox {
 position: relative;
 top: -35px;
@@ -290,3 +290,4 @@ left: 20px;
 display: none;
 }
 }
+
