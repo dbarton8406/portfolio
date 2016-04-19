@@ -1528,8 +1528,9 @@ box-shadow: inset rgba(255, 255, 255, 0.1) 0px -5px 5px, rgba(0, 0, 0, 0.1) 0px 
 }
 .button:hover {
 color: rgba(0, 0, 0, 0.6);
-text-shadow: #6CF82E 0px 0px 3px;
+text-shadow: #395F72 0px 0px 3px, #150807 1px 3px 4px;
 box-shadow: inset rgba(255, 255, 255, 0.4) 0px -30px 15px, inset rgba(255, 255, 255, 0.2) -25px 25px 10px, inset rgba(255, 255, 255, 1) 0px 2px 1px, rgba(0, 0, 0, 0.4) 0px 10px 15px;
+
 }
 .button:active {
 margin-top: 46px;
